@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <article class="mw7 center ph3 pv4">
+    <div class="nested-copy-line-height lh-copy f4 mid-gray">
+      {{- .Content -}}
+    </div>
+    <div class="mt4">
+      <h2 style="color: #6b4226;">Send Us a Message</h2>
+      {{ partial "contact-form.html" (dict
+        "subject" "New Contact - CBA Rabbitry"
+        "messageLabel" "Message"
+        "messagePlaceholder" "How can we help you?"
+        "submitLabel" "Send Message"
+      ) }}
+    </div>
+  </article>
+{{ end }}

@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <article class="mw7 center ph3 pv4">
+    <div class="nested-copy-line-height lh-copy f4 mid-gray">
+      {{- .Content -}}
+    </div>
+    <div class="mt4">
+      <h2 style="color: #6b4226;">Join the Waiting List</h2>
+      <p class="f5 mid-gray"><em>The $49 waiting list fee will be collected after we confirm your spot. We'll be in touch within 24–48 hours.</em></p>
+      {{ partial "contact-form.html" (dict
+        "subject" "Waiting List Request - CBA Rabbitry"
+        "showPreferences" true
+        "messageLabel" "Anything else we should know?"
+        "messagePlaceholder" "Timeline, budget, any special requests..."
+        "submitLabel" "Join the Waiting List"
+      ) }}
+    </div>
+  </article>
+{{ end }}

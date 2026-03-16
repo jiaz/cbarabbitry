@@ -1,0 +1,62 @@
+baseURL = "https://cbarabbitry.com/"
+languageCode = "en-us"
+title = "CBA Rabbitry"
+theme = "ananke"
+
+[params]
+  featured_image = "/images/hero-bunnies.jpg"
+  description = "Holland Lop & Mini Rex bunnies raised with love in Bellevue, WA. Socialization-trained, health-guaranteed, lifetime support."
+  text_color = ""
+  background_color_class = "bg-near-white"
+  recent_posts_number = 3
+
+  # Contact info
+  email = "cbarabbitry@gmail.com"
+  phone = "360-489-6698"
+  address = "Factoria Mall, Bellevue, WA 98006"
+
+  # Web3Forms & Turnstile (fill in after account creation)
+  web3forms_key = "YOUR_WEB3FORMS_KEY"
+  turnstile_site_key = "YOUR_TURNSTILE_SITE_KEY"
+
+  # Custom CSS
+  custom_css = ["/css/custom.css"]
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Bunnies for Adoption"
+    url = "/bunnies-for-adoption/"
+    weight = 2
+  [[menu.main]]
+    name = "Request Adoption"
+    url = "/request-adoption/"
+    weight = 3
+  [[menu.main]]
+    name = "Join Waiting List"
+    url = "/join-waiting-list/"
+    weight = 4
+  [[menu.main]]
+    name = "Sales Policy"
+    url = "/sales-policy/"
+    weight = 5
+  [[menu.main]]
+    name = "Partner Friends"
+    url = "/partner-friends/"
+    weight = 6
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 7
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 8
+
+[social]
+  instagram = "cbarabbitry"
+  tiktok = "CBA.Rabbitry"
+  facebook = "cbarabbitry"

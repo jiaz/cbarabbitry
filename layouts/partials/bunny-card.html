@@ -1,0 +1,31 @@
+{{ $bunny := . }}
+{{ $available := $bunny.Params.available | default true }}
+<div class="bunny-card{{ if not $available }} sold{{ end }}">
+  {{ with $bunny.Params.featured_image }}
+  <img src="{{ . }}" alt="{{ $bunny.Title }}" loading="lazy">
+  {{ else }}
+  <img src="/images/bunnies/placeholder.jpg" alt="{{ $bunny.Title }}" loading="lazy">
+  {{ end }}
+  <div class="bunny-card-body">
+    <div class="bunny-card-title">
+      {{ $bunny.Title }}
+      {{ with $bunny.Params.grade }}
+        <span class="grade-badge grade-{{ . | lower }}">Grade {{ . }}</span>
+      {{ end }}
+    </div>
+    <div class="bunny-card-meta">
+      {{ with $bunny.Params.sex }}{{ . }} &nbsp;·&nbsp; {{ end }}
+      {{ with $bunny.Params.color }}{{ . }}{{ end }}
+    </div>
+    <div class="bunny-card-price">
+      {{ if $available }}
+        ${{ $bunny.Params.price }}+
+      {{ else }}
+        <span style="color:#c0392b;">Sold</span>
+      {{ end }}
+    </div>
+    {{ if $available }}
+    <a href="{{ $bunny.Permalink }}" class="btn">Meet {{ $bunny.Title }}</a>
+    {{ end }}
+  </div>
+</div>

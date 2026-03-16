@@ -1,0 +1,204 @@
+/* CBA Rabbitry — Warm earth tone overrides for Ananke theme */
+
+:root {
+  --cba-brown: #6b4226;
+  --cba-warm-tan: #c8a97e;
+  --cba-cream: #fdf6ec;
+  --cba-accent: #a0522d;
+  --cba-green: #5a7a4a;
+  --cba-badge-a: #5a7a4a;
+  --cba-badge-p: #a0522d;
+  --cba-badge-s: #7b5ea7;
+}
+
+/* Header / Nav */
+header.bg-black,
+.bg-black { background-color: var(--cba-brown) !important; }
+
+/* Hero section */
+.cover-main { background-color: rgba(107, 66, 38, 0.55); }
+
+/* Links */
+a { color: var(--cba-accent); }
+a:hover { color: var(--cba-brown); }
+
+/* Buttons */
+.bg-dark-gray,
+button[type="submit"],
+input[type="submit"] {
+  background-color: var(--cba-accent) !important;
+  border-color: var(--cba-accent) !important;
+  color: #fff !important;
+}
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+  background-color: var(--cba-brown) !important;
+}
+
+/* Page background */
+body { background-color: var(--cba-cream); }
+
+/* ── Bunny Grid ── */
+.bunny-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+.bunny-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(107,66,38,0.12);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.bunny-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(107,66,38,0.2);
+}
+
+.bunny-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.bunny-card-body {
+  padding: 1rem 1.2rem 1.2rem;
+}
+
+.bunny-card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--cba-brown);
+  margin: 0 0 0.4rem;
+}
+
+.bunny-card-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.6rem;
+}
+
+.bunny-card-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--cba-accent);
+  margin-bottom: 0.8rem;
+}
+
+.bunny-card a.btn {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: var(--cba-accent);
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.bunny-card a.btn:hover { background: var(--cba-brown); }
+
+/* Grade badges */
+.grade-badge {
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.03em;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+.grade-badge.grade-a { background-color: var(--cba-badge-a); }
+.grade-badge.grade-p { background-color: var(--cba-badge-p); }
+.grade-badge.grade-s { background-color: var(--cba-badge-s); }
+
+/* Sold overlay */
+.bunny-card.sold { opacity: 0.55; }
+.bunny-card.sold::after {
+  content: "SOLD";
+  position: absolute;
+  top: 12px; right: 12px;
+  background: #c0392b;
+  color: #fff;
+  padding: 0.2rem 0.7rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+.bunny-card { position: relative; }
+
+/* ── Forms ── */
+.cba-form-wrap {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(107,66,38,0.1);
+}
+
+.cba-form-wrap label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: var(--cba-brown);
+}
+
+.cba-form-wrap input,
+.cba-form-wrap textarea,
+.cba-form-wrap select {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #d4b896;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 1.1rem;
+  background: #fffaf5;
+  box-sizing: border-box;
+}
+
+.cba-form-wrap textarea { min-height: 120px; resize: vertical; }
+
+.cba-form-wrap button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+/* ── Grade section headings in bunny list ── */
+.grade-section h2 {
+  border-left: 5px solid var(--cba-warm-tan);
+  padding-left: 0.8rem;
+  color: var(--cba-brown);
+  margin-top: 2.5rem;
+}
+
+/* ── Partner cards ── */
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.partner-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(107,66,38,0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+.partner-card img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  height: 160px;
+  object-fit: cover;
+}

@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <article class="mw7 center ph3 pv4">
+    <div class="nested-copy-line-height lh-copy f4 mid-gray">
+      {{- .Content -}}
+    </div>
+    <div class="mt4">
+      {{ partial "contact-form.html" (dict
+        "subject" "Adoption Request - CBA Rabbitry"
+        "showBunny" true
+        "messageLabel" "Tell us about yourself and your home"
+        "messagePlaceholder" "Do you have other pets? Children? Is this your first rabbit? Any other info to share..."
+        "submitLabel" "Submit Adoption Request"
+      ) }}
+    </div>
+  </article>
+{{ end }}

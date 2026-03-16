@@ -1,0 +1,18 @@
+# Cloudflare Pages build configuration
+# These settings mirror what you'll enter in the Cloudflare Dashboard.
+#
+# Dashboard path: Workers & Pages → your project → Settings → Build
+#
+# Build command:   hugo
+# Build output:    public
+# Root directory:  (leave blank)
+#
+# Environment variables (set under Settings → Environment variables):
+#   HUGO_VERSION = 0.147.0
+
+build_command: hugo
+build_output_directory: public
+root_directory: ""
+
+environment_variables:
+  HUGO_VERSION: "0.147.0"
