@@ -403,15 +403,8 @@ p, li {
   opacity: 0.55;
 }
 
-/* Mobile: hide video, show static image */
-@media (max-width: 767px) {
-  .cba-hero-video { display: none; }
-}
-
-/* Desktop: hide static image (video plays) */
-@media (min-width: 768px) {
-  .cba-hero-img { display: none; }
-}
+/* Hide static image when video is available */
+.cba-hero-img { display: none; }
 .cba-hero-content {
   position: relative;
   z-index: 1;
