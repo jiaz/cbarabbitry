@@ -15,9 +15,8 @@ theme = "ananke"
   phone = "360-489-6698"
   address = "Factoria Mall, Bellevue, WA 98006"
 
-  # Web3Forms & Turnstile (fill in after account creation)
-  web3forms_key = "YOUR_WEB3FORMS_KEY"
-  turnstile_site_key = "YOUR_TURNSTILE_SITE_KEY"
+  # Web3Forms
+  web3forms_key = "688d6843-276c-4eaf-a68d-84893774df7c"
 
   # Custom CSS
   custom_css = ["/css/custom.css"]

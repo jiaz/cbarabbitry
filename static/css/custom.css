@@ -1162,6 +1162,14 @@ p, li {
   margin: 0 0 0.75rem;
 }
 .cba-form-split-info p { font-size: 0.9rem; margin-bottom: 1rem; }
+.cba-waitlist-content { font-size: 0.9rem; color: var(--cba-dark-mid); line-height: 1.8; }
+.cba-waitlist-content h2, .cba-waitlist-content h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; color: var(--cba-dark); margin: 1.2rem 0 0.4rem; }
+.cba-waitlist-content h2 { font-size: 1.2rem; }
+.cba-waitlist-content h3 { font-size: 1.05rem; }
+.cba-waitlist-content ul, .cba-waitlist-content ol { padding-left: 1.2rem; margin-bottom: 1rem; }
+.cba-waitlist-content li { margin-bottom: 0.3rem; font-size: 0.9rem; }
+.cba-waitlist-content a { color: var(--cba-accent); }
+.cba-waitlist-content strong { color: var(--cba-dark); }
 .cba-contact-detail {
   display: flex;
   align-items: flex-start;

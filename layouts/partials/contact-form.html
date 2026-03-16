@@ -13,13 +13,6 @@
   <label for="color_pref">Color Preference</label>
   <input type="text" id="color_pref" name="color_preference" placeholder="e.g. Orange, Frosty, Fawn, any">
 
-  <label for="type_pref">Breed Preference</label>
-  <select id="type_pref" name="breed_preference">
-    <option value="">No preference</option>
-    <option value="Holland Lop">Holland Lop</option>
-    <option value="Mini Rex">Mini Rex</option>
-  </select>
-
   <label for="grade_pref">Grade Preference</label>
   <select id="grade_pref" name="grade_preference">
     <option value="">No preference</option>
@@ -48,9 +41,8 @@
   <label for="message">{{ .messageLabel | default "Message" }} *</label>
   <textarea id="message" name="message" required placeholder="{{ .messagePlaceholder | default "How can we help you?" }}"></textarea>
 
-  <!-- Cloudflare Turnstile -->
-  <div class="cf-turnstile" data-sitekey="{{ site.Params.turnstile_site_key }}" data-theme="light"></div>
+  <!-- Honeypot spam protection -->
+  <input type="checkbox" name="botcheck" style="display:none">
 
   <button type="submit">{{ .submitLabel | default "Send Message" }}</button>
 </form>
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
