@@ -1,1 +1,2 @@
-<link rel="stylesheet" href="{{ urls.RelURL "/css/custom.css" }}">
+{{ $css := resources.Get "css/custom.css" | fingerprint }}
+<link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
