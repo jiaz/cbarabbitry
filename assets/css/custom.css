@@ -756,6 +756,9 @@ p, li {
   flex-wrap: wrap;
 }
 .cba-social-icons a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   color: rgba(255, 255, 255, 0.65);
   font-size: 0.82rem;
   font-family: 'DM Sans', sans-serif;
@@ -769,6 +772,13 @@ p, li {
   transition: border-color 0.2s, color 0.2s;
 }
 .cba-social-icons a:hover { border-color: var(--cba-warm-tan); color: var(--cba-warm-tan); }
+.cba-social-icon-svg, .cba-social-icon-svg svg { width: 16px; height: 16px; fill: currentColor; flex-shrink: 0; }
+
+@media (max-width: 767px) {
+  .cba-social-label { display: none; }
+  .cba-social-icons a { padding: 0.65rem; }
+  .cba-social-icon-svg, .cba-social-icon-svg svg { width: 20px; height: 20px; }
+}
 
 /* ─── 8. Grade Badges ───────────────────────────────────────────────────── */
 .grade-badge {
