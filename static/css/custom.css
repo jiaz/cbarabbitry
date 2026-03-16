@@ -925,7 +925,9 @@ p, li {
   margin: 0;
 }
 .cba-bunny-row-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
   margin-top: 0.4rem;
   padding: 0.4rem 1.1rem;
   background: transparent;
@@ -940,7 +942,29 @@ p, li {
   transition: background 0.15s, color 0.15s;
 }
 .cba-bunny-row-btn:hover { background: var(--cba-accent); color: #fff; }
-.cba-bunny-row.sold { opacity: 0.6; }
+.cba-bunny-row-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.4rem; }
+.cba-bunny-row-actions .cba-bunny-row-btn { margin-top: 0; }
+.cba-bunny-row-btn--sold {
+  cursor: default;
+  color: var(--cba-dark-mid);
+  border-color: var(--cba-tan-light);
+  background: var(--cba-cream-alt);
+  opacity: 0.7;
+}
+.cba-bunny-row-btn--sold:hover { background: var(--cba-cream-alt); color: var(--cba-dark-mid); }
+.cba-bunny-row-btn--waitlist {
+  color: var(--cba-brown);
+  border-color: var(--cba-brown);
+}
+.cba-bunny-row-btn--waitlist:hover { background: var(--cba-brown); color: #fff; }
+.cba-bunny-row.sold { opacity: 0.75; }
+.cba-grade-section--sold .cba-grade-header-title { color: var(--cba-dark-mid); font-size: 1.3rem; }
+.cba-grade-header-sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  color: var(--cba-dark-mid);
+  margin: 0.2rem 0 0;
+}
 
 /* Footer CTA on bunnies page */
 .cba-bunnies-footer-cta {
@@ -969,10 +993,18 @@ p, li {
   font-size: 0.88rem;
   color: var(--cba-accent);
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
   margin-bottom: 2rem;
 }
 .cba-bunny-back:hover { color: var(--cba-accent-muted); }
+.cba-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
 .cba-bunny-single-layout {
   display: flex;
   gap: 2.5rem;

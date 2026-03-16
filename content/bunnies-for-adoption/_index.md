@@ -1,6 +1,6 @@
 ---
 title: "Bunnies for Adoption"
-description: "Meet our available Netherland Dwarf bunnies. Each one is socialization-trained and health-guaranteed."
+description: "Meet our adorable Netherland Dwarf bunnies."
 featured_image: "/images/hero-bunnies.jpg"
 ---
 

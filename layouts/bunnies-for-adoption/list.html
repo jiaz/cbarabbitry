@@ -32,40 +32,61 @@
             details.
         </div>
 
-        {{ $pages := .Pages }} {{ $gradeS := where $pages "Params.grade" "S" }}
-        {{ $gradeP := where $pages "Params.grade" "P" }} {{ $gradeA := where
-        $pages "Params.grade" "A" }} {{ if $gradeS }}
+        {{ $pages := .Pages }}
+        {{ $available := where $pages "Params.available" true }}
+        {{ $sold := where $pages "Params.available" false }}
+
+        {{ $gradeSS := where $available "Params.grade" "SS" }}
+        {{ $gradeS  := where $available "Params.grade" "S" }}
+        {{ $gradeP  := where $available "Params.grade" "P" }}
+        {{ $gradeA  := where $available "Params.grade" "A" }}
+
+        {{ if $gradeSS }}
+        <div class="cba-grade-section">
+            <div class="cba-grade-header">
+                <h2 class="cba-grade-header-title">Grade SS — Grand Champion Quality</h2>
+            </div>
+            {{ range $gradeSS }}{{ partial "bunny-list-item.html" . }}{{ end }}
+        </div>
+        {{ end }}
+        {{ if $gradeS }}
         <div class="cba-grade-section">
             <div class="cba-grade-header">
                 <h2 class="cba-grade-header-title">Grade S — Show Quality</h2>
             </div>
             {{ range $gradeS }}{{ partial "bunny-list-item.html" . }}{{ end }}
         </div>
-        {{ end }} {{ if $gradeP }}
+        {{ end }}
+        {{ if $gradeP }}
         <div class="cba-grade-section">
             <div class="cba-grade-header">
-                <h2 class="cba-grade-header-title">
-                    Grade P — Premium Quality
-                </h2>
+                <h2 class="cba-grade-header-title">Grade P — Premium Quality</h2>
             </div>
             {{ range $gradeP }}{{ partial "bunny-list-item.html" . }}{{ end }}
         </div>
-        {{ end }} {{ if $gradeA }}
+        {{ end }}
+        {{ if $gradeA }}
         <div class="cba-grade-section">
             <div class="cba-grade-header">
                 <h2 class="cba-grade-header-title">Grade A — Pet Quality</h2>
             </div>
             {{ range $gradeA }}{{ partial "bunny-list-item.html" . }}{{ end }}
         </div>
-        {{ end }} {{ if not (or $gradeS $gradeP $gradeA) }}
+        {{ end }}
+        {{ if not (or $gradeSS $gradeS $gradeP $gradeA) }}
         <div class="cba-bunnies-empty">
             <p>No bunnies currently available.</p>
-            <a
-                href="/join-waiting-list/"
-                class="cba-btn-primary"
-                style="margin-top: 1rem; display: inline-block"
-                >Join Our Waiting List</a
-            >
+            <a href="/join-waiting-list/" class="cba-btn-primary" style="margin-top: 1rem; display: inline-block">Join Our Waiting List</a>
+        </div>
+        {{ end }}
+
+        {{ if $sold }}
+        <div class="cba-grade-section cba-grade-section--sold">
+            <div class="cba-grade-header">
+                <h2 class="cba-grade-header-title">Recently Adopted</h2>
+                <p class="cba-grade-header-sub">These bunnies have found their forever homes. Join the waiting list for future litters.</p>
+            </div>
+            {{ range $sold }}{{ partial "bunny-list-item.html" . }}{{ end }}
         </div>
         {{ end }}
 
