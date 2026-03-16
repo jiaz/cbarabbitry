@@ -14,6 +14,15 @@ theme = "ananke"
   email = "cbarabbitry@gmail.com"
   phone = "360-489-6698"
   address = "Factoria Mall, Bellevue, WA 98006"
+  maps_url = "https://maps.google.com/?q=Factoria+Mall,+Bellevue,+WA+98006"
+
+  # Social links
+  instagram_url = "https://www.instagram.com/cbarabbitry"
+  tiktok_url    = "https://www.tiktok.com/@CBA.Rabbitry"
+  facebook_url  = "https://www.facebook.com/cbarabbitry"
+  wechat_id     = "cbarabbitry"
+  rednote_url   = "https://xhslink.com/m/1H9NhET3821"
+  rednote       = "CBA Rabbitry (小红书)"
 
   # Web3Forms
   web3forms_key = "688d6843-276c-4eaf-a68d-84893774df7c"

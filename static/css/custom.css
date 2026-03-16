@@ -85,15 +85,25 @@ p, li {
 }
 
 .cba-nav-logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 500;
-  font-size: 1.35rem;
-  color: var(--cba-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
   white-space: nowrap;
   flex-shrink: 0;
 }
-.cba-nav-logo:hover { color: var(--cba-accent); }
+.cba-nav-logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+.cba-nav-logo-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: 1.35rem;
+  color: var(--cba-dark);
+}
+.cba-nav-logo:hover .cba-nav-logo-text { color: var(--cba-accent); }
 
 .cba-nav-links {
   display: flex;
@@ -1179,6 +1189,34 @@ p, li {
   color: var(--cba-dark-mid);
 }
 .cba-contact-detail a { color: var(--cba-accent); }
+.cba-contact-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.25rem 0;
+}
+.cba-social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 20px;
+  background: var(--cba-cream-alt);
+  border: 1px solid var(--cba-tan-light);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--cba-dark-mid);
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.cba-social-btn svg { width: 14px; height: 14px; flex-shrink: 0; }
+.cba-social-btn:not(.cba-social-btn--text):hover {
+  background: var(--cba-accent-pale);
+  border-color: var(--cba-warm-tan);
+  color: var(--cba-accent);
+}
+.cba-social-btn--text { cursor: default; }
 .cba-response-note {
   margin-top: 1.5rem;
   padding-top: 1.25rem;
@@ -1349,13 +1387,11 @@ p, li {
   margin-bottom: 0.75rem;
 }
 .cba-partner-content img {
-  width: 100%;
-  max-width: 400px;
-  height: 200px;
-  object-fit: cover;
+  height: 120px;
+  width: auto;
+  object-fit: contain;
   border-radius: 8px;
   margin-bottom: 1rem;
-  box-shadow: 0 2px 12px rgba(44, 26, 14, 0.1);
 }
 .cba-partner-content em {
   font-size: 0.88rem;
@@ -1379,6 +1415,12 @@ p, li {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
+}
+.cba-footer-logo {
+  height: 48px;
+  width: auto;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
 }
 .cba-footer-brand {
   font-family: 'Cormorant Garamond', serif;
@@ -1522,7 +1564,7 @@ p, li {
   .cba-footer-bottom { flex-direction: column; text-align: center; }
 
   /* Partner images */
-  .cba-partner-content img { max-width: 100%; height: 180px; }
+  .cba-partner-content img { height: 100px; }
 }
 
 @media (max-width: 520px) {
