@@ -31,6 +31,7 @@
                     rel="noopener"
                     >Facebook</a
                 >
+                {{ with site.Params.rednote_url }}<a href="{{ . }}" target="_blank" rel="noopener">小红书</a>{{ end }}
             </div>
             <p class="cba-footer-contact-item">
                 <a href="mailto:{{ site.Params.email }}"
