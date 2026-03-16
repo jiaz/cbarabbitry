@@ -1539,22 +1539,33 @@ p, li {
   /* Trust strip */
   .cba-trust-strip-inner { grid-template-columns: 1fr; gap: 1.75rem; }
 
-  /* Grade cards */
-  .cba-grade-cards { grid-template-columns: 1fr; }
+  /* Grade cards — compact 3-col on mobile */
+  .cba-grade-cards { grid-template-columns: repeat(3, 1fr); gap: 0.4rem; }
+  .cba-grade-card { padding: 0.65rem 0.4rem; }
+  .cba-grade-card-label { font-size: 0.62rem; }
+  .cba-grade-card-name { font-size: 0.85rem; margin-bottom: 0.1rem; }
+  .cba-grade-card-price { font-size: 0.95rem; }
+  .cba-grade-card-desc { font-size: 0.68rem; margin-top: 0.2rem; }
 
   /* Gallery layout */
   .cba-gallery-layout { grid-template-columns: 1fr; gap: 2rem; }
   .cba-gallery-title--mobile { display: block; text-align: center; }
   .cba-gallery-title--desktop { display: none; }
 
-  /* Bunny row */
-  .cba-bunny-row { flex-direction: column; }
+  /* Bunny row — keep horizontal, image ~1:1 on left */
   .cba-bunny-row-img, .cba-bunny-row-img-placeholder {
-    flex: none;
-    width: 100%;
-    height: 220px;
+    flex: 0 0 38%;
+    width: 38%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    align-self: flex-start;
   }
-  .cba-bunny-row-body { padding: 1.1rem; }
+  .cba-bunny-row-body { padding: 0.7rem 0.85rem; gap: 0.15rem; }
+  .cba-bunny-row-name { font-size: 1.05rem; }
+  .cba-bunny-row-meta { font-size: 0.78rem; }
+  .cba-bunny-row-price { font-size: 1rem; }
+  .cba-bunny-row-desc { font-size: 0.8rem; }
+  .cba-bunny-row-btn { padding: 0.3rem 0.75rem; font-size: 0.78rem; }
 
   /* Form split → stack */
   .cba-form-split-inner { grid-template-columns: 1fr; }
