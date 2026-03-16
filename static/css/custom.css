@@ -740,6 +740,7 @@ p, li {
 .cba-social-icons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -1467,6 +1468,7 @@ p, li {
 .cba-footer-links a:hover { color: rgba(255, 255, 255, 0.9); }
 .cba-footer-social-row {
   display: flex;
+  align-items: center;
   gap: 0.9rem;
   margin-bottom: 1rem;
   flex-wrap: wrap;
