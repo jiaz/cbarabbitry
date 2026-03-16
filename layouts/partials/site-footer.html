@@ -1,0 +1,53 @@
+<footer class="cba-footer" role="contentinfo">
+    <div class="cba-footer-inner">
+        <div>
+            <p class="cba-footer-brand">CBA Rabbitry</p>
+            <p class="cba-footer-tagline">
+                Netherland Dwarf bunnies<br />
+                Raised with love in Bellevue, WA<br />
+                Factoria Mall, Bellevue, WA 98006
+            </p>
+        </div>
+
+        <div>
+            <p class="cba-footer-heading">Connect</p>
+            <div class="cba-footer-social-row">
+                <a
+                    href="https://www.instagram.com/cbarabbitry"
+                    target="_blank"
+                    rel="noopener"
+                    >Instagram</a
+                >
+                <a
+                    href="https://www.tiktok.com/@CBA.Rabbitry"
+                    target="_blank"
+                    rel="noopener"
+                    >TikTok</a
+                >
+                <a
+                    href="https://www.facebook.com/cbarabbitry"
+                    target="_blank"
+                    rel="noopener"
+                    >Facebook</a
+                >
+            </div>
+            <p class="cba-footer-contact-item">
+                <a href="mailto:{{ site.Params.email }}"
+                    >{{ site.Params.email }}</a
+                >
+            </p>
+            <p class="cba-footer-contact-item">
+                <a href="tel:{{ site.Params.phone | replaceRE `[^0-9]` `` }}"
+                    >{{ site.Params.phone }}</a
+                >
+            </p>
+        </div>
+    </div>
+    <hr class="cba-footer-divider" />
+    <div class="cba-footer-bottom">
+        <p class="cba-footer-copy">
+            &copy; {{ now.Format "2006" }} CBA Rabbitry
+        </p>
+        <p class="cba-footer-copy"><em>Raised with love, every bunny.</em></p>
+    </div>
+</footer>

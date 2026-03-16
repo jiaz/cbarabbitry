@@ -2,6 +2,9 @@
 title: "About CBA Rabbitry"
 description: "Learn about our passion for Holland Lop and Mini Rex bunnies."
 featured_image: "/images/hero-bunnies.jpg"
+_build:
+  render: "never"
+  list: "never"
 ---
 
 ## Our Story

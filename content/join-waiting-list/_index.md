@@ -1,32 +1,36 @@
 ---
 title: "Join Our Waiting List"
-description: "Reserve your future bunny by joining the CBA Rabbitry waiting list."
+description: "Reserve your future Netherland Dwarf bunny by joining the CBA Rabbitry waiting list."
 ---
 
-## Join Our Waiting List
+## Our waiting time is on average ~1-2 month
 
-Don't see the perfect bunny available right now? Join our waiting list and be first to know when new litters arrive!
+To ensure responsible breeding practices and proper planning of our litters, CBA Rabbitry operates on a waitlist-based breeding system. Breedings will only be planned based on confirmed demand from our waitlist.
 
-### How It Works
+Our goal is to produce healthy, high-quality Netherland Dwarf rabbits while avoiding overbreeding and ensuring every bunny has a committed home.
 
-1. **Submit the form below** with your preferences (color, type, grade, gender)
-2. **Pay the $49 waiting list fee** — this is applied toward your future purchase price
-3. **Wait 1–2 months** — we'll contact you when a matching bunny becomes available
-4. **Complete your adoption** — your waiting list fee covers part of the purchase
+### Waitlist Policy
 
-### Preferences We Can Accommodate
+The waitlist fee is **$49**. After you adopt a bunny from us, the waitlist fee will be applied toward the total price.
 
-- **Color** — Orange, Frosty, Fawn, Blue Tort, and more (ask us what's coming!)
-- **Breed/Type** — Holland Lop, Mini Rex
-- **Grade** — A (pet), P (premium), S (show)
-- **Gender** — Doe (female), Buck (male), no preference
+Please [contact us](/contact/) via Email, Phone or WeChat to submit your request and the waiting fee. Feel free to tell us any preference of Netherland Dwarf (ND) you are looking for, such as:
 
-### Waiting List Fee
+- Color
+- Type
+- Grade (A / P / S)
+- Gender
 
-- **$49** — paid when you join the list
-- **Non-refundable** if you decline a matching bunny that meets your stated preferences
-- **Applied to your purchase** when you adopt
+Waiting time for new babies is usually 1–2 months.
 
-*Typical wait time: 1–2 months depending on litter availability and your specific preferences.*
+### Our Commitment
+
+At CBA Rabbitry, we focus on producing:
+
+- Healthy rabbits
+- Strong Netherland Dwarf bloodlines
+- Exceptional temperament
+- Proper structure and type
+
+We appreciate your patience and support in maintaining a responsible and ethical breeding program.
 
 Have questions? [Contact us](/contact/) anytime!

@@ -1,0 +1,27 @@
+{{ $bunny := . }}
+{{ $available := $bunny.Params.available | default true }}
+<div class="cba-bunny-row{{ if not $available }} sold{{ end }}">
+  {{ with $bunny.Params.grade }}<span class="grade-badge grade-{{ . | lower }}">Grade {{ . }}</span>{{ end }}
+  {{ with $bunny.Params.featured_image }}
+  <img class="cba-bunny-row-img" src="{{ . }}" alt="{{ $bunny.Title }}" loading="lazy">
+  {{ else }}
+  <div class="cba-bunny-row-img-placeholder">🐰</div>
+  {{ end }}
+  <div class="cba-bunny-row-body">
+    <p class="cba-bunny-row-name">{{ $bunny.Title }}</p>
+    <p class="cba-bunny-row-meta">
+      {{ with $bunny.Params.sex }}{{ . }}{{ end }}{{ with $bunny.Params.color }} &nbsp;·&nbsp; {{ . }}{{ end }}
+    </p>
+    <p class="cba-bunny-row-price">
+      {{ if $available }}
+        ${{ $bunny.Params.price }}+
+      {{ else }}
+        <span class="cba-bunny-sold-label">Sold — found their forever home</span>
+      {{ end }}
+    </p>
+    <p class="cba-bunny-row-desc">{{ $bunny.Plain | truncate 140 "…" }}</p>
+    {{ if $available }}
+    <a href="{{ $bunny.RelPermalink }}" class="cba-bunny-row-btn">Meet {{ $bunny.Title }} →</a>
+    {{ end }}
+  </div>
+</div>

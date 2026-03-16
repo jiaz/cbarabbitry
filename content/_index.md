@@ -1,24 +1,55 @@
 ---
 title: "CBA Rabbitry"
-description: "Holland Lop & Mini Rex bunnies raised with love in Bellevue, WA."
+description: "Netherland Dwarf bunnies raised with love in Seattle, WA. Socialization-trained, health-guaranteed, lifetime support."
 featured_image: "/images/hero-bunnies.jpg"
+
+hero_subtitle: "Netherland Dwarf bunnies, raised with love in Seattle, WA"
+hero_cta_primary_label: "Meet Our Bunnies"
+hero_cta_primary_url: "/bunnies-for-adoption/"
+hero_cta_secondary_label: "Join Waiting List"
+hero_cta_secondary_url: "/join-waiting-list/"
+
+trust_items:
+  - icon: "🐾"
+    title: "Daily Socialization"
+    desc: "Every bunny is handled from birth for a calm, friendly temperament ready to bond with your family."
+  - icon: "🩺"
+    title: "Health Guarantee"
+    desc: "180-day genetic health guarantee on every bunny, plus optional extended coverage for peace of mind."
+  - icon: "💌"
+    title: "Lifetime Support"
+    desc: "We're here for questions, advice, and support throughout your bunny's entire life — not just at pickup."
+
+about_heading: "Our Story"
+about_image: "/images/about/champion.jpeg"
+
+bunnies_heading: "Available Now"
+bunnies_subheading: "Ready to find their forever home"
+
+quote_text: "We don't just sell you a bunny — we're here for the life of your pet."
+quote_body: "We provide life long support to the family that adopt bunnies from our Rabbitry. Please feel free to message us for any bunny care related question! We also provide every CBA bunny owner a pamphlet of Bunny Care include most of the things you need!\n\nIf you are in local Seattle, we additionally provide 14 days free boarding."
+
+gallery_heading: "Our Bunnies"
+gallery_images:
+  - src: "/images/bunnies/muffin.jpg"
+    alt: "Muffin"
+  - src: "/images/bunnies/harper.jpg"
+    alt: "Harper"
+  - src: "/images/about/crane.jpg"
+    alt: "CBA Rabbitry bunny"
+  - src: "/images/bunnies/milktea.jpg"
+    alt: "Milktea"
+  - src: "/images/bunnies/fantastic.jpg"
+    alt: "Fantastic"
+
+social_heading: "Follow Our Journey"
+social_desc: "See our daily bunny life — new litters, care tips, and behind-the-scenes moments"
 ---
 
-## Welcome to CBA Rabbitry
+While we have more than 5 years of rabbit breeding experience, the Rabbitry officially started since Aug. 2025.
 
-We are a small, family-run rabbitry in Bellevue, WA dedicated to raising happy, healthy Holland Lop and Mini Rex bunnies. Every bunny in our care receives individual attention, socialization training, and expert care from day one.
+CBA Rabbitry is family owned, we focus on breeding high quality Netherland dwarf rabbit in the US. Our rabbits comes from show quality Netherland dwarf breeders blood lines, and we have been improve the breedings over years to ensure every bunny we breed is **adorable, has a sweet-personality, being trained for socialize, friendly to kids and healthy**.
 
-### Why Choose CBA Rabbitry?
+We are passionate about finding loving homes for rabbits in need and supporting family to have them well-cared for.
 
-**Lifelong Support**
-We don't just sell you a bunny — we're here for the life of your pet. Have a question at 2am? We've got you.
-
-**Expert Care**
-Our bunnies are raised by experienced handlers who specialize in Holland Lops and Mini Rex. We know the breed inside and out.
-
-**Socialization-Trained**
-Every bunny is handled daily from birth, making them calm, friendly, and ready to bond with your family.
-
----
-
-[View Bunnies Available for Adoption](/bunnies-for-adoption/) &nbsp;|&nbsp; [Join Our Waiting List](/join-waiting-list/)
+Our Rabbitry is located in **Seattle, WA, US., we transport bnunies to all US states with reasonable shipping cost.**

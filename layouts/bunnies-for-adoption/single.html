@@ -1,55 +1,101 @@
 {{ define "main" }}
-  <article class="mw7 center ph3 pv4">
-    <nav class="mb3">
-      <a href="/bunnies-for-adoption/" style="color: #a0522d;">← Back to all bunnies</a>
-    </nav>
+<div class="cba-bunny-single">
+    <div class="cba-bunny-single-inner">
+        <a href="/bunnies-for-adoption/" class="cba-bunny-back"
+            >← Back to all bunnies</a
+        >
 
-    <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-      {{ with .Params.featured_image }}
-      <div style="flex: 0 0 320px;">
-        <img src="{{ . }}" alt="{{ $.Title }}" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 16px rgba(107,66,38,0.2);">
-      </div>
-      {{ end }}
+        <div class="cba-bunny-single-layout">
+            {{ with .Params.featured_image }}
+            <div class="cba-bunny-single-photo-wrap">
+                <img
+                    src="{{ . }}"
+                    alt="{{ $.Title }}"
+                    class="cba-bunny-single-photo"
+                />
+            </div>
+            {{ end }}
 
-      <div style="flex: 1; min-width: 250px;">
-        <h1 style="color: #6b4226; margin-top: 0;">
-          {{ .Title }}
-          {{ with .Params.grade }}
-            <span class="grade-badge grade-{{ . | lower }}">Grade {{ . }}</span>
-          {{ end }}
-        </h1>
+            <div class="cba-bunny-single-details">
+                <h1 class="cba-bunny-single-name">{{ .Title }}</h1>
 
-        <table style="border-collapse: collapse; margin-bottom: 1.5rem;">
-          {{ with .Params.color }}
-          <tr><td style="padding: 0.3rem 1rem 0.3rem 0; font-weight: bold; color: #6b4226;">Color</td><td>{{ . }}</td></tr>
-          {{ end }}
-          {{ with .Params.sex }}
-          <tr><td style="padding: 0.3rem 1rem 0.3rem 0; font-weight: bold; color: #6b4226;">Sex</td><td>{{ . }}</td></tr>
-          {{ end }}
-          {{ with .Params.dob }}
-          <tr><td style="padding: 0.3rem 1rem 0.3rem 0; font-weight: bold; color: #6b4226;">Date of Birth</td><td>{{ . }}</td></tr>
-          {{ end }}
-          {{ with .Params.price }}
-          <tr><td style="padding: 0.3rem 1rem 0.3rem 0; font-weight: bold; color: #6b4226;">Price</td><td style="color: #a0522d; font-weight: bold;">${{ . }}+</td></tr>
-          {{ end }}
-        </table>
+                <table class="cba-bunny-single-table">
+                    {{ with .Params.breed }}
+                    <tr>
+                        <td class="cba-bunny-table-label">Breed</td>
+                        <td>{{ . }}</td>
+                    </tr>
+                    {{ end }} {{ with .Params.grade }}
+                    <tr>
+                        <td class="cba-bunny-table-label">Grade</td>
+                        <td>{{ . }}</td>
+                    </tr>
+                    {{ end }} {{ with .Params.color }}
+                    <tr>
+                        <td class="cba-bunny-table-label">Color</td>
+                        <td>{{ . }}</td>
+                    </tr>
+                    {{ end }} {{ with .Params.sex }}
+                    <tr>
+                        <td class="cba-bunny-table-label">Sex</td>
+                        <td>{{ . }}</td>
+                    </tr>
+                    {{ end }} {{ with .Params.dob }}
+                    <tr>
+                        <td class="cba-bunny-table-label">Date of Birth</td>
+                        <td>{{ . }}</td>
+                    </tr>
+                    {{ end }} {{ with .Params.health }}
+                    <tr>
+                        <td class="cba-bunny-table-label">Health</td>
+                        <td>{{ . }}</td>
+                    </tr>
+                    {{ end }} {{ with .Params.price }}
+                    <tr>
+                        <td class="cba-bunny-table-label">Price</td>
+                        <td class="cba-bunny-table-price">${{ . }}+</td>
+                    </tr>
+                    {{ end }}
+                </table>
 
-        {{ if .Params.available | default true }}
-        <div style="background: #f0f8ea; border: 1px solid #5a7a4a; border-radius: 6px; padding: 0.8rem 1rem; margin-bottom: 1.5rem; color: #3a5a2a;">
-          ✓ Available for adoption
+                {{ if .Params.available | default true }}
+                <div class="cba-bunny-available-notice">
+                    ✓ Available for adoption
+                </div>
+                <div class="cba-bunny-single-ctas">
+                    <a href="/request-adoption/" class="cba-btn-primary"
+                        >Request Adoption</a
+                    >
+                </div>
+                {{ else }}
+                <div class="cba-bunny-sold-notice">
+                    This bunny has found their forever home!
+                    <a href="/join-waiting-list/">Join our waiting list</a> for
+                    future litters.
+                </div>
+                {{ end }}
+            </div>
         </div>
-        <a href="/request-adoption/" style="display: inline-block; padding: 0.75rem 1.5rem; background: #a0522d; color: #fff; border-radius: 6px; text-decoration: none; font-weight: bold; margin-right: 0.5rem;">Request Adoption</a>
-        <a href="/join-waiting-list/" style="display: inline-block; padding: 0.75rem 1.5rem; background: #fff; color: #a0522d; border: 2px solid #a0522d; border-radius: 6px; text-decoration: none; font-weight: bold;">Join Waiting List</a>
-        {{ else }}
-        <div style="background: #fdecea; border: 1px solid #c0392b; border-radius: 6px; padding: 0.8rem 1rem; margin-bottom: 1.5rem; color: #922b21;">
-          This bunny has found their forever home! <a href="/join-waiting-list/">Join our waiting list</a> for future litters.
-        </div>
-        {{ end }}
-      </div>
-    </div>
 
-    <div class="lh-copy f4 mid-gray mt4" style="border-top: 2px solid #e8d5c0; padding-top: 1.5rem;">
-      {{- .Content -}}
+        <div class="cba-bunny-single-content">{{ .Content }}</div>
+
+        <div class="cba-bunny-single-contact">
+            <h2>Interested in This Bunny?</h2>
+            <p>
+                Feel free to contact us for more information via email at
+                <a href="mailto:cbarabbitry@gmail.com">cbarabbitry@gmail.com</a
+                >. We are happy to send more photos or videos of the bunny you
+                are interested in, or you are welcome to schedule a visit to
+                meet the bunny in person in the Seattle Area, Washington State,
+                US.
+            </p>
+            <p>
+                You can pick up the bunny, or we also transport bunnies to all
+                US states at a reasonable cost (est. $110–$150). Please review
+                our <a href="/sales-policy/">Sales Policy</a> for full adoption
+                details.
+            </p>
+        </div>
     </div>
-  </article>
+</div>
 {{ end }}

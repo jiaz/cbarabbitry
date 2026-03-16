@@ -1,21 +1,9 @@
 ---
 title: "Bunnies for Adoption"
-description: "Meet our available Holland Lop and Mini Rex bunnies. Each one is socialization-trained and health-guaranteed."
+description: "Meet our available Netherland Dwarf bunnies. Each one is socialization-trained and health-guaranteed."
 featured_image: "/images/hero-bunnies.jpg"
 ---
 
-## Available Bunnies
+## Adoptions
 
-All our bunnies are raised with daily handling, proper nutrition, and veterinary oversight. Each comes with a health guarantee and our lifelong support.
-
-### Grading System
-
-We grade our bunnies based on conformation, coat quality, and show potential:
-
-| Grade | Description | Starting Price |
-|-------|-------------|----------------|
-| **A** | Pet quality — wonderful companions, may have minor conformation variations | $99+ |
-| **P** | Premium quality — excellent conformation, show potential | $299+ |
-| **S** | Show quality — competition-ready, exceptional conformation and coat | $599+ |
-
-All bunnies require a **non-refundable deposit** to reserve. See our [Sales Policy](/sales-policy/) for full details.
+Listed below are our current Netherland Dwarf bunnies available for adoption. Feel free to contact us for more information via email ([cbarabbitry@gmail.com](mailto:cbarabbitry@gmail.com)). We are happy to send more photos or videos of the bunny you are interested in, or you are welcome to schedule meeting the bunny in person in the Seattle area, Washington State. You can pick up the bunny, or we also transport bunnies to all US states at reasonable cost (est. $110–$150). Please look at our [Sales Policy](/sales-policy/) for bunny adoption.

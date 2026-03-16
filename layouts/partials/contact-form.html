@@ -1,59 +1,56 @@
-{{ $formSubject := .subject | default "New Message - CBA Rabbitry" }}
-<div class="cba-form-wrap">
-  <form action="https://api.web3forms.com/submit" method="POST">
-    <input type="hidden" name="access_key" value="{{ site.Params.web3forms_key }}">
-    <input type="hidden" name="subject" value="{{ $formSubject }}">
-    <input type="hidden" name="redirect" value="{{ site.BaseURL }}thank-you/">
-    <input type="hidden" name="from_name" value="CBA Rabbitry Website">
+<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="{{ site.Params.web3forms_key }}">
+  <input type="hidden" name="subject" value="{{ .subject | default "New Message - CBA Rabbitry" }}">
+  <input type="hidden" name="redirect" value="{{ site.BaseURL }}thank-you/">
+  <input type="hidden" name="from_name" value="CBA Rabbitry Website">
 
-    {{ if .showBunny }}
-    <label for="bunny">Which bunny are you interested in?</label>
-    <input type="text" id="bunny" name="bunny_interest" placeholder="e.g. Muffin, or describe what you're looking for">
-    {{ end }}
+  {{ if .showBunny }}
+  <label for="bunny">Which bunny are you interested in?</label>
+  <input type="text" id="bunny" name="bunny_interest" placeholder="e.g. Muffin, or describe what you're looking for">
+  {{ end }}
 
-    {{ if .showPreferences }}
-    <label for="color_pref">Color Preference</label>
-    <input type="text" id="color_pref" name="color_preference" placeholder="e.g. Orange, Frosty, Fawn, any">
+  {{ if .showPreferences }}
+  <label for="color_pref">Color Preference</label>
+  <input type="text" id="color_pref" name="color_preference" placeholder="e.g. Orange, Frosty, Fawn, any">
 
-    <label for="type_pref">Breed Preference</label>
-    <select id="type_pref" name="breed_preference">
-      <option value="">No preference</option>
-      <option value="Holland Lop">Holland Lop</option>
-      <option value="Mini Rex">Mini Rex</option>
-    </select>
+  <label for="type_pref">Breed Preference</label>
+  <select id="type_pref" name="breed_preference">
+    <option value="">No preference</option>
+    <option value="Holland Lop">Holland Lop</option>
+    <option value="Mini Rex">Mini Rex</option>
+  </select>
 
-    <label for="grade_pref">Grade Preference</label>
-    <select id="grade_pref" name="grade_preference">
-      <option value="">No preference</option>
-      <option value="A - Pet ($99+)">A — Pet ($99+)</option>
-      <option value="P - Premium ($299+)">P — Premium ($299+)</option>
-      <option value="S - Show ($599+)">S — Show ($599+)</option>
-    </select>
+  <label for="grade_pref">Grade Preference</label>
+  <select id="grade_pref" name="grade_preference">
+    <option value="">No preference</option>
+    <option value="A - Pet ($99+)">A — Pet ($99+)</option>
+    <option value="P - Premium ($299+)">P — Premium ($299+)</option>
+    <option value="S - Show ($599+)">S — Show ($599+)</option>
+  </select>
 
-    <label for="gender_pref">Gender Preference</label>
-    <select id="gender_pref" name="gender_preference">
-      <option value="">No preference</option>
-      <option value="Doe (female)">Doe (female)</option>
-      <option value="Buck (male)">Buck (male)</option>
-    </select>
-    {{ end }}
+  <label for="gender_pref">Gender Preference</label>
+  <select id="gender_pref" name="gender_preference">
+    <option value="">No preference</option>
+    <option value="Doe (female)">Doe (female)</option>
+    <option value="Buck (male)">Buck (male)</option>
+  </select>
+  {{ end }}
 
-    <label for="name">Your Name *</label>
-    <input type="text" id="name" name="name" required placeholder="Your full name">
+  <label for="name">Your Name *</label>
+  <input type="text" id="name" name="name" required placeholder="Your full name">
 
-    <label for="email">Email Address *</label>
-    <input type="email" id="email" name="email" required placeholder="your@email.com">
+  <label for="email">Email Address *</label>
+  <input type="email" id="email" name="email" required placeholder="your@email.com">
 
-    <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" name="phone" placeholder="Optional">
+  <label for="phone">Phone Number</label>
+  <input type="tel" id="phone" name="phone" placeholder="Optional">
 
-    <label for="message">{{ .messageLabel | default "Message" }} *</label>
-    <textarea id="message" name="message" required placeholder="{{ .messagePlaceholder | default "How can we help you?" }}"></textarea>
+  <label for="message">{{ .messageLabel | default "Message" }} *</label>
+  <textarea id="message" name="message" required placeholder="{{ .messagePlaceholder | default "How can we help you?" }}"></textarea>
 
-    <!-- Cloudflare Turnstile -->
-    <div class="cf-turnstile" data-sitekey="{{ site.Params.turnstile_site_key }}" data-theme="light" style="margin-bottom: 1rem;"></div>
+  <!-- Cloudflare Turnstile -->
+  <div class="cf-turnstile" data-sitekey="{{ site.Params.turnstile_site_key }}" data-theme="light"></div>
 
-    <button type="submit">{{ .submitLabel | default "Send Message" }}</button>
-  </form>
-</div>
+  <button type="submit">{{ .submitLabel | default "Send Message" }}</button>
+</form>
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>

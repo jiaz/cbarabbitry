@@ -1,16 +1,16 @@
 {{ define "main" }}
-  <article class="mw7 center ph3 pv4">
-    <div class="nested-copy-line-height lh-copy f4 mid-gray">
-      {{- .Content -}}
-    </div>
-    <div class="mt4">
-      {{ partial "contact-form.html" (dict
-        "subject" "Adoption Request - CBA Rabbitry"
-        "showBunny" true
-        "messageLabel" "Tell us about yourself and your home"
-        "messagePlaceholder" "Do you have other pets? Children? Is this your first rabbit? Any other info to share..."
-        "submitLabel" "Submit Adoption Request"
-      ) }}
-    </div>
-  </article>
+<div class="cba-form-page">
+  <div class="cba-form-card">
+    <h1 class="cba-form-card-title">Request Adoption</h1>
+    <p>Interested in bringing home one of our bunnies? Fill out the form below and we'll get back to you within 24–48 hours. After we connect, you can place a deposit to officially reserve your bunny.</p>
+    <p>Not sure yet? Check out our <a href="/bunnies-for-adoption/">available bunnies</a> or <a href="/join-waiting-list/">join our waiting list</a> for upcoming litters.</p>
+    {{ partial "contact-form.html" (dict
+      "subject" "Adoption Request - CBA Rabbitry"
+      "showBunny" true
+      "messageLabel" "Tell us about yourself and your home"
+      "messagePlaceholder" "Do you have other pets? Children? Is this your first rabbit? Any other info to share..."
+      "submitLabel" "Submit Adoption Request"
+    ) }}
+  </div>
+</div>
 {{ end }}

@@ -1,55 +1,80 @@
 {{ define "main" }}
-  <article class="pa3 pa4-ns">
-    <section class="mw7 center ph3">
-      <div class="nested-copy-line-height lh-copy f4 mid-gray">
-        {{- .Content -}}
-      </div>
-    </section>
-
-    <section class="mw8 center ph3 mt4">
-      {{ $pages := .Pages }}
-
-      {{/* Group by grade: S first, then P, then A */}}
-      {{ $gradeS := where $pages "Params.grade" "S" }}
-      {{ $gradeP := where $pages "Params.grade" "P" }}
-      {{ $gradeA := where $pages "Params.grade" "A" }}
-
-      {{ if $gradeS }}
-      <div class="grade-section">
-        <h2>Grade S — Show Quality <span class="grade-badge grade-s">$599+</span></h2>
-        <div class="bunny-grid">
-          {{ range $gradeS }}{{ partial "bunny-card.html" . }}{{ end }}
+<div class="cba-bunnies-page">
+    <div class="cba-bunnies-page-inner">
+        <!-- Grading system cards -->
+        <div class="cba-grade-cards">
+            <div class="cba-grade-card cba-grade-card-a">
+                <div class="cba-grade-card-label">Grade A</div>
+                <div class="cba-grade-card-name">Pet Quality</div>
+                <div class="cba-grade-card-desc">
+                    Wonderful companions; may have minor conformation variations
+                </div>
+            </div>
+            <div class="cba-grade-card cba-grade-card-p">
+                <div class="cba-grade-card-label">Grade P</div>
+                <div class="cba-grade-card-name">Premium Quality</div>
+                <div class="cba-grade-card-desc">
+                    Excellent conformation, show potential
+                </div>
+            </div>
+            <div class="cba-grade-card cba-grade-card-s">
+                <div class="cba-grade-card-label">Grade S</div>
+                <div class="cba-grade-card-name">Show Quality</div>
+                <div class="cba-grade-card-desc">
+                    Competition-ready, exceptional conformation &amp; coat
+                </div>
+            </div>
         </div>
-      </div>
-      {{ end }}
 
-      {{ if $gradeP }}
-      <div class="grade-section">
-        <h2>Grade P — Premium Quality <span class="grade-badge grade-p">$299+</span></h2>
-        <div class="bunny-grid">
-          {{ range $gradeP }}{{ partial "bunny-card.html" . }}{{ end }}
+        <div class="cba-deposit-note">
+            All bunnies require a <strong>non-refundable deposit</strong> to
+            reserve. See our <a href="/sales-policy/">Sales Policy</a> for full
+            details.
         </div>
-      </div>
-      {{ end }}
 
-      {{ if $gradeA }}
-      <div class="grade-section">
-        <h2>Grade A — Pet Quality <span class="grade-badge grade-a">$99+</span></h2>
-        <div class="bunny-grid">
-          {{ range $gradeA }}{{ partial "bunny-card.html" . }}{{ end }}
+        {{ $pages := .Pages }} {{ $gradeS := where $pages "Params.grade" "S" }}
+        {{ $gradeP := where $pages "Params.grade" "P" }} {{ $gradeA := where
+        $pages "Params.grade" "A" }} {{ if $gradeS }}
+        <div class="cba-grade-section">
+            <div class="cba-grade-header">
+                <h2 class="cba-grade-header-title">Grade S — Show Quality</h2>
+            </div>
+            {{ range $gradeS }}{{ partial "bunny-list-item.html" . }}{{ end }}
         </div>
-      </div>
-      {{ end }}
+        {{ end }} {{ if $gradeP }}
+        <div class="cba-grade-section">
+            <div class="cba-grade-header">
+                <h2 class="cba-grade-header-title">
+                    Grade P — Premium Quality
+                </h2>
+            </div>
+            {{ range $gradeP }}{{ partial "bunny-list-item.html" . }}{{ end }}
+        </div>
+        {{ end }} {{ if $gradeA }}
+        <div class="cba-grade-section">
+            <div class="cba-grade-header">
+                <h2 class="cba-grade-header-title">Grade A — Pet Quality</h2>
+            </div>
+            {{ range $gradeA }}{{ partial "bunny-list-item.html" . }}{{ end }}
+        </div>
+        {{ end }} {{ if not (or $gradeS $gradeP $gradeA) }}
+        <div class="cba-bunnies-empty">
+            <p>No bunnies currently available.</p>
+            <a
+                href="/join-waiting-list/"
+                class="cba-btn-primary"
+                style="margin-top: 1rem; display: inline-block"
+                >Join Our Waiting List</a
+            >
+        </div>
+        {{ end }}
 
-      {{ if not (or $gradeS $gradeP $gradeA) }}
-      <div class="tc pv5">
-        <p class="f4 mid-gray">No bunnies currently available. <a href="/join-waiting-list/">Join our waiting list</a> to be first to know!</p>
-      </div>
-      {{ end }}
-    </section>
-
-    <section class="mw7 center ph3 pv4 tc">
-      <p class="f4">Don't see your perfect match? <a href="/join-waiting-list/">Join our waiting list</a> for upcoming litters.</p>
-    </section>
-  </article>
+        <div class="cba-bunnies-footer-cta">
+            <p>Don't see your perfect match?</p>
+            <a href="/join-waiting-list/" class="cba-btn-primary"
+                >Join Our Waiting List</a
+            >
+        </div>
+    </div>
+</div>
 {{ end }}

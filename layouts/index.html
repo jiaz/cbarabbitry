@@ -1,0 +1,149 @@
+{{ define "main" }}
+{{ $p := .Params }}
+{{ $bunnies := where (where site.RegularPages "Section" "bunnies-for-adoption") ".Params.available" true }}
+
+<!-- Hero -->
+<section class="cba-hero">
+  <img class="cba-hero-img" src="/images/hero-bunnies.jpg" alt="CBA Rabbitry bunnies" loading="eager">
+  <div class="cba-hero-content">
+    <h1 class="cba-hero-title">CBA Rabbitry</h1>
+    <p class="cba-hero-subtitle">{{ $p.hero_subtitle }}</p>
+    <div class="cba-hero-ctas">
+      <a href="{{ $p.hero_cta_primary_url }}" class="cba-btn-primary">{{ $p.hero_cta_primary_label }}</a>
+      <a href="{{ $p.hero_cta_secondary_url }}" class="cba-btn-outline">{{ $p.hero_cta_secondary_label }}</a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Strip -->
+<section class="cba-trust-strip">
+  <div class="cba-trust-strip-inner">
+    {{ range $p.trust_items }}
+    <div class="cba-trust-item">
+      <div class="cba-trust-item-icon">{{ .icon }}</div>
+      <p class="cba-trust-item-title">{{ .title }}</p>
+      <p class="cba-trust-item-desc">{{ .desc }}</p>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+<!-- About / Our Story -->
+<section class="cba-about-blurb">
+  <div class="cba-about-blurb-inner">
+    <div>
+      <h2>{{ $p.about_heading }}</h2>
+      {{ $.Content }}
+    </div>
+    <div>
+      <img class="cba-about-photo" src="{{ $p.about_image }}" alt="CBA Rabbitry" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- Available Bunnies -->
+{{ if $bunnies }}
+<section class="cba-bunnies-now">
+  <div class="cba-bunnies-now-inner">
+    <h2 class="cba-section-heading">{{ $p.bunnies_heading }}</h2>
+    <p class="cba-section-subheading">{{ $p.bunnies_subheading }}</p>
+    <div class="cba-mini-grid">
+      {{ range first 3 $bunnies }}
+      <a href="{{ .RelPermalink }}" class="cba-mini-card">
+        {{ with .Params.grade }}<span class="grade-badge grade-{{ . | lower }}">Grade {{ . }}</span>{{ end }}
+        {{ with .Params.featured_image }}
+        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+        {{ else }}
+        <div class="cba-mini-card-placeholder">🐰</div>
+        {{ end }}
+        <div class="cba-mini-card-body">
+          <p class="cba-mini-card-name">{{ .Title }}</p>
+          <p class="cba-mini-card-meta">{{ with .Params.sex }}{{ . }}{{ end }}{{ with .Params.color }} &nbsp;·&nbsp; {{ . }}{{ end }}</p>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+    <a href="/bunnies-for-adoption/" class="cba-btn-primary">View All Bunnies</a>
+  </div>
+</section>
+{{ end }}
+
+<!-- Quote Band -->
+<section class="cba-quote-band">
+  <div class="cba-quote-band-inner">
+    <p class="cba-quote-text">"{{ $p.quote_text }}"</p>
+    {{ with $p.quote_body }}<div class="cba-quote-body">{{ . | markdownify }}</div>{{ end }}
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="cba-gallery-strip">
+  <h2 class="cba-gallery-title cba-gallery-title--mobile">{{ $p.gallery_heading }}</h2>
+  <div class="cba-gallery-layout">
+  <div class="cba-carousel" id="cba-carousel">
+    <div class="cba-carousel-track">
+      {{ range $i, $img := $p.gallery_images }}
+      <div class="cba-carousel-slide{{ if eq $i 0 }} active{{ end }}">
+        <img src="{{ $img.src }}" alt="{{ $img.alt }}" loading="{{ if eq $i 0 }}eager{{ else }}lazy{{ end }}">
+        <div class="cba-carousel-caption">{{ $img.alt }}</div>
+      </div>
+      {{ end }}
+      <button class="cba-carousel-btn cba-carousel-prev" aria-label="Previous">&#8592;</button>
+      <button class="cba-carousel-btn cba-carousel-next" aria-label="Next">&#8594;</button>
+    </div>
+    <div class="cba-carousel-dots">
+      {{ range $i, $img := $p.gallery_images }}
+      <button class="cba-carousel-dot{{ if eq $i 0 }} active{{ end }}" aria-label="Slide {{ add $i 1 }}"></button>
+      {{ end }}
+    </div>
+  </div>
+  <div class="cba-gallery-breed-blurb">
+    <h2 class="cba-gallery-title cba-gallery-title--desktop">{{ $p.gallery_heading }}</h2>
+    <h3>Netherland Dwarf Rabbitry Breed</h3>
+    <p>The Netherland Dwarf is a small, iconic rabbit breed loved for its charming looks and compact size. Known for its tiny, rounded body, short upright ears, and large expressive eyes, this breed has a sweet, teddy-like appearance that makes it instantly recognizable.</p>
+    <p>Despite its petite frame, the Netherland Dwarf has a bold, curious personality and often forms strong bonds with its humans. With its combination of beautiful type, soft coat, and lively, friendly nature, the Netherland Dwarf is cherished both as a show rabbit and as an adorable companion pet.</p>
+  </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  var carousel = document.getElementById('cba-carousel');
+  if (!carousel) return;
+  var slides = carousel.querySelectorAll('.cba-carousel-slide');
+  var dots   = carousel.querySelectorAll('.cba-carousel-dot');
+  var current = 0, timer;
+
+  function goTo(n) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (n + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
+  function start() { clearInterval(timer); timer = setInterval(function () { goTo(current + 1); }, 4500); }
+  function reset() { start(); }
+
+  carousel.querySelector('.cba-carousel-prev').addEventListener('click', function () { goTo(current - 1); reset(); });
+  carousel.querySelector('.cba-carousel-next').addEventListener('click', function () { goTo(current + 1); reset(); });
+  dots.forEach(function (dot, i) { dot.addEventListener('click', function () { goTo(i); reset(); }); });
+
+  carousel.addEventListener('mouseenter', function () { clearInterval(timer); });
+  carousel.addEventListener('mouseleave', start);
+  start();
+})();
+</script>
+
+<!-- Social -->
+<section class="cba-social-band">
+  <h2>{{ $p.social_heading }}</h2>
+  <p>{{ $p.social_desc }}</p>
+  <div class="cba-social-icons">
+    <a href="https://www.instagram.com/cbarabbitry" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.tiktok.com/@CBA.Rabbitry" target="_blank" rel="noopener">TikTok</a>
+    <a href="https://www.facebook.com/cbarabbitry" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</section>
+
+{{ end }}

@@ -1,204 +1,1495 @@
-/* CBA Rabbitry — Warm earth tone overrides for Ananke theme */
+/* === CBA Rabbitry — Custom Design System === */
 
+/* ─── 1. CSS Variables ─────────────────────────────────────────────────── */
 :root {
-  --cba-brown: #6b4226;
-  --cba-warm-tan: #c8a97e;
-  --cba-cream: #fdf6ec;
-  --cba-accent: #a0522d;
-  --cba-green: #5a7a4a;
-  --cba-badge-a: #5a7a4a;
-  --cba-badge-p: #a0522d;
-  --cba-badge-s: #7b5ea7;
+  --cba-brown:        #6b4226;
+  --cba-accent:       #a0522d;
+  --cba-accent-muted: #8b4513;
+  --cba-accent-pale:  #f5e6d8;
+  --cba-dark:         #2c1a0e;
+  --cba-dark-mid:     #4a2e18;
+  --cba-cream:        #faf4e8;
+  --cba-cream-alt:    #f2e8d5;
+  --cba-off-white:    #fffdf8;
+  --cba-warm-tan:     #c8a97e;
+  --cba-tan-light:    #e8d4b8;
+  --cba-green:        #5a7a4a;
+  --cba-badge-a:      #5a7a4a;
+  --cba-badge-p:      #a0522d;
+  --cba-badge-s:      #7b5ea7;
+  --nav-height:       64px;
 }
 
-/* Header / Nav */
-header.bg-black,
-.bg-black { background-color: var(--cba-brown) !important; }
+/* ─── 2. Base Reset ────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
 
-/* Hero section */
-.cover-main { background-color: rgba(107, 66, 38, 0.55); }
-
-/* Links */
-a { color: var(--cba-accent); }
-a:hover { color: var(--cba-brown); }
-
-/* Buttons */
-.bg-dark-gray,
-button[type="submit"],
-input[type="submit"] {
-  background-color: var(--cba-accent) !important;
-  border-color: var(--cba-accent) !important;
-  color: #fff !important;
-}
-button[type="submit"]:hover,
-input[type="submit"]:hover {
-  background-color: var(--cba-brown) !important;
+body {
+  background-color: var(--cba-cream);
+  color: var(--cba-dark);
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
 }
 
-/* Page background */
-body { background-color: var(--cba-cream); }
+/* Suppress Ananke default header & nav chrome */
+.bg-black, header.bg-black, .cover-main { background: none !important; }
 
-/* ── Bunny Grid ── */
-.bunny-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
-  padding: 1.5rem 0;
+/* Remove Tachyons bottom padding on main */
+main { padding-bottom: 0 !important; }
+
+img { max-width: 100%; display: block; }
+
+a { color: var(--cba-accent); text-decoration: none; }
+a:hover { color: var(--cba-accent-muted); }
+
+/* ─── 3. Typography ────────────────────────────────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  color: var(--cba-dark);
+  line-height: 1.2;
+  margin-top: 0;
 }
 
-.bunny-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(107,66,38,0.12);
-  overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.bunny-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(107,66,38,0.2);
+p, li {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--cba-dark-mid);
 }
 
-.bunny-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
+/* ─── 4. Navigation — Option A (Warm Ivory Bar) ────────────────────────── */
+.cba-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--cba-off-white);
+  border-bottom: 1px solid var(--cba-tan-light);
+  height: var(--nav-height);
+  transition: box-shadow 0.25s;
 }
 
-.bunny-card-body {
-  padding: 1rem 1.2rem 1.2rem;
+.cba-nav.cba-nav-scrolled {
+  box-shadow: 0 2px 16px rgba(44, 26, 14, 0.09);
 }
 
-.bunny-card-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: var(--cba-brown);
-  margin: 0 0 0.4rem;
+.cba-nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-.bunny-card-meta {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 0.6rem;
+.cba-nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: 1.35rem;
+  color: var(--cba-dark);
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.cba-nav-logo:hover { color: var(--cba-accent); }
+
+.cba-nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.15rem;
 }
 
-.bunny-card-price {
-  font-size: 1.1rem;
-  font-weight: bold;
+.cba-nav-link {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--cba-dark-mid);
+  text-decoration: none;
+  padding: 0.45rem 0.7rem;
+  border-radius: 4px;
+  transition: color 0.15s;
+  display: block;
+  white-space: nowrap;
+}
+.cba-nav-link:hover { color: var(--cba-accent); }
+.cba-nav-link.cba-nav-active {
   color: var(--cba-accent);
-  margin-bottom: 0.8rem;
+  position: relative;
+}
+.cba-nav-link.cba-nav-active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0.7rem;
+  right: 0.7rem;
+  height: 2px;
+  background: var(--cba-accent);
+  border-radius: 1px;
 }
 
-.bunny-card a.btn {
+/* Dropdown */
+.cba-nav-dropdown { position: relative; list-style: none; }
+
+.cba-nav-dropbtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cba-dark-mid);
+  padding: 0.45rem 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: 4px;
+  transition: color 0.15s;
+  white-space: nowrap;
+}
+.cba-nav-dropbtn:hover,
+.cba-nav-dropbtn.cba-nav-active { color: var(--cba-accent); }
+
+.cba-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--cba-off-white);
+  border: 1px solid var(--cba-tan-light);
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(44, 26, 14, 0.1);
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 0.5rem;
+  min-width: 185px;
+  z-index: 100;
+}
+
+.cba-nav-dropdown:hover .cba-dropdown-menu,
+.cba-nav-dropdown:focus-within .cba-dropdown-menu { display: block; }
+
+.cba-dropdown-menu li a {
+  display: block;
+  padding: 0.55rem 1.25rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: var(--cba-dark-mid);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.12s, color 0.12s;
+}
+.cba-dropdown-menu li a:hover {
+  background: var(--cba-accent-pale);
+  color: var(--cba-accent);
+}
+
+/* Social icons in nav */
+.cba-nav-social {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-shrink: 0;
+}
+.cba-nav-social a {
+  color: var(--cba-dark-mid);
+  display: flex;
+  align-items: center;
+  transition: color 0.15s;
+}
+.cba-nav-social a:hover { color: var(--cba-accent); }
+.cba-nav-social svg { width: 18px; height: 18px; fill: currentColor; }
+
+/* Hamburger */
+.cba-nav-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem;
+  flex-direction: column;
+  gap: 5px;
+}
+.cba-nav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--cba-dark);
+  border-radius: 2px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+/* Mobile overlay */
+.cba-nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--cba-dark);
+  z-index: 1001;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+}
+.cba-nav-overlay.is-open { display: flex; }
+.cba-nav-overlay a,
+.cba-nav-overlay button {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.15s;
+}
+.cba-nav-overlay a:hover,
+.cba-nav-overlay button:hover { color: var(--cba-warm-tan); }
+.cba-nav-overlay-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 1.4rem !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.cba-nav-overlay-sub {
+  font-size: 1rem !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  padding-left: 1.5rem;
+}
+
+/* ─── 5. Page Title Band (non-home pages) ──────────────────────────────── */
+.cba-page-header {
+  background: var(--cba-cream-alt);
+  padding: 3rem 1.5rem 2.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--cba-tan-light);
+}
+.cba-page-header-inner { max-width: 800px; margin: 0 auto; }
+.cba-page-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  color: var(--cba-dark);
+  margin: 0 0 0.5rem;
+}
+.cba-page-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--cba-dark-mid);
+  margin: 0;
+}
+
+/* ─── 6. Shared Buttons ────────────────────────────────────────────────── */
+.cba-btn-primary {
   display: inline-block;
-  padding: 0.4rem 1rem;
+  padding: 0.8rem 1.8rem;
   background: var(--cba-accent);
   color: #fff;
-  border-radius: 4px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   text-decoration: none;
-  font-size: 0.9rem;
-}
-.bunny-card a.btn:hover { background: var(--cba-brown); }
-
-/* Grade badges */
-.grade-badge {
-  display: inline-block;
-  padding: 0.2em 0.6em;
   border-radius: 4px;
-  font-size: 0.78rem;
-  font-weight: bold;
-  color: #fff;
-  letter-spacing: 0.03em;
-  margin-left: 0.4rem;
-  vertical-align: middle;
-}
-.grade-badge.grade-a { background-color: var(--cba-badge-a); }
-.grade-badge.grade-p { background-color: var(--cba-badge-p); }
-.grade-badge.grade-s { background-color: var(--cba-badge-s); }
-
-/* Sold overlay */
-.bunny-card.sold { opacity: 0.55; }
-.bunny-card.sold::after {
-  content: "SOLD";
-  position: absolute;
-  top: 12px; right: 12px;
-  background: #c0392b;
-  color: #fff;
-  padding: 0.2rem 0.7rem;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 0.85rem;
-}
-.bunny-card { position: relative; }
-
-/* ── Forms ── */
-.cba-form-wrap {
-  max-width: 600px;
-  margin: 2rem auto;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(107,66,38,0.1);
-}
-
-.cba-form-wrap label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 0.3rem;
-  color: var(--cba-brown);
-}
-
-.cba-form-wrap input,
-.cba-form-wrap textarea,
-.cba-form-wrap select {
-  width: 100%;
-  padding: 0.6rem 0.8rem;
-  border: 1px solid #d4b896;
-  border-radius: 5px;
-  font-size: 1rem;
-  margin-bottom: 1.1rem;
-  background: #fffaf5;
-  box-sizing: border-box;
-}
-
-.cba-form-wrap textarea { min-height: 120px; resize: vertical; }
-
-.cba-form-wrap button[type="submit"] {
-  width: 100%;
-  padding: 0.75rem;
-  font-size: 1.05rem;
+  transition: background 0.2s;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
-  font-weight: bold;
-  letter-spacing: 0.02em;
+}
+.cba-btn-primary:hover { background: var(--cba-accent-muted); color: #fff; }
+
+.cba-btn-outline {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s, border-color 0.2s;
+}
+.cba-btn-outline:hover { background: rgba(255, 255, 255, 0.15); color: #fff; }
+
+.cba-btn-light {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: var(--cba-off-white);
+  color: var(--cba-accent);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.cba-btn-light:hover { background: var(--cba-cream); color: var(--cba-accent-muted); }
+
+.cba-btn-secondary {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: transparent;
+  color: var(--cba-accent);
+  border: 1px solid var(--cba-accent);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+.cba-btn-secondary:hover { background: var(--cba-accent); color: #fff; }
+
+/* ─── 7. Home Page ─────────────────────────────────────────────────────── */
+
+/* Hero */
+.cba-hero {
+  position: relative;
+  height: 100vh;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: var(--cba-dark);
+}
+.cba-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.55;
+}
+.cba-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  max-width: 720px;
+}
+.cba-hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: clamp(2.8rem, 9vw, 5.5rem);
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin: 0 0 0.5rem;
+  line-height: 1.05;
+}
+.cba-hero-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  color: rgba(255, 255, 255, 0.82);
+  margin: 0 0 2.25rem;
+}
+.cba-hero-ctas {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-/* ── Grade section headings in bunny list ── */
-.grade-section h2 {
-  border-left: 5px solid var(--cba-warm-tan);
-  padding-left: 0.8rem;
-  color: var(--cba-brown);
-  margin-top: 2.5rem;
+/* Trust strip */
+.cba-trust-strip {
+  background: var(--cba-cream);
+  padding: 3.5rem 1.5rem;
+  border-bottom: 1px solid var(--cba-tan-light);
 }
-
-/* ── Partner cards ── */
-.partner-grid {
+.cba-trust-strip-inner {
+  max-width: 900px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin: 2rem 0;
-}
-.partner-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(107,66,38,0.1);
-  padding: 1.5rem;
   text-align: center;
 }
-.partner-card img {
-  max-width: 100%;
-  border-radius: 6px;
-  margin-bottom: 1rem;
-  height: 160px;
+.cba-trust-item-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+.cba-trust-item-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--cba-dark);
+  margin: 0 0 0.4rem;
+}
+.cba-trust-item-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--cba-dark-mid);
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* About blurb */
+.cba-about-blurb {
+  background: var(--cba-off-white);
+  padding: 4.5rem 1.5rem;
+}
+.cba-about-blurb-inner {
+  max-width: 1020px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+.cba-about-blurb h2 { font-size: 2.2rem; margin-bottom: 1rem; }
+.cba-about-blurb p { margin-bottom: 1rem; }
+.cba-about-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+.cba-pill {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  background: var(--cba-accent-pale);
+  color: var(--cba-accent);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border-radius: 20px;
+}
+.cba-about-photo {
+  width: 100%;
+  border-radius: 10px;
   object-fit: cover;
+  height: 400px;
+  box-shadow: 0 4px 28px rgba(44, 26, 14, 0.13);
+}
+
+/* Bunnies Now */
+.cba-bunnies-now {
+  background: var(--cba-cream);
+  padding: 4.5rem 1.5rem;
+  text-align: center;
+}
+.cba-bunnies-now-inner { max-width: 1020px; margin: 0 auto; }
+.cba-section-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  color: var(--cba-dark);
+  margin: 0 0 0.4rem;
+}
+.cba-section-subheading {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: var(--cba-dark-mid);
+  margin: 0 0 2.5rem;
+}
+
+/* Mini bunny cards (home page grid) */
+.cba-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.cba-mini-card {
+  position: relative;
+  background: var(--cba-off-white);
+  border: 1px solid var(--cba-tan-light);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  display: block;
+}
+.cba-mini-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(44, 26, 14, 0.12);
+}
+.cba-mini-card img, .cba-mini-card-placeholder {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.cba-mini-card-placeholder {
+  background: var(--cba-cream-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+.cba-mini-card-body { padding: 1rem 1.2rem 1.2rem; }
+.cba-mini-card-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--cba-dark);
+  margin: 0 0 0.3rem;
+}
+.cba-mini-card-meta {
+  font-size: 0.85rem;
+  color: var(--cba-dark-mid);
+  margin-bottom: 0.4rem;
+}
+.cba-mini-card-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--cba-accent);
+  margin: 0;
+}
+
+/* Quote band */
+.cba-quote-band {
+  background: var(--cba-brown);
+  padding: 4.5rem 2rem;
+  text-align: center;
+}
+.cba-quote-band-inner { max-width: 700px; margin: 0 auto; }
+.cba-quote-body,
+.cba-quote-body p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--cba-accent-pale);
+  line-height: 1.7;
+  margin: 0;
+}
+.cba-quote-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0 0 2rem;
+  line-height: 1.5;
+}
+
+/* Gallery strip */
+.cba-gallery-strip {
+  background: var(--cba-cream-alt);
+  padding: 3.5rem 0 4rem;
+}
+.cba-gallery-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  color: var(--cba-dark);
+  text-align: left;
+  margin: 0 0 1.5rem;
+}
+.cba-gallery-title--mobile { display: none; }
+
+/* ── Gallery layout ───────────────────────────────────────── */
+.cba-gallery-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  align-items: center;
+}
+.cba-gallery-breed-blurb {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--cba-dark-mid);
+}
+.cba-gallery-breed-blurb h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.35rem;
+  color: var(--cba-dark);
+  margin: 0 0 0.9rem;
+}
+.cba-gallery-breed-blurb p { margin: 0 0 0.8rem; }
+.cba-gallery-breed-blurb p:last-child { margin-bottom: 0; }
+
+/* ── Carousel ─────────────────────────────────────────────── */
+.cba-carousel {
+  min-width: 0;
+}
+.cba-carousel-track {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--cba-dark);
+  box-shadow: 0 12px 40px rgba(44, 26, 14, 0.18);
+}
+.cba-carousel-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.cba-carousel-slide.active { opacity: 1; }
+.cba-carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.cba-carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem 1.5rem 1.2rem;
+  background: linear-gradient(to top, rgba(44, 26, 14, 0.55), transparent);
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: rgba(255, 253, 248, 0.9);
+  letter-spacing: 0.03em;
+}
+.cba-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s;
+  z-index: 2;
+}
+.cba-carousel-btn:hover {
+  background: rgba(255, 255, 255, 0.28);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+.cba-carousel-prev { left: 1rem; }
+.cba-carousel-next { right: 1rem; }
+.cba-carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1.2rem;
+}
+.cba-carousel-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cba-tan-light);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.35s, transform 0.35s;
+}
+.cba-carousel-dot.active {
+  background: var(--cba-warm-tan);
+  transform: scale(1.45);
+}
+
+/* Social band */
+.cba-social-band {
+  background: var(--cba-dark);
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+}
+.cba-social-band h2 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem;
+}
+.cba-social-band p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.95rem;
+  margin: 0 0 1.75rem;
+}
+.cba-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.cba-social-icons a {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.82rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid rgba(200, 169, 126, 0.35);
+  border-radius: 4px;
+  transition: border-color 0.2s, color 0.2s;
+}
+.cba-social-icons a:hover { border-color: var(--cba-warm-tan); color: var(--cba-warm-tan); }
+
+/* ─── 8. Grade Badges ───────────────────────────────────────────────────── */
+.grade-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 6px 14px;
+  border-top-left-radius: 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.grade-badge.grade-a { background-color: #dff0d8; color: #2d5a1f; border-top: 1px solid #b8dba8; border-left: 1px solid #b8dba8; }
+.grade-badge.grade-p { background-color: #f9e5d0; color: #7a3a0e; border-top: 1px solid #e8c4a0; border-left: 1px solid #e8c4a0; }
+.grade-badge.grade-s { background-color: #ece6f8; color: #4a2e80; border-top: 1px solid #cdc0ee; border-left: 1px solid #cdc0ee; }
+
+/* ─── 9. Bunny List Page — Editorial (Option 2) ─────────────────────────── */
+.cba-bunnies-page {
+  background: var(--cba-cream);
+  padding: 3rem 1.5rem 4rem;
+}
+.cba-bunnies-page-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* Grade intro cards */
+.cba-grade-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.cba-grade-card {
+  padding: 1.25rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.cba-grade-card-a { background: #edf5e8; border: 1px solid #c0d9b0; }
+.cba-grade-card-p { background: var(--cba-accent-pale); border: 1px solid #e0b898; }
+.cba-grade-card-s { background: #f0ecf8; border: 1px solid #d0c0e8; }
+.cba-grade-card-label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--cba-dark-mid);
+  margin-bottom: 0.3rem;
+}
+.cba-grade-card-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--cba-dark);
+  margin-bottom: 0.2rem;
+}
+.cba-grade-card-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--cba-accent);
+}
+.cba-grade-card-desc {
+  font-size: 0.8rem;
+  color: var(--cba-dark-mid);
+  margin-top: 0.3rem;
+  line-height: 1.4;
+}
+
+/* Deposit note */
+.cba-deposit-note {
+  background: var(--cba-off-white);
+  border: 1px solid var(--cba-tan-light);
+  border-left: 4px solid var(--cba-warm-tan);
+  border-radius: 0 8px 8px 0;
+  padding: 0.9rem 1.2rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.9rem;
+  color: var(--cba-dark-mid);
+}
+
+/* Grade section header */
+.cba-grade-section { margin-bottom: 2.5rem; }
+.cba-grade-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--cba-tan-light);
+}
+.cba-grade-header-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: 1.75rem;
+  color: var(--cba-dark);
+  margin: 0;
+}
+
+/* Bunny row (editorial list item) */
+.cba-bunny-row {
+  position: relative;
+  display: flex;
+  gap: 0;
+  background: var(--cba-off-white);
+  border: 1px solid var(--cba-tan-light);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.2s;
+}
+.cba-bunny-row:hover { box-shadow: 0 4px 18px rgba(44, 26, 14, 0.1); }
+.cba-bunny-row-img {
+  flex: 0 0 220px;
+  width: 220px;
+  align-self: stretch;
+  object-fit: cover;
+  display: block;
+}
+.cba-bunny-row-img-placeholder {
+  flex: 0 0 220px;
+  width: 220px;
+  align-self: stretch;
+  background: var(--cba-cream-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cba-warm-tan);
+  font-size: 2.5rem;
+}
+.cba-bunny-row-body {
+  padding: 1.1rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+  flex: 1;
+}
+.cba-bunny-row-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: var(--cba-dark);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.cba-bunny-row-meta {
+  font-size: 0.85rem;
+  color: var(--cba-dark-mid);
+  margin: 0;
+}
+.cba-bunny-row-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--cba-accent);
+  margin: 0;
+}
+.cba-bunny-sold-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  color: #c0392b;
+  font-weight: 400;
+}
+.cba-bunny-row-desc {
+  font-size: 0.88rem;
+  color: var(--cba-dark-mid);
+  line-height: 1.5;
+  margin: 0;
+}
+.cba-bunny-row-btn {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.4rem 1.1rem;
+  background: transparent;
+  color: var(--cba-accent);
+  border: 1px solid var(--cba-accent);
+  border-radius: 20px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  align-self: flex-start;
+  transition: background 0.15s, color 0.15s;
+}
+.cba-bunny-row-btn:hover { background: var(--cba-accent); color: #fff; }
+.cba-bunny-row.sold { opacity: 0.6; }
+
+/* Footer CTA on bunnies page */
+.cba-bunnies-footer-cta {
+  text-align: center;
+  padding: 3rem 0 1rem;
+  border-top: 1px solid var(--cba-tan-light);
+  margin-top: 2rem;
+}
+.cba-bunnies-footer-cta p { margin-bottom: 1rem; }
+.cba-bunnies-empty {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+/* ─── 10. Bunny Single Page ────────────────────────────────────────────── */
+.cba-bunny-single {
+  background: var(--cba-cream);
+  padding: 3rem 1.5rem 4rem;
+}
+.cba-bunny-single-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.cba-bunny-back {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  color: var(--cba-accent);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.cba-bunny-back:hover { color: var(--cba-accent-muted); }
+.cba-bunny-single-layout {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+.cba-bunny-single-photo-wrap { flex: 0 0 320px; }
+.cba-bunny-single-photo {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(44, 26, 14, 0.15);
+}
+.cba-bunny-single-details { flex: 1; min-width: 250px; }
+.cba-bunny-single-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--cba-dark);
+  margin: 0 0 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.cba-bunny-single-table {
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.cba-bunny-table-label {
+  padding: 0.35rem 1.2rem 0.35rem 0;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.88rem;
+  color: var(--cba-dark-mid);
+  white-space: nowrap;
+}
+.cba-bunny-table-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--cba-accent);
+}
+.cba-bunny-available-notice {
+  background: #edf5e8;
+  border: 1px solid #c0d9b0;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+  color: #3a5a2a;
+  font-size: 0.9rem;
+  font-family: 'DM Sans', sans-serif;
+}
+.cba-bunny-sold-notice {
+  background: #fdecea;
+  border: 1px solid #e0b0ad;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+  color: #922b21;
+  font-size: 0.9rem;
+  font-family: 'DM Sans', sans-serif;
+}
+.cba-bunny-sold-notice a { color: var(--cba-accent); }
+.cba-bunny-single-ctas { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+.cba-bunny-single-content {
+  border-top: 2px solid var(--cba-tan-light);
+  padding-top: 2rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--cba-dark-mid);
+}
+.cba-bunny-single-contact {
+  margin-top: 2.5rem;
+  padding: 1.75rem 2rem;
+  background: var(--cba-cream-alt);
+  border: 1px solid var(--cba-tan-light);
+  border-radius: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--cba-dark-mid);
+}
+.cba-bunny-single-contact h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--cba-dark);
+  margin: 0 0 0.75rem;
+}
+.cba-bunny-single-contact h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--cba-dark);
+  margin: 1.25rem 0 0.4rem;
+}
+.cba-bunny-single-contact a { color: var(--cba-accent); }
+.cba-bunny-single-contact p { margin: 0 0 0.6rem; }
+
+/* ─── 11. Form Pages ────────────────────────────────────────────────────── */
+
+/* Centered Card (Option 1) */
+.cba-form-page {
+  background: var(--cba-cream);
+  padding: 3rem 1.5rem 4rem;
+}
+.cba-form-card {
+  max-width: 580px;
+  margin: 0 auto;
+  background: var(--cba-off-white);
+  border: 1px solid var(--cba-tan-light);
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 2px 16px rgba(44, 26, 14, 0.07);
+}
+.cba-form-card-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--cba-dark);
+  margin: 0 0 1rem;
+}
+.cba-form-card p {
+  font-size: 0.9rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Side-by-Side (Option 2) */
+.cba-form-split-page {
+  background: var(--cba-cream);
+  padding: 3rem 1.5rem 4rem;
+}
+.cba-form-split-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2rem;
+  align-items: start;
+}
+.cba-form-split-info {
+  background: var(--cba-cream-alt);
+  border-radius: 12px;
+  padding: 2rem;
+  position: sticky;
+  top: calc(var(--nav-height) + 1rem);
+}
+.cba-form-split-info-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: var(--cba-dark);
+  margin: 0 0 0.75rem;
+}
+.cba-form-split-info p { font-size: 0.9rem; margin-bottom: 1rem; }
+.cba-contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.88rem;
+  color: var(--cba-dark-mid);
+}
+.cba-contact-detail a { color: var(--cba-accent); }
+.cba-response-note {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--cba-tan-light);
+  font-size: 0.83rem;
+  color: var(--cba-dark-mid);
+  font-style: italic;
+}
+.cba-form-split-form {
+  background: var(--cba-off-white);
+  border: 1px solid var(--cba-tan-light);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 16px rgba(44, 26, 14, 0.07);
+}
+.cba-form-split-form-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--cba-dark);
+  margin: 0 0 1.5rem;
+}
+
+/* Shared form field styles */
+.cba-form-card label,
+.cba-form-split-form label {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--cba-dark);
+  margin-bottom: 0.35rem;
+}
+.cba-form-card input,
+.cba-form-card textarea,
+.cba-form-card select,
+.cba-form-split-form input,
+.cba-form-split-form textarea,
+.cba-form-split-form select {
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--cba-tan-light);
+  border-radius: 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1.1rem;
+  background: var(--cba-cream);
+  color: var(--cba-dark);
+  box-sizing: border-box;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  appearance: auto;
+}
+.cba-form-card input:focus,
+.cba-form-card textarea:focus,
+.cba-form-card select:focus,
+.cba-form-split-form input:focus,
+.cba-form-split-form textarea:focus,
+.cba-form-split-form select:focus {
+  outline: none;
+  border-color: var(--cba-accent);
+  box-shadow: 0 0 0 3px rgba(160, 82, 45, 0.12);
+}
+.cba-form-card textarea,
+.cba-form-split-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.cba-form-card button[type="submit"],
+.cba-form-split-form button[type="submit"] {
+  width: 100%;
+  padding: 0.85rem;
+  background: var(--cba-accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.cba-form-card button[type="submit"]:hover,
+.cba-form-split-form button[type="submit"]:hover {
+  background: var(--cba-accent-muted);
+}
+.cf-turnstile { margin-bottom: 1rem; }
+
+/* ─── 12. Prose Pages (Sales Policy, Partner Friends) ──────────────────── */
+.cba-prose {
+  background: var(--cba-cream);
+  padding: 3rem 1.5rem 4rem;
+}
+.cba-prose-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--cba-dark-mid);
+}
+.cba-prose-inner h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--cba-dark);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  border-bottom: none;
+}
+.cba-prose-inner h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--cba-dark);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  border-left: 3px solid var(--cba-warm-tan);
+  padding-left: 0.75rem;
+}
+.cba-prose-inner ul,
+.cba-prose-inner ol {
+  padding-left: 1.5rem;
+}
+.cba-prose-inner li { margin-bottom: 0.4rem; }
+.cba-prose-inner hr {
+  border: none;
+  border-top: 1px solid var(--cba-tan-light);
+  margin: 2rem 0;
+}
+.cba-prose-inner a { color: var(--cba-accent); }
+.cba-prose-inner a:hover { color: var(--cba-accent-muted); }
+.cba-prose-inner strong { color: var(--cba-dark); }
+.cba-prose-inner table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+.cba-prose-inner th {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--cba-dark);
+  background: var(--cba-cream-alt);
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--cba-tan-light);
+  text-align: left;
+}
+.cba-prose-inner td {
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--cba-tan-light);
+  background: var(--cba-off-white);
+  color: var(--cba-dark-mid);
+}
+
+/* Partner page specific */
+.cba-partner-content h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--cba-dark);
+  border-left: 3px solid var(--cba-warm-tan);
+  padding-left: 0.75rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+.cba-partner-content img {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 12px rgba(44, 26, 14, 0.1);
+}
+.cba-partner-content em {
+  font-size: 0.88rem;
+  color: var(--cba-dark-mid);
+}
+
+/* ─── 13. Thank-You Page ───────────────────────────────────────────────── */
+.tc.pv5 {
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+/* ─── 14. Footer ───────────────────────────────────────────────────────── */
+.cba-footer {
+  background: var(--cba-dark);
+  padding: 3rem 1.5rem 1.5rem;
+}
+.cba-footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+.cba-footer-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0 0 0.75rem;
+}
+.cba-footer-tagline {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.7;
+  margin: 0;
+}
+.cba-footer-heading {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: rgba(255, 255, 255, 0.35);
+  margin: 0 0 1rem;
+}
+.cba-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.cba-footer-links a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.cba-footer-links a:hover { color: rgba(255, 255, 255, 0.9); }
+.cba-footer-social-row {
+  display: flex;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.cba-footer-social-row a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.cba-footer-social-row a:hover { color: var(--cba-warm-tan); }
+.cba-footer-contact-item {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 0.4rem;
+}
+.cba-footer-contact-item a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+.cba-footer-contact-item a:hover { color: rgba(255, 255, 255, 0.85); }
+.cba-footer-divider {
+  border: none;
+  border-top: 1px solid rgba(200, 169, 126, 0.2);
+  margin: 2rem 0 1rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cba-footer-bottom {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.cba-footer-copy {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.25);
+  margin: 0;
+}
+.cba-footer-copy em { font-style: italic; }
+
+/* ─── 15. Responsive ───────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .cba-about-blurb-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .cba-about-blurb-inner > div:last-child { order: -1; }
+  .cba-about-photo { height: 280px; }
+}
+
+@media (max-width: 768px) {
+  /* Nav mobile */
+  .cba-nav-links, .cba-nav-social { display: none; }
+  .cba-nav-hamburger { display: flex; }
+
+  /* Trust strip */
+  .cba-trust-strip-inner { grid-template-columns: 1fr; gap: 1.75rem; }
+
+  /* Grade cards */
+  .cba-grade-cards { grid-template-columns: 1fr; }
+
+  /* Gallery layout */
+  .cba-gallery-layout { grid-template-columns: 1fr; gap: 2rem; }
+  .cba-gallery-title--mobile { display: block; text-align: center; }
+  .cba-gallery-title--desktop { display: none; }
+
+  /* Bunny row */
+  .cba-bunny-row { flex-direction: column; }
+  .cba-bunny-row-img, .cba-bunny-row-img-placeholder {
+    flex: none;
+    width: 100%;
+    height: 220px;
+  }
+  .cba-bunny-row-body { padding: 1.1rem; }
+
+  /* Form split → stack */
+  .cba-form-split-inner { grid-template-columns: 1fr; }
+  .cba-form-split-info { position: static; }
+
+  /* Footer */
+  .cba-footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .cba-footer-links { display: none; }
+  .cba-footer-bottom { flex-direction: column; text-align: center; }
+
+  /* Partner images */
+  .cba-partner-content img { max-width: 100%; height: 180px; }
+}
+
+@media (max-width: 520px) {
+  .cba-hero-ctas { flex-direction: column; align-items: center; }
+  .cba-mini-grid { grid-template-columns: 1fr; }
+  .cba-form-card { padding: 1.5rem; }
+  .cba-form-split-form { padding: 1.5rem; }
+  .cba-form-split-info { padding: 1.5rem; }
+  .cba-footer-social-row { gap: 0.5rem; }
 }

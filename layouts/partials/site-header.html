@@ -1,0 +1,9 @@
+{{ partials.Include "site-navigation.html" . }}
+{{ if not .IsHome }}
+<div class="cba-page-header">
+  <div class="cba-page-header-inner">
+    <h1 class="cba-page-title">{{ .Title }}</h1>
+    {{ with .Params.description }}<p class="cba-page-subtitle">{{ . }}</p>{{ end }}
+  </div>
+</div>
+{{ end }}

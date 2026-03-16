@@ -1,10 +1,34 @@
 {{ define "main" }}
-  <article class="mw7 center ph3 pv4">
-    <div class="nested-copy-line-height lh-copy f4 mid-gray">
-      {{- .Content -}}
+<div class="cba-form-split-page">
+  <div class="cba-form-split-inner">
+
+    <div class="cba-form-split-info">
+      <h2 class="cba-form-split-info-title">Get in Touch</h2>
+      <p>We love hearing from bunny lovers! Whether you have questions about our available bunnies, rabbit care, or are ready to start the adoption process — we're here to help.</p>
+      <div class="cba-contact-detail">
+        <span>📧</span>
+        <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>
+      </div>
+      <div class="cba-contact-detail">
+        <span>📞</span>
+        <a href="tel:{{ site.Params.phone | replaceRE `[^0-9]` `` }}">{{ site.Params.phone }}</a>
+      </div>
+      <div class="cba-contact-detail">
+        <span>📍</span>
+        <span>{{ site.Params.address }}</span>
+      </div>
+      <div class="cba-contact-detail" style="flex-wrap:wrap; gap:0.5rem;">
+        <a href="https://www.instagram.com/cbarabbitry" target="_blank" rel="noopener">Instagram</a>
+        <span style="color:var(--cba-tan-light)">·</span>
+        <a href="https://www.tiktok.com/@CBA.Rabbitry" target="_blank" rel="noopener">TikTok</a>
+        <span style="color:var(--cba-tan-light)">·</span>
+        <a href="https://www.facebook.com/cbarabbitry" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <p class="cba-response-note">We typically respond within 24–48 hours.</p>
     </div>
-    <div class="mt4">
-      <h2 style="color: #6b4226;">Send Us a Message</h2>
+
+    <div class="cba-form-split-form">
+      <h2 class="cba-form-split-form-title">Send a Message</h2>
       {{ partial "contact-form.html" (dict
         "subject" "New Contact - CBA Rabbitry"
         "messageLabel" "Message"
@@ -12,5 +36,7 @@
         "submitLabel" "Send Message"
       ) }}
     </div>
-  </article>
+
+  </div>
+</div>
 {{ end }}

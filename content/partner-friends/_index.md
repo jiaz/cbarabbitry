@@ -1,22 +1,18 @@
 ---
-title: "Our Partner Friends"
-description: "Meet our trusted rabbitry partners and nonprofit friends in the Pacific Northwest."
+title: "Our Local Business Partners & Friends"
+description: "Meet our local business partners and friends."
 featured_image: "/images/hero-bunnies.jpg"
 ---
 
-## Our Partner Friends
-
-We are proud to work alongside these wonderful organizations who share our love for rabbits in the Pacific Northwest.
-
----
+## Our Local Business Partners & Friends
 
 ### Tangled Woods Rabbitry
 
 ![Tangled Woods Rabbitry](/images/partners/partner-twr.jpg)
 
-Tangled Woods Rabbitry is a fellow rabbit breeder located in Western Washington. They share our commitment to quality, health, and proper socialization.
+Located in Western Washington. Had Netherlands for decades, have show Hollands, Netherlands, and French Lops. In terms of the color, focus on BEW/VM, Silver Marten, All colors of Otters. Self (Mostly Lilac/Chocolate/Blue), and Chinchilla, and some shaded.
 
-[Visit Tangled Woods Rabbitry on Facebook](https://www.facebook.com/tangledwoodsrabbitry)
+[Facebook Page](https://www.facebook.com/woodshire.cavies)
 
 ---
 
@@ -24,11 +20,6 @@ Tangled Woods Rabbitry is a fellow rabbit breeder located in Western Washington.
 
 ![Seattle Little Rangers](/images/partners/partner-slr.jpg)
 
-
-Seattle Little Rangers is a 501(c)(3) nonprofit organization dedicated to rabbit welfare and rescue in the greater Seattle area. We are proud to support their mission.
+Seattle Little Rangers (SLR) is a 501(c)(3) nonprofit organization based in the Greater Seattle area dedicated to promoting the physical, emotional, and social well-being of children by providing opportunities for safe, inclusive, and enriching outdoor activities. Their mission is to create meaningful opportunities for children to explore, learn, and grow through hands-on activities, family events, and community initiatives.
 
 [Visit Seattle Little Rangers](https://seattlelittlerangers.org)
-
----
-
-*Want to partner with CBA Rabbitry? [Contact us](/contact/) to discuss collaboration opportunities.*
