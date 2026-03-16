@@ -24,6 +24,12 @@ We love sharing bunny content! Follow our journey on:
 - **Rednote (小红书):** CBA Rabbitry
 - **Facebook:** [CBA Rabbitry](https://www.facebook.com/cbarabbitry)
 
+## Gallery
+
+![Champion bunny](/images/about/champion.jpeg)
+
+![CBA Rabbitry bunny](/images/about/crane.jpg)
+
 ## Our Commitment
 
 We believe in responsible breeding and lifetime support. When you adopt from CBA Rabbitry, you join our family. We are always available for questions, advice, and support throughout your bunny's life.

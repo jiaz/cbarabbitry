@@ -24,6 +24,7 @@ Tangled Woods Rabbitry is a fellow rabbit breeder located in Western Washington.
 
 ![Seattle Little Rangers](/images/partners/partner-slr.jpg)
 
+
 Seattle Little Rangers is a 501(c)(3) nonprofit organization dedicated to rabbit welfare and rescue in the greater Seattle area. We are proud to support their mission.
 
 [Visit Seattle Little Rangers](https://seattlelittlerangers.org)
