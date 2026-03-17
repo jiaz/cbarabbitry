@@ -962,6 +962,8 @@ p, li {
   color: var(--cba-dark-mid);
   line-height: 1.5;
   margin: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .cba-bunny-row-btn {
   display: inline-flex;
