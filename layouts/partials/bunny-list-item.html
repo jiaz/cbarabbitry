@@ -18,7 +18,7 @@
       {{ end }}
       <div class="cba-bunny-row-actions">
       {{ if $available }}
-        <a href="{{ $bunny.RelPermalink }}" class="cba-bunny-row-btn">Meet {{ $bunny.Title }} <svg class="cba-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></a>
+        <a href="{{ $bunny.RelPermalink }}" class="cba-bunny-row-btn">Meet {{ $bunny.Title }}</a>
       {{ else }}
         <button class="cba-bunny-row-btn cba-bunny-row-btn--sold" disabled>Sold</button>
       {{ end }}
