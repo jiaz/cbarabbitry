@@ -924,7 +924,7 @@ p, li {
   padding: 1.1rem 1.4rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.3rem;
   flex: 1;
 }
