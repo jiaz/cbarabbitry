@@ -8,20 +8,22 @@
   <div class="cba-bunny-row-img-placeholder">🐰</div>
   {{ end }}
   <div class="cba-bunny-row-body">
-    <p class="cba-bunny-row-name">{{ $bunny.Title }}</p>
-    <p class="cba-bunny-row-meta">
-      {{ with $bunny.Params.sex }}{{ . }}{{ end }}{{ with $bunny.Params.color }} &nbsp;·&nbsp; {{ . }}{{ end }}
-    </p>
-    {{ if $available }}
-    <p class="cba-bunny-row-price">${{ $bunny.Params.price }}+</p>
-    {{ end }}
-    <p class="cba-bunny-row-desc">{{ $bunny.Plain | truncate 140 "…" }}</p>
-    <div class="cba-bunny-row-actions">
-    {{ if $available }}
-      <a href="{{ $bunny.RelPermalink }}" class="cba-bunny-row-btn">Meet {{ $bunny.Title }} <svg class="cba-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></a>
-    {{ else }}
-      <button class="cba-bunny-row-btn cba-bunny-row-btn--sold" disabled>Sold</button>
-    {{ end }}
+    <div class="cba-bunny-row-info">
+      <p class="cba-bunny-row-name">{{ $bunny.Title }}</p>
+      <p class="cba-bunny-row-meta">
+        {{ with $bunny.Params.sex }}{{ . }}{{ end }}{{ with $bunny.Params.color }} &nbsp;·&nbsp; {{ . }}{{ end }}
+      </p>
+      {{ if $available }}
+      <p class="cba-bunny-row-price">${{ $bunny.Params.price }}+</p>
+      {{ end }}
+      <div class="cba-bunny-row-actions">
+      {{ if $available }}
+        <a href="{{ $bunny.RelPermalink }}" class="cba-bunny-row-btn">Meet {{ $bunny.Title }} <svg class="cba-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></a>
+      {{ else }}
+        <button class="cba-bunny-row-btn cba-bunny-row-btn--sold" disabled>Sold</button>
+      {{ end }}
+      </div>
     </div>
+    <p class="cba-bunny-row-desc">{{ $bunny.Plain | truncate 140 "…" }}</p>
   </div>
 </div>

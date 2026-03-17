@@ -1580,19 +1580,43 @@ p, li {
   .cba-gallery-title--mobile { display: block; text-align: center; }
   .cba-gallery-title--desktop { display: none; }
 
-  /* Bunny row — keep horizontal, image ~1:1 on left */
+  /* Bunny row — grid: image+info in row 1, description full-width in row 2 */
+  .cba-bunny-row {
+    display: grid;
+    grid-template-columns: 38% 1fr;
+    grid-template-areas:
+      "img body"
+      "desc desc";
+  }
   .cba-bunny-row-img, .cba-bunny-row-img-placeholder {
-    flex: 0 0 38%;
-    width: 38%;
+    grid-area: img;
+    width: 100%;
     aspect-ratio: 1 / 1;
     height: auto;
-    align-self: flex-start;
+    align-self: stretch;
+    flex: none;
   }
-  .cba-bunny-row-body { padding: 0.7rem 0.85rem; gap: 0.15rem; }
+  .cba-bunny-row-body {
+    grid-area: body;
+    display: contents;
+  }
+  .cba-bunny-row-info {
+    grid-area: body;
+    padding: 0.7rem 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+  .cba-bunny-row-desc {
+    grid-area: desc;
+    font-size: 0.8rem;
+    padding: 0.6rem 0.85rem;
+    border-top: 1px solid var(--cba-tan-light);
+    margin: 0;
+  }
   .cba-bunny-row-name { font-size: 1.05rem; }
   .cba-bunny-row-meta { font-size: 0.78rem; }
   .cba-bunny-row-price { font-size: 1rem; }
-  .cba-bunny-row-desc { font-size: 0.8rem; }
   .cba-bunny-row-btn { padding: 0.3rem 0.75rem; font-size: 0.78rem; }
 
   /* Form split → stack */
