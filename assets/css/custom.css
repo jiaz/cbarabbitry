@@ -98,7 +98,7 @@ p, li {
   display: block;
 }
 .cba-nav-logo-text {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 500;
   font-size: 1.35rem;
   color: var(--cba-dark);
@@ -412,8 +412,8 @@ p, li {
   max-width: 720px;
 }
 .cba-hero-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 300;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
   font-size: clamp(2.8rem, 9vw, 5.5rem);
   letter-spacing: 0.04em;
   color: #fff;
