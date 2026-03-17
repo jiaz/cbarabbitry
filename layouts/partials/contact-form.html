@@ -7,6 +7,12 @@
   {{ if .showBunny }}
   <label for="bunny">Which bunny are you interested in?</label>
   <input type="text" id="bunny" name="bunny_interest" placeholder="e.g. Muffin, or describe what you're looking for">
+  <script>
+    (function () {
+      var param = new URLSearchParams(window.location.search).get('bunny');
+      if (param) document.getElementById('bunny').value = param.replace(/-/g, ' ').replace(/\b\w/g, function(c){ return c.toUpperCase(); });
+    })();
+  </script>
   {{ end }}
 
   {{ if .showPreferences }}
