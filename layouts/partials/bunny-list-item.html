@@ -1,7 +1,6 @@
 {{ $bunny := . }}
 {{ $available := $bunny.Params.available | default true }}
 <div class="cba-bunny-row{{ if not $available }} sold{{ end }}">
-  {{ with $bunny.Params.grade }}<span class="grade-badge grade-{{ . | lower }}">Grade {{ . }}</span>{{ end }}
   {{ with $bunny.Params.featured_image }}
   <img class="cba-bunny-row-img" src="{{ . }}" alt="{{ $bunny.Title }}" loading="lazy">
   {{ else }}
@@ -9,7 +8,10 @@
   {{ end }}
   <div class="cba-bunny-row-body">
     <div class="cba-bunny-row-info">
-      <p class="cba-bunny-row-name">{{ $bunny.Title }}</p>
+      <p class="cba-bunny-row-name">
+        {{ $bunny.Title }}
+        {{ with $bunny.Params.grade }}<span class="grade-badge grade-{{ . | lower }}">Grade {{ . }}</span>{{ end }}
+      </p>
       <p class="cba-bunny-row-meta">
         {{ with $bunny.Params.sex }}{{ . }}{{ end }}{{ with $bunny.Params.color }} &nbsp;·&nbsp; {{ . }}{{ end }}
       </p>
@@ -24,6 +26,6 @@
       {{ end }}
       </div>
     </div>
-    <p class="cba-bunny-row-desc">{{ $bunny.Plain | truncate 140 "…" }}</p>
+    <p class="cba-bunny-row-desc">{{ $bunny.Plain }}</p>
   </div>
 </div>
