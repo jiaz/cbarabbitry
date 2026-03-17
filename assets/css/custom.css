@@ -1610,7 +1610,7 @@ p, li {
   .cba-bunny-row-desc {
     grid-area: desc;
     font-size: 0.8rem;
-    padding: 1rem 0.85rem;
+    padding: 1.5rem 0.85rem;
     border-top: 1px solid var(--cba-tan-light);
     margin: 0;
   }
