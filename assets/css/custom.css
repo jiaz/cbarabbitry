@@ -394,12 +394,12 @@ p, li {
   background: url('/images/hero-bunnies.jpg') center/cover;
   z-index: 0;
 }
-/* Dark scrim — sits above both image and video */
+/* Warm brown scrim — recreates the soft, creamy original tone */
 .cba-hero::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(44, 26, 14, 0.5);
   z-index: 2;
 }
 .cba-hero-img { display: none; }
