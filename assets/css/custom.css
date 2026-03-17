@@ -386,14 +386,15 @@ p, li {
   overflow: hidden;
   background: var(--cba-dark);
 }
-.cba-hero-img {
+/* Always-visible fallback — renders with the stylesheet, no flash */
+.cba-hero::before {
+  content: '';
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background: url('/images/hero-bunnies.jpg') center/cover;
   opacity: 0.55;
 }
+.cba-hero-img { display: none; }
 .cba-hero-video {
   position: absolute;
   inset: 0;
@@ -403,8 +404,6 @@ p, li {
   opacity: 0.55;
 }
 
-/* Hide static image when video is available */
-.cba-hero-img { display: none; }
 .cba-hero-content {
   position: relative;
   z-index: 1;
