@@ -1,3 +1,4 @@
+{{ define "title" }}{{ .Site.Title }} — Netherland Dwarf Bunnies in Seattle, WA{{ end }}
 {{ define "main" }}
 {{ $p := .Params }}
 {{ $bunnies := where (where site.RegularPages "Section" "bunnies-for-adoption") ".Params.available" true }}

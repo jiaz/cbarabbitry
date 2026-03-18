@@ -1,0 +1,9 @@
+{{- with . -}}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ with .Params.title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}" />
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}" />
+{{- $img := .Params.featured_image | default .Site.Params.featured_image -}}
+{{- with $img }}
+<meta name="twitter:image" content="{{ . | absURL }}" />
+{{- end -}}
+{{- end -}}

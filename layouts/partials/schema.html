@@ -1,0 +1,47 @@
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "CBA Rabbitry",
+  "url": "{{ .Site.BaseURL }}",
+  "description": "{{ .Site.Params.description }}",
+  "telephone": "{{ .Site.Params.phone }}",
+  "email": "{{ .Site.Params.email }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Factoria Mall",
+    "addressLocality": "Bellevue",
+    "addressRegion": "WA",
+    "postalCode": "98006",
+    "addressCountry": "US"
+  },
+  "image": "{{ .Site.Params.featured_image | absURL }}",
+  "sameAs": [
+    "https://www.instagram.com/cbarabbitry",
+    "https://www.tiktok.com/@CBA.Rabbitry",
+    "https://www.facebook.com/cbarabbitry"
+  ]
+}
+</script>
+{{- end }}
+{{- if and .IsPage (eq .Section "bunnies-for-adoption") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "{{ .Title }} — Netherland Dwarf Rabbit",
+  "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}",
+  "brand": { "@type": "Brand", "name": "CBA Rabbitry" }
+  {{- with .Params.featured_image }},
+  "image": "{{ . | absURL }}"{{ end }}
+  {{- with .Params.price }},
+  "offers": {
+    "@type": "Offer",
+    "price": "{{ . }}",
+    "priceCurrency": "USD",
+    "availability": "{{ if $.Params.available }}https://schema.org/InStock{{ else }}https://schema.org/SoldOut{{ end }}"
+  }{{ end }}
+}
+</script>
+{{- end }}

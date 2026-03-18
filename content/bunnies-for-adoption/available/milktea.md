@@ -9,6 +9,7 @@ dob: "2025-11-08"
 available: true
 health: "Healthy"
 featured_image: "/images/bunnies/milktea.jpg"
+description: "Milktea is an adorable Fawn Netherland Dwarf buck available for adoption in Seattle, WA. Grade A (Adorable quality), sweet-natured and people-friendly."
 ---
 
 Meet Milktea! This adorable Fawn buck has the sweetest personality. His warm fawn coloring and floppy ears make him absolutely irresistible.

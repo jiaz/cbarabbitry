@@ -1,0 +1,13 @@
+{{- with . -}}
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:title" content="{{ with .Params.title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}" />
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:locale" content="{{ .Site.Language.Lang }}" />
+{{- $img := .Params.featured_image | default .Site.Params.featured_image -}}
+{{- with $img }}
+<meta property="og:image" content="{{ . | absURL }}" />
+<meta property="og:image:alt" content="{{ $.Site.Title }}" />
+{{- end -}}
+{{- end -}}
