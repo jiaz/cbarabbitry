@@ -98,9 +98,9 @@ p, li {
   display: block;
 }
 .cba-nav-logo-text {
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  font-size: 1.35rem;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+  font-size: 1.5rem;
   color: var(--cba-dark);
 }
 .cba-nav-logo:hover .cba-nav-logo-text { color: var(--cba-accent); }
@@ -420,8 +420,8 @@ p, li {
   max-width: 720px;
 }
 .cba-hero-title {
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
   font-size: clamp(2.8rem, 9vw, 5.5rem);
   letter-spacing: 0.04em;
   color: #fff;
@@ -1455,9 +1455,9 @@ p, li {
   opacity: 0.9;
 }
 .cba-footer-brand {
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  font-size: 1.3rem;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+  font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.88);
   margin: 0 0 0.75rem;
 }
