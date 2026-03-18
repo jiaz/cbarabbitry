@@ -4,7 +4,7 @@ description: "Netherland Dwarf bunnies raised with love in Seattle, WA. Socializ
 featured_image: "/images/hero-bunnies.jpg"
 
 hero_subtitle: "Netherland Dwarf bunnies, raised with love in Seattle, WA"
-hero_cta_primary_label: "Meet Our Bunnies"
+hero_cta_primary_label: "Adopt Our Bunnies"
 hero_cta_primary_url: "/bunnies-for-adoption/"
 hero_cta_secondary_label: "Join Waiting List"
 hero_cta_secondary_url: "/join-waiting-list/"
