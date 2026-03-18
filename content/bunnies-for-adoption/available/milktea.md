@@ -6,7 +6,7 @@ price: 149
 color: "Fawn"
 sex: "Buck"
 dob: "2025-11-08"
-available: true
+available: false
 health: "Healthy"
 featured_image: "/images/bunnies/milktea.jpg"
 description: "Milktea is an adorable Fawn Netherland Dwarf buck available for adoption in Seattle, WA. Grade A (Adorable quality), sweet-natured and people-friendly."
