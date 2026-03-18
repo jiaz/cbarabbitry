@@ -5,8 +5,8 @@ grade: "P"
 price: 299
 color: "Frosty"
 sex: "Doe"
-dob: "2025-01-01"
-available: true
+dob: "2025-01-28"
+available: false
 health: "Healthy"
 featured_image: "/images/bunnies/66-frosty.jpg"
 ---

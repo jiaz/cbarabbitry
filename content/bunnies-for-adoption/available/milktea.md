@@ -2,7 +2,7 @@
 title: "Milktea"
 breed: "Netherland Dwarf"
 grade: "A"
-price: 79
+price: 149
 color: "Fawn"
 sex: "Buck"
 dob: "2025-01-01"

@@ -2,7 +2,7 @@
 title: "Muffin"
 breed: "Netherland Dwarf"
 grade: "P"
-price: 299
+price: 499
 color: "Orange"
 sex: "Doe"
 dob: "2025-01-01"
