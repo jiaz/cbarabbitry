@@ -26,13 +26,7 @@
             </div>
         </div>
 
-        <div class="cba-deposit-note">
-            All bunnies require a <strong>non-refundable deposit</strong> to
-            reserve. See our <a href="/sales-policy/">Sales Policy</a> for full
-            details.
-        </div>
-
-        {{ $pages := .Pages }}
+{{ $pages := .Pages }}
         {{ $available := where $pages "Params.available" true }}
         {{ $sold := where $pages "Params.available" false }}
 
