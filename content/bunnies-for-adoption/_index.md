@@ -1,6 +1,6 @@
 ---
 title: "Bunnies for Adoption"
-description: "Meet our adorable Netherland Dwarf bunnies."
+description: "Meet our gorgeous Netherland Dwarf bunnies."
 featured_image: "/images/hero-bunnies.jpg"
 ---
 
