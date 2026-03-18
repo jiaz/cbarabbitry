@@ -5,7 +5,7 @@ grade: "A"
 price: 149
 color: "Fawn"
 sex: "Buck"
-dob: "2025-01-01"
+dob: "2025-11-08"
 available: true
 health: "Healthy"
 featured_image: "/images/bunnies/milktea.jpg"

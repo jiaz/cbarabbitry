@@ -1,5 +1,5 @@
 ---
-title: "66 (Frosty)"
+title: "Snowflake"
 breed: "Netherland Dwarf"
 grade: "P"
 price: 299

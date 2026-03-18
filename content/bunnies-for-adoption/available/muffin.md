@@ -5,7 +5,7 @@ grade: "P"
 price: 499
 color: "Orange"
 sex: "Doe"
-dob: "2025-01-01"
+dob: "2026-02-08"
 available: true
 health: "Healthy"
 featured_image: "/images/bunnies/muffin.jpg"
