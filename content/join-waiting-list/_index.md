@@ -15,16 +15,11 @@ The waitlist fee is **$49**. We'll send you a payment link after you submit your
 
 ### How to Join
 
-Please use this form, or [contact us](/contact/) to submit your request. Feel free to tell us any preference of Netherland Dwarf (ND) you are looking for, such as:
-
-- Color
-- Type
-- Grade (A / P / S)
-- Gender
+Please use this form, or [contact us](/contact/) to submit your request. 
 
 ### Waiting Time
 
-Waiting time for new babies is usually 1–2 months.
+Waiting time for new babies is usually 1–2 months. We usually start breeding within two weeks after you submit waitlist fee.
 
 ### Our Commitment
 
