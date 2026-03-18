@@ -1,8 +1,6 @@
 ---
 title: "Snowflake"
 breed: "Netherland Dwarf"
-grade: "P"
-price: 299
 color: "Frosty"
 sex: "Doe"
 dob: "2025-01-28"
