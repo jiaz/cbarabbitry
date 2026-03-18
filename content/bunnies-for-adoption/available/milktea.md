@@ -13,4 +13,4 @@ featured_image: "/images/bunnies/milktea.jpg"
 
 Meet Milktea! This adorable Fawn buck has the sweetest personality. His warm fawn coloring and floppy ears make him absolutely irresistible.
 
-Milktea is Grade A (Pet quality) — a wonderful companion who will bring joy to any home. He has been handled daily and is great with people.
+Milktea is Grade A (Adorable quality) — a wonderful companion who will bring joy to any home. He has been handled daily and is great with people.
