@@ -10,4 +10,4 @@ new_home: "OR State"
 featured_image: "/images/bunnies/snowwhite.jpg"
 ---
 
-Charming round and short ears, and a round face — a true show-quality beauty.
+Charming round and short ears, and a round face — a true signature-quality beauty.

@@ -10,4 +10,4 @@ new_home: "WA State"
 featured_image: "/images/bunnies/cappuccino.jpg"
 ---
 
-A deeply sweet beauty with soft fawn coloring and show-quality conformation.
+A deeply sweet beauty with soft fawn coloring and signature-quality conformation.
