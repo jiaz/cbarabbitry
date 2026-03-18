@@ -6,7 +6,7 @@ price: 399
 color: "Frosty"
 sex: "Buck"
 dob: "2026-01-28"
-available: false
+available: true
 health: "Healthy"
 featured_image: "/images/bunnies/milktea.jpg"
 ---
