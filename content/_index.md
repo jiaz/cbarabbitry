@@ -31,14 +31,16 @@ quote_body: "We provide life long support to the family that adopt bunnies from 
 
 gallery_heading: "Our Bunnies"
 gallery_images:
-  - src: "/images/about/toffe.jpg"
+  - src: "/images/about/toffee2.jpg"
     alt: "Toffee"
   - src: "/images/bunnies/gangbeng.jpg"
     alt: "Gangbeng"
-  - src: "/images/about/crane.jpg"
-    alt: "Crane"
-  - src: "/images/about/harper_frontface_25d.jpg"
+  - src: "/images/about/banner_frosty_snow.jpg"
+    alt: "Princess"
+  - src: "/images/bunnies/harper.jpg"
     alt: "Harper"
+  - src: "/images/about/karl.jpg"
+    alt: "Karl"
   - src: "/images/about/cupcake.jpg"
     alt: "Cupcake"
 
