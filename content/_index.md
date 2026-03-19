@@ -37,7 +37,7 @@ gallery_images:
     alt: "Gangbeng"
   - src: "/images/about/banner_frosty_snow.jpg"
     alt: "Princess"
-  - src: "/images/bunnies/harper_show_pos_outside.jpg"
+  - src: "/images/about/harper_show_pos_outside.jpg"
     alt: "Harper"
   - src: "/images/about/karl.jpg"
     alt: "Karl"

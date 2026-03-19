@@ -3,7 +3,7 @@ title: "Sales Policy"
 description: "CBA Rabbitry's adoption policies, health guarantee, and payment information."
 ---
 
-**Please Read Our policy Before purchasing or claiming a bunny. We love each and every bunny in our rabbitry and we want the best for all of them even the babies.**
+**Please Read Our policy Before purchasing or claiming a bunny. We love each and every bunny in our rabbitry and we want the best for all of them.**
 
 ### Non Refundable
 
