@@ -14,6 +14,9 @@
 
     <ul class="cba-nav-links" role="list">
       <li>
+        <a href="/news/" class="cba-nav-link{{ if hasPrefix $cur.RelPermalink "/news" }} cba-nav-active{{ end }}">News &amp; Events</a>
+      </li>
+      <li>
         <a href="/bunnies-for-adoption/" class="cba-nav-link{{ if hasPrefix $cur.RelPermalink "/bunnies-for-adoption" }} cba-nav-active{{ end }}">Adopt Bunnies</a>
       </li>
       <li>
@@ -21,9 +24,6 @@
       </li>
       <li>
         <a href="/sales-policy/" class="cba-nav-link{{ if hasPrefix $cur.RelPermalink "/sales-policy" }} cba-nav-active{{ end }}">Sales Policy</a>
-      </li>
-      <li>
-        <a href="/news/" class="cba-nav-link{{ if hasPrefix $cur.RelPermalink "/news" }} cba-nav-active{{ end }}">News &amp; Events</a>
       </li>
       <li>
         <a href="/partner-friends/" class="cba-nav-link{{ if hasPrefix $cur.RelPermalink "/partner-friends" }} cba-nav-active{{ end }}">Partners</a>
@@ -56,10 +56,10 @@
 <!-- Mobile overlay -->
 <div class="cba-nav-overlay" id="cba-nav-overlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
   <button class="cba-nav-overlay-close" id="cba-overlay-close" aria-label="Close menu">✕</button>
+  <a href="/news/">News &amp; Events</a>
   <a href="/bunnies-for-adoption/">Adopt Bunnies</a>
   <a href="/join-waiting-list/">Waiting List</a>
   <a href="/sales-policy/">Sales Policy</a>
-  <a href="/news/">News &amp; Events</a>
   <a href="/partner-friends/">Partners</a>
   <a href="/contact/">Contact</a>
 </div>
