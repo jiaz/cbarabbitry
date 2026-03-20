@@ -2,7 +2,7 @@
 title: "Captain"
 breed: "Netherland Dwarf"
 color: "Light Grey"
-sex: "Buck"
+sex: "Boy"
 dob: "2026-01-28"
 available: false
 new_home: "WA State"

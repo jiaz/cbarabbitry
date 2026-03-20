@@ -3,7 +3,7 @@ title: "Zizi"
 breed: "Netherland Dwarf"
 grade: "P"
 color: "Orange with Grey Shading"
-sex: "Doe"
+sex: "Girl"
 dob: "2025-11-08"
 available: false
 new_home: "NY City"

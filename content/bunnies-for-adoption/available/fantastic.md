@@ -3,7 +3,7 @@ title: "Fantastic"
 breed: "Netherland Dwarf"
 grade: "P"
 color: "Orange"
-sex: "Buck"
+sex: "Boy"
 dob: "2026-02-08"
 available: false
 new_home: "WA State"

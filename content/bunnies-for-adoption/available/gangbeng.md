@@ -3,7 +3,7 @@ title: "Gangbeng"
 breed: "Netherland Dwarf"
 grade: "SS"
 color: "Light Purple"
-sex: "Buck"
+sex: "Boy"
 dob: "2026-02-01"
 available: false
 new_home: "VA State"

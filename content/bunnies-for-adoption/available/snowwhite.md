@@ -3,7 +3,7 @@ title: "Snowwhite"
 breed: "Netherland Dwarf"
 grade: "S"
 color: "Frosty"
-sex: "Doe"
+sex: "Girl"
 dob: "2025-11-14"
 available: false
 new_home: "OR State"

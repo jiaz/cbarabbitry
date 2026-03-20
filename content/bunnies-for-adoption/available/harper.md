@@ -2,7 +2,7 @@
 title: "Harper"
 breed: "Netherland Dwarf"
 color: "Orange"
-sex: "Doe"
+sex: "Girl"
 dob: "2025-11-14"
 available: false
 new_home: "WA State"

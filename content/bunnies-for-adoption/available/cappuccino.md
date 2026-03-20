@@ -3,7 +3,7 @@ title: "Cappuccino"
 breed: "Netherland Dwarf"
 grade: "S"
 color: "Fawn"
-sex: "Doe"
+sex: "Girl"
 dob: "2025-11-04"
 available: false
 new_home: "WA State"

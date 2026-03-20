@@ -4,7 +4,7 @@ breed: "Netherland Dwarf"
 grade: "P"
 price: 399
 color: "Frosty"
-sex: "Buck"
+sex: "Boy"
 dob: "2026-01-28"
 available: false
 health: "Healthy"
