@@ -53,6 +53,11 @@
                         <td class="cba-bunny-table-label">Price</td>
                         <td class="cba-bunny-table-price">${{ . }}+</td>
                     </tr>
+                    {{ end }} {{ with .Params.video }}
+                    <tr>
+                        <td class="cba-bunny-table-label">Video</td>
+                        <td><a href="{{ . }}" target="_blank" rel="noopener">Watch video ▶</a></td>
+                    </tr>
                     {{ end }}
                 </table>
 
