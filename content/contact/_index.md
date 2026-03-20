@@ -19,6 +19,5 @@ description: "Get in touch with CBA Rabbitry. We will respond to you ASAP."
 
 **Rednote (小红书):** CBA Rabbitry
 
-**Location:** Factoria Mall, Bellevue, WA 98006
 
 You are welcomed to contact us via any of the above channels. We will respond to you ASAP. If you do not receive our response within 24 hours, please feel free to send a message to a different channel above!

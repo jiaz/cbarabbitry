@@ -13,8 +13,7 @@ theme = "ananke"
   # Contact info
   email = "cbarabbitry@gmail.com"
   phone = "360-489-6698"
-  address = "Factoria Mall, Bellevue, WA 98006"
-  maps_url = "https://maps.google.com/?q=Factoria+Mall,+Bellevue,+WA+98006"
+  address = "Bellevue, WA"
 
   # Social links
   instagram_url = "https://www.instagram.com/cbarabbitry"
