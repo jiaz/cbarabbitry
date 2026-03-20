@@ -45,8 +45,13 @@
   <input type="tel" id="phone" name="phone" required placeholder="Your phone number">
 
   {{ if not .hideMessage }}
+  {{ if .messageOptional }}
+  <label for="message">{{ .messageLabel | default "Message" }}</label>
+  <textarea id="message" name="message" placeholder="{{ .messagePlaceholder | default "How can we help you?" }}"></textarea>
+  {{ else }}
   <label for="message">{{ .messageLabel | default "Message" }} *</label>
   <textarea id="message" name="message" required placeholder="{{ .messagePlaceholder | default "How can we help you?" }}"></textarea>
+  {{ end }}
   {{ end }}
 
   <!-- Honeypot spam protection -->
