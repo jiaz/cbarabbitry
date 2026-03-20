@@ -9,7 +9,7 @@ _build:
 
 ## Our Story
 
-CBA Rabbitry was founded out of a deep love for Netherland Dwarf rabbits. Located in Bellevue, WA, we are a small, dedicated rabbitry committed to raising healthy, well-socialized bunnies that make wonderful companions.
+CBA Rabbitry was founded out of a deep love for Netherland Dwarf rabbits. Located in Seattle, WA, we are a small, dedicated rabbitry committed to raising healthy, well-socialized bunnies that make wonderful companions.
 
 Every bunny in our care is treated like family. From the moment they're born, our bunnies receive:
 
