@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="cba-news-page">
+  <div class="cba-news-page-inner">
+    <h1 class="cba-news-heading">News &amp; Events</h1>
+    <p class="cba-news-subheading">The latest announcements and happenings from CBA Rabbitry.</p>
+
+    {{ $posts := .Pages.ByDate.Reverse }}
+    {{ if $posts }}
+    <div class="cba-news-list">
+      {{ range $posts }}
+      {{ $post := . }}
+      <article class="cba-news-card">
+        {{ with .Params.photo }}
+        <a href="{{ $post.RelPermalink }}" class="cba-news-card-img-wrap">
+          <img src="{{ . }}" alt="{{ $post.Title }}" class="cba-news-card-img" loading="lazy">
+        </a>
+        {{ end }}
+        <div class="cba-news-card-body">
+          <p class="cba-news-card-date">{{ .Date.Format "January 2, 2006 · 3:04 PM" }}</p>
+          <h2 class="cba-news-card-title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h2>
+          <div class="cba-news-card-summary">{{ .Summary }}</div>
+          <a href="{{ .RelPermalink }}" class="cba-news-read-more">Read more →</a>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+    {{ else }}
+    <p class="cba-news-empty">No news or events yet. Check back soon!</p>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

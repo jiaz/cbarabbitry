@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="cba-news-single">
+  <div class="cba-news-single-inner">
+    <a href="/news/" class="cba-bunny-back">
+      <svg class="cba-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      Back to News &amp; Events
+    </a>
+
+    <p class="cba-news-single-date">{{ .Date.Format "January 2, 2006 · 3:04 PM" }}</p>
+    <h1 class="cba-news-single-title">{{ .Title }}</h1>
+
+    {{ with .Params.photo }}
+    <div class="cba-news-single-photo-wrap">
+      <img src="{{ . }}" alt="{{ $.Title }}" class="cba-news-single-photo" loading="lazy">
+    </div>
+    {{ end }}
+
+    <div class="cba-news-single-content">{{ .Content }}</div>
+  </div>
+</div>
+{{ end }}
