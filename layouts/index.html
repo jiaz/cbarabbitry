@@ -62,7 +62,8 @@
         {{ end }}
         <div class="cba-mini-card-body">
           <p class="cba-mini-card-name">{{ .Title }}</p>
-          <p class="cba-mini-card-meta">{{ with .Params.sex }}{{ . }}{{ end }}{{ with .Params.color }} &nbsp;·&nbsp; {{ . }}{{ end }}</p>
+          <p class="cba-mini-card-meta">{{ with .Params.sex }}{{ . }}{{ end }}{{ with .Params.color }} &nbsp;·&nbsp; {{
+            . }}{{ end }}</p>
         </div>
       </a>
       {{ end }}
@@ -84,59 +85,64 @@
 <section class="cba-gallery-strip">
   <h2 class="cba-gallery-title cba-gallery-title--mobile">{{ $p.gallery_heading }}</h2>
   <div class="cba-gallery-layout">
-  <div class="cba-carousel" id="cba-carousel">
-    <div class="cba-carousel-track">
-      {{ range $i, $img := $p.gallery_images }}
-      <div class="cba-carousel-slide{{ if eq $i 0 }} active{{ end }}">
-        <img src="{{ $img.src }}" alt="{{ $img.alt }}" loading="{{ if eq $i 0 }}eager{{ else }}lazy{{ end }}">
-        <div class="cba-carousel-caption">{{ $img.alt }}</div>
+    <div class="cba-carousel" id="cba-carousel">
+      <div class="cba-carousel-track">
+        {{ range $i, $img := $p.gallery_images }}
+        <div class="cba-carousel-slide{{ if eq $i 0 }} active{{ end }}">
+          <img src="{{ $img.src }}" alt="{{ $img.alt }}" loading="{{ if eq $i 0 }}eager{{ else }}lazy{{ end }}">
+          <div class="cba-carousel-caption">{{ $img.alt }}</div>
+        </div>
+        {{ end }}
+        <button class="cba-carousel-btn cba-carousel-prev" aria-label="Previous">&#8592;</button>
+        <button class="cba-carousel-btn cba-carousel-next" aria-label="Next">&#8594;</button>
       </div>
-      {{ end }}
-      <button class="cba-carousel-btn cba-carousel-prev" aria-label="Previous">&#8592;</button>
-      <button class="cba-carousel-btn cba-carousel-next" aria-label="Next">&#8594;</button>
+      <div class="cba-carousel-dots">
+        {{ range $i, $img := $p.gallery_images }}
+        <button class="cba-carousel-dot{{ if eq $i 0 }} active{{ end }}" aria-label="Slide {{ add $i 1 }}"></button>
+        {{ end }}
+      </div>
     </div>
-    <div class="cba-carousel-dots">
-      {{ range $i, $img := $p.gallery_images }}
-      <button class="cba-carousel-dot{{ if eq $i 0 }} active{{ end }}" aria-label="Slide {{ add $i 1 }}"></button>
-      {{ end }}
+    <div class="cba-gallery-breed-blurb">
+      <h2 class="cba-gallery-title cba-gallery-title--desktop">{{ $p.gallery_heading }}</h2>
+      <h3>Netherland Dwarf, the World Smallest Rabbit Breed</h3>
+      <p>The Netherland Dwarf is a small, iconic rabbit breed loved for its charming looks and compact size. Known for
+        its **the world most tiny rabbit breed**, they average weigh rounded 2-2.5lb when adult, sizes of just 2 hands,
+        round body, short upright ears, and large expressive eyes, this breed has a sweet, teddy-like appearance that
+        makes it instantly recognizable.</p>
+      <p>Despite its petite frame, the Netherland Dwarf has a bold, curious personality and often forms strong bonds
+        with its humans. With its combination of beautiful type, soft coat, and lively, friendly nature, the Netherland
+        Dwarf is cherished both as a show rabbit and as an adorable companion pet.</p>
     </div>
-  </div>
-  <div class="cba-gallery-breed-blurb">
-    <h2 class="cba-gallery-title cba-gallery-title--desktop">{{ $p.gallery_heading }}</h2>
-    <h3>Netherland Dwarf Rabbitry Breed</h3>
-  <p>The Netherland Dwarf is a small, iconic rabbit breed loved for its charming looks and compact size. Known for its **the world most tiny rabbit breed**, they average weigh rounded 2-2.5lb when adualt, sizes of just 2 hands, round body, short upright ears, and large expressive eyes, this breed has a sweet, teddy-like appearance that makes it instantly recognizable.</p>
-    <p>Despite its petite frame, the Netherland Dwarf has a bold, curious personality and often forms strong bonds with its humans. With its combination of beautiful type, soft coat, and lively, friendly nature, the Netherland Dwarf is cherished both as a show rabbit and as an adorable companion pet.</p>
-  </div>
   </div>
 </section>
 
 <script>
-(function () {
-  var carousel = document.getElementById('cba-carousel');
-  if (!carousel) return;
-  var slides = carousel.querySelectorAll('.cba-carousel-slide');
-  var dots   = carousel.querySelectorAll('.cba-carousel-dot');
-  var current = 0, timer;
+  (function () {
+    var carousel = document.getElementById('cba-carousel');
+    if (!carousel) return;
+    var slides = carousel.querySelectorAll('.cba-carousel-slide');
+    var dots = carousel.querySelectorAll('.cba-carousel-dot');
+    var current = 0, timer;
 
-  function goTo(n) {
-    slides[current].classList.remove('active');
-    dots[current].classList.remove('active');
-    current = (n + slides.length) % slides.length;
-    slides[current].classList.add('active');
-    dots[current].classList.add('active');
-  }
+    function goTo(n) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (n + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
 
-  function start() { clearInterval(timer); timer = setInterval(function () { goTo(current + 1); }, 4500); }
-  function reset() { start(); }
+    function start() { clearInterval(timer); timer = setInterval(function () { goTo(current + 1); }, 4500); }
+    function reset() { start(); }
 
-  carousel.querySelector('.cba-carousel-prev').addEventListener('click', function () { goTo(current - 1); reset(); });
-  carousel.querySelector('.cba-carousel-next').addEventListener('click', function () { goTo(current + 1); reset(); });
-  dots.forEach(function (dot, i) { dot.addEventListener('click', function () { goTo(i); reset(); }); });
+    carousel.querySelector('.cba-carousel-prev').addEventListener('click', function () { goTo(current - 1); reset(); });
+    carousel.querySelector('.cba-carousel-next').addEventListener('click', function () { goTo(current + 1); reset(); });
+    dots.forEach(function (dot, i) { dot.addEventListener('click', function () { goTo(i); reset(); }); });
 
-  carousel.addEventListener('mouseenter', function () { clearInterval(timer); });
-  carousel.addEventListener('mouseleave', start);
-  start();
-})();
+    carousel.addEventListener('mouseenter', function () { clearInterval(timer); });
+    carousel.addEventListener('mouseleave', start);
+    start();
+  })();
 </script>
 
 <!-- Social -->
@@ -145,20 +151,30 @@
   <p>{{ $p.social_desc }}</p>
   <div class="cba-social-icons">
     <a href="https://www.instagram.com/cbarabbitry" target="_blank" rel="noopener" aria-label="Instagram">
-      <svg class="cba-social-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      <svg class="cba-social-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path
+          d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+      </svg>
       <span class="cba-social-label">Instagram</span>
     </a>
     <a href="https://www.tiktok.com/@CBA.Rabbitry" target="_blank" rel="noopener" aria-label="TikTok">
-      <svg class="cba-social-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.17 8.17 0 004.78 1.53V6.77a4.85 4.85 0 01-1.01-.08z"/></svg>
+      <svg class="cba-social-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path
+          d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.17 8.17 0 004.78 1.53V6.77a4.85 4.85 0 01-1.01-.08z" />
+      </svg>
       <span class="cba-social-label">TikTok</span>
     </a>
     <a href="https://www.facebook.com/cbarabbitry" target="_blank" rel="noopener" aria-label="Facebook">
-      <svg class="cba-social-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      <svg class="cba-social-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path
+          d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+      </svg>
       <span class="cba-social-label">Facebook</span>
     </a>
     {{ with site.Params.rednote_url }}
     <a href="{{ . }}" target="_blank" rel="noopener" aria-label="Rednote">
-      <span class="cba-social-icon-svg" aria-hidden="true">{{ readFile "static/images/rednote-icon.svg" | safeHTML }}</span>
+      <span class="cba-social-icon-svg" aria-hidden="true">{{ readFile "static/images/rednote-icon.svg" | safeHTML
+        }}</span>
       <span class="cba-social-label">Rednote</span>
     </a>
     {{ end }}
