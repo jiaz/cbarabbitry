@@ -1795,8 +1795,8 @@ p, li {
 
 .cba-news-single-photo {
   width: 100%;
-  max-height: 480px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   display: block;
 }
 
