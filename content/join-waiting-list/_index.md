@@ -19,7 +19,7 @@ Please use this form, or [contact us](/contact/) to submit your request.
 
 ### Waiting Time
 
-Waiting time for new babies is usually 1–2 months. We usually start breeding within two weeks after you submit waitlist fee.
+We typically start breeding within 1-2 weeks after you submit waitlist fee, in 1-2 month new babies are available for your to pick and reserve.
 
 ### Our Commitment
 

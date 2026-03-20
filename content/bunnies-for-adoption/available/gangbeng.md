@@ -2,7 +2,7 @@
 title: "Gangbeng"
 breed: "Netherland Dwarf"
 grade: "SS"
-color: "Light Purple"
+color: "Light Lilac"
 sex: "Boy"
 dob: "2026-02-01"
 available: false
