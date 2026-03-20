@@ -4,7 +4,8 @@
 
     <div class="cba-form-split-info">
       <h2 class="cba-form-split-info-title">Get in Touch</h2>
-      <p>We love hearing from bunny lovers! Whether you have questions about our available bunnies, rabbit care, or are ready to start the adoption process — we're here to help.</p>
+      <p>We love hearing from bunny lovers! Whether you have questions about our available bunnies, rabbit care, or are
+        ready to start the adoption process — we're here to help.</p>
       <div class="cba-contact-detail">
         <span>📧</span>
         <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>
@@ -27,19 +28,30 @@
       <div class="cba-contact-socials">
         {{ with site.Params.instagram_url }}
         <a href="{{ . }}" class="cba-social-btn" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none" />
+          </svg>
           Instagram
         </a>
         {{ end }}
         {{ with site.Params.tiktok_url }}
         <a href="{{ . }}" class="cba-social-btn" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+          </svg>
           TikTok
         </a>
         {{ end }}
         {{ with site.Params.facebook_url }}
         <a href="{{ . }}" class="cba-social-btn" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+          </svg>
           Facebook
         </a>
         {{ end }}
@@ -51,16 +63,16 @@
         </a>
         {{ end }}
       </div>
-      <p class="cba-response-note">We typically respond within 24–48 hours.</p>
+      <p class="cba-response-note">We typically respond within 24 hours.</p>
     </div>
 
     <div class="cba-form-split-form">
       <h2 class="cba-form-split-form-title">Send a Message</h2>
       {{ partial "contact-form.html" (dict
-        "subject" "New Contact - CBA Rabbitry"
-        "messageLabel" "Message"
-        "messagePlaceholder" "How can we help you?"
-        "submitLabel" "Send Message"
+      "subject" "New Contact - CBA Rabbitry"
+      "messageLabel" "Message"
+      "messagePlaceholder" "How can we help you?"
+      "submitLabel" "Send Message"
       ) }}
     </div>
 

@@ -50,7 +50,7 @@ social_desc: "See our daily bunny life — new litters, care tips, and behind-th
 
 While we have more than 5 years of rabbit breeding experience, the Rabbitry officially started since Aug. 2025.
 
-CBA Rabbitry is family owned, we focus on breeding high quality Netherland dwarf rabbit in the US. Our rabbits comes from signature quality Netherland dwarf breeders blood lines, and we have been improve the breedings over years to ensure every bunny we breed is **adorable, has a sweet-personality, being trained for socialize, friendly to kids and healthy**.
+CBA Rabbitry focus on breeding high quality Netherland dwarf rabbit in the US. Our rabbits comes from signature quality Netherland dwarf breeders blood lines, and we have been improve the breedings over years to ensure every bunny we breed is **adorable, has a sweet-personality, being trained for socialize, friendly to kids and healthy**.
 
 We are passionate about finding loving homes for rabbits in need and supporting family to have them well-cared for.
 
