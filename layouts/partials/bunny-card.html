@@ -22,6 +22,7 @@
         ${{ $bunny.Params.price }}
       {{ else }}
         <span style="color:#c0392b;">Sold</span>
+        {{ with $bunny.Params.new_home }}<div class="bunny-card-new-home">New home: {{ . }}</div>{{ end }}
       {{ end }}
     </div>
     {{ if $available }}

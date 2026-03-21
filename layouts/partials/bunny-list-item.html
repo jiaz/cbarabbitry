@@ -10,6 +10,7 @@
   <div class="cba-bunny-row-body">
     <div class="cba-bunny-row-info">
       <p class="cba-bunny-row-name">{{ $bunny.Title }}</p>
+      {{ if not $available }}{{ with $bunny.Params.new_home }}<p class="cba-bunny-new-home">🏡 {{ . }}</p>{{ end }}{{ end }}
       <p class="cba-bunny-row-meta">
         {{ with $bunny.Params.sex }}{{ . }}{{ end }}{{ with $bunny.Params.color }} &nbsp;·&nbsp; {{ . }}{{ end }}
       </p>

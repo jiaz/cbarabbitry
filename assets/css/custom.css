@@ -958,6 +958,14 @@ p, li {
   color: #c0392b;
   font-weight: 400;
 }
+.cba-bunny-new-home {
+  margin: 0.2rem 0 0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  color: var(--cba-accent-muted);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
 .cba-bunny-row-desc {
   font-size: 0.88rem;
   color: var(--cba-dark-mid);
