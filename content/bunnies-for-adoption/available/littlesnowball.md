@@ -8,6 +8,7 @@ sex: "Boy"
 dob: "2026-01-28"
 available: false
 health: "Healthy"
+new_home: "WA State"
 featured_image: "/images/bunnies/little-carrot_square.jpg"
 ---
 

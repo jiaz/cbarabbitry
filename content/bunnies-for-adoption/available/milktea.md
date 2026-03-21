@@ -8,6 +8,7 @@ sex: "Boy"
 dob: "2025-11-08"
 available: false
 health: "Healthy"
+new_home: "CA State"
 featured_image: "/images/bunnies/milktea.jpg"
 description: "Milktea is an adorable Fawn Netherland Dwarf boy available for adoption in Seattle, WA. Grade A (Adorable quality), sweet-natured and people-friendly."
 ---

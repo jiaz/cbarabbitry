@@ -13,6 +13,6 @@ video: "https://www.tiktok.com/@cba.rabbitry/video/7613987783106956574?is_from_w
 description: "Muffin is a gorgeous Orange Netherland Dwarf girl available for adoption in Seattle, WA. Grade P (Premium quality) with excellent conformation and a wonderfully calm temperament."
 ---
 
-Meet Muffin! This sweet Orange girl has beautiful conformation and a wonderfully calm temperament. She has been handled daily since birth and loves cuddles.
+Meet Muffin! Her Father is an ARBA show quality Netherland dwarf.
 
-Muffin is Grade P (Premium), meaning she has excellent conformation of short ears, round face. She is ready for her forever home.
+This sweet Orange girl has beautiful conformation of short ears, round face. Muffin has a wonderfully calm temperament. She has been handled daily since birth and loves cuddles.
