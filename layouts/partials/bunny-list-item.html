@@ -14,7 +14,7 @@
         {{ with $bunny.Params.sex }}{{ . }}{{ end }}{{ with $bunny.Params.color }} &nbsp;·&nbsp; {{ . }}{{ end }}
       </p>
       {{ if $available }}
-      <p class="cba-bunny-row-price">${{ $bunny.Params.price }}+</p>
+      <p class="cba-bunny-row-price">${{ $bunny.Params.price }}</p>
       {{ end }}
       <div class="cba-bunny-row-actions">
       {{ if $available }}
