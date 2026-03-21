@@ -1,7 +1,7 @@
 ---
 title: "Easter Egg Hunting"
 date: 2026-03-19T10:00:00-07:00
-photo: "/images/news/easter_poster.JPG"
+photo: "/images/news/easter_poster_f.jpeg"
 ---
 
 Join us for a fun-filled Easter celebration!
