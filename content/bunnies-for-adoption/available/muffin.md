@@ -15,4 +15,4 @@ description: "Muffin is a gorgeous Orange Netherland Dwarf girl available for ad
 
 Meet Muffin! This sweet Orange girl has beautiful conformation and a wonderfully calm temperament. She has been handled daily since birth and loves cuddles.
 
-Muffin is Grade P (Premium), meaning she has excellent conformation and show potential. She is ready for her forever home.
+Muffin is Grade P (Premium), meaning she has excellent conformation of short ears, round face. She is ready for her forever home.

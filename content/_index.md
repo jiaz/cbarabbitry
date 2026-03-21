@@ -33,7 +33,7 @@ gallery_heading: "Our Bunnies"
 gallery_images:
   - src: "/images/about/toffee2.jpg"
     alt: "Toffee"
-  - src: "/images/about/champ_hold.jpg"
+  - src: "/images/about/champ_sq.jpg"
     alt: "Champ"
   - src: "/images/about/gangbeng.jpg"
     alt: "Gangbeng"
