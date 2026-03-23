@@ -6,4 +6,4 @@ photo: "/images/news/0326_litters.jpg"
 
 We're thrilled to announce our March litter has arrived! Two healthy Netherland Dwarf kits were born this week. their colors are Fawn and Broken Fawn. They will be ready for their forever homes in approximately 8 weeks.
 
-Welcome to  [Contact us](/contact/) us to reserve them!
+Welcome to [submit an adoption request](/request-adoption/) to reserve them!
