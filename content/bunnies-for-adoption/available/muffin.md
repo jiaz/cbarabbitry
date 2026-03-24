@@ -15,4 +15,4 @@ description: "Muffin is a gorgeous Orange Netherland Dwarf girl available for ad
 
 Meet Muffin! Her Father is an ARBA show quality Netherland dwarf.
 
-This sweet Orange girl has beautiful conformation of short ears, round face. Muffin has a wonderfully calm temperament. She has been handled daily since birth and loves cuddles.
+This sweet Orange girl has beautiful conformation of short ears, round face. Muffin is very smart, she play toys very well. She has been handled daily by our rabbitry staff since birth and she is fully trained to be socialized.
