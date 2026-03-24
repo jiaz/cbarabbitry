@@ -4,6 +4,7 @@ breed: "Netherland Dwarf"
 color: "Frosty"
 sex: "Girl"
 dob: "2025-01-28"
+grade: "A"
 available: false
 health: "Healthy"
 new_home: "WA State"

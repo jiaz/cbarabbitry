@@ -4,6 +4,7 @@ breed: "Netherland Dwarf"
 color: "Light Grey"
 sex: "Boy"
 dob: "2026-01-28"
+grade: "A"
 available: false
 new_home: "WA State"
 featured_image: "/images/bunnies/captain.jpg"
