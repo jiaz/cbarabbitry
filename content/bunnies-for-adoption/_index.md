@@ -1,6 +1,6 @@
 ---
 title: "Bunnies for Adoption"
-description: "Meet our gorgeous Netherland Dwarf bunnies."
+description: "Meet our gorgeous Netherland Dwarf bunnies. We transport bunny to all US states."
 featured_image: "/images/hero-bunnies.jpg"
 ---
 
