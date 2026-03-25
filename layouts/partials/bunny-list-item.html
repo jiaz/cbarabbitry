@@ -1,7 +1,9 @@
 {{ $bunny := . }}
 {{ $available := $bunny.Params.available | default true }}
-<div class="cba-bunny-row{{ if not $available }} sold{{ end }}">
+{{ $reserved := $bunny.Params.reserved | default false }}
+<div class="cba-bunny-row{{ if not $available }} sold{{ else if $reserved }} reserved{{ end }}">
   {{ with $bunny.Params.grade }}<span class="grade-badge grade-{{ . | lower }}">Grade {{ . }}</span>{{ end }}
+  {{ if $reserved }}<span class="cba-reserved-badge">Reserved</span>{{ end }}
   {{ with $bunny.Params.featured_image }}
   <img class="cba-bunny-row-img" src="{{ . }}" alt="{{ $bunny.Title }}" loading="lazy">
   {{ else }}
@@ -10,18 +12,21 @@
   <div class="cba-bunny-row-body">
     <div class="cba-bunny-row-info">
       <p class="cba-bunny-row-name">{{ $bunny.Title }}</p>
-      {{ if not $available }}{{ with $bunny.Params.new_home }}<p class="cba-bunny-new-home">🏡 {{ . }}</p>{{ end }}{{ end }}
+      {{ if or (not $available) $reserved }}{{ with $bunny.Params.new_home }}<p class="cba-bunny-new-home">🏡 {{ . }}</p>{{ end }}{{ end }}
+      {{ if $reserved }}{{ with $bunny.Params.reserved_by }}<p class="cba-bunny-reserved-by">🔒 Reserved by {{ . }}</p>{{ end }}{{ end }}
       <p class="cba-bunny-row-meta">
-        {{ with $bunny.Params.sex }}{{ . }}{{ end }}{{ with $bunny.Params.color }} &nbsp;·&nbsp; {{ . }}{{ end }}
+        {{ with $bunny.Params.sex }}{{ . }}{{ with $bunny.Params.color }} &nbsp;·&nbsp; {{ . }}{{ end }}{{ else }}{{ with $bunny.Params.color }}{{ . }}{{ end }}{{ end }}
       </p>
-      {{ if $available }}
+      {{ if and $available (not $reserved) }}
       <p class="cba-bunny-row-price">${{ $bunny.Params.price }}</p>
       {{ end }}
       <div class="cba-bunny-row-actions">
-      {{ if $available }}
-        <a href="{{ $bunny.RelPermalink }}" class="cba-bunny-row-btn">Meet {{ $bunny.Title }}</a>
-      {{ else }}
+      {{ if not $available }}
         <button class="cba-bunny-row-btn cba-bunny-row-btn--sold" disabled>Sold</button>
+      {{ else if $reserved }}
+        <button class="cba-bunny-row-btn cba-bunny-row-btn--reserved" disabled>Reserved</button>
+      {{ else }}
+        <a href="{{ $bunny.RelPermalink }}" class="cba-bunny-row-btn">Meet {{ $bunny.Title }}</a>
       {{ end }}
       </div>
     </div>

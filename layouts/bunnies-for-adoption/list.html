@@ -27,7 +27,9 @@
         </div>
 
 {{ $pages := .Pages }}
-        {{ $available := where $pages "Params.available" true }}
+        {{ $availableAll := where $pages "Params.available" true }}
+        {{ $available := where $availableAll "Params.reserved" "!=" true }}
+        {{ $reserved := where $availableAll "Params.reserved" true }}
         {{ $sold := where $pages "Params.available" false }}
 
         {{ $gradeSS := where $available "Params.grade" "SS" }}
@@ -71,6 +73,23 @@
         <div class="cba-bunnies-empty">
             <p>No bunnies currently available.</p>
             <a href="/join-waiting-list/" class="cba-btn-primary" style="margin-top: 1rem; display: inline-block">Join Our Waiting List</a>
+        </div>
+        {{ end }}
+
+        {{ if $reserved }}
+        {{ $reservedSS := where $reserved "Params.grade" "SS" }}
+        {{ $reservedS  := where $reserved "Params.grade" "S" }}
+        {{ $reservedP  := where $reserved "Params.grade" "P" }}
+        {{ $reservedA  := where $reserved "Params.grade" "A" }}
+        <div class="cba-grade-section cba-grade-section--reserved">
+            <div class="cba-grade-header">
+                <h2 class="cba-grade-header-title">Reserved</h2>
+                <p class="cba-grade-header-sub">These bunnies have been reserved and are pending adoption.</p>
+            </div>
+            {{ range $reservedSS }}{{ partial "bunny-list-item.html" . }}{{ end }}
+            {{ range $reservedS }}{{ partial "bunny-list-item.html" . }}{{ end }}
+            {{ range $reservedP }}{{ partial "bunny-list-item.html" . }}{{ end }}
+            {{ range $reservedA }}{{ partial "bunny-list-item.html" . }}{{ end }}
         </div>
         {{ end }}
 

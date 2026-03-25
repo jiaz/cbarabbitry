@@ -2018,3 +2018,51 @@ p, li {
     padding: 1.25rem;
   }
 }
+
+/* Reserved state */
+.cba-bunny-row.reserved {
+  background: #fff8e1;
+  border-color: #ffe082;
+  opacity: 0.9;
+}
+.cba-bunny-row-btn--reserved {
+  cursor: default;
+  color: #7a5300;
+  border-color: #ffb300;
+  background: #fff3cd;
+  opacity: 0.85;
+}
+.cba-bunny-row-btn--reserved:hover { background: #fff3cd; color: #7a5300; }
+.cba-grade-section--reserved .cba-grade-header-title { color: #8a6000; font-size: 1.3rem; }
+.cba-bunny-reserved-notice {
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+  color: #7a5300;
+  font-size: 0.9rem;
+  font-family: 'DM Sans', sans-serif;
+}
+.cba-reserved-badge {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  background: #ffb300;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 0.15em 0.5em;
+  z-index: 1;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.cba-bunny-reserved-by {
+  font-size: 0.85rem;
+  color: #b45309;
+  margin: 0.15rem 0;
+  font-weight: 500;
+}

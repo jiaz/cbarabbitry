@@ -61,7 +61,24 @@
                     {{ end }}
                 </table>
 
-                {{ if .Params.available | default true }}
+                {{ $available := .Params.available | default true }}
+                {{ $reserved := .Params.reserved | default false }}
+                {{ if not $available }}
+                <div class="cba-bunny-sold-notice">
+                    This bunny has found their forever home!
+                    <a href="/join-waiting-list/">Join our waiting list</a> for
+                    future litters.
+                </div>
+                {{ else if $reserved }}
+                <div class="cba-bunny-reserved-notice">
+                    This bunny has been reserved and is pending adoption.
+                </div>
+                <div class="cba-bunny-single-ctas">
+                    <a href="/join-waiting-list/" class="cba-btn-primary"
+                        >Join Waiting List</a
+                    >
+                </div>
+                {{ else }}
                 <div class="cba-bunny-available-notice">
                     ✓ Available for adoption
                 </div>
@@ -69,12 +86,6 @@
                     <a href="/request-adoption/?bunny={{ .Title | urlize }}" class="cba-btn-primary"
                         >Request Adoption</a
                     >
-                </div>
-                {{ else }}
-                <div class="cba-bunny-sold-notice">
-                    This bunny has found their forever home!
-                    <a href="/join-waiting-list/">Join our waiting list</a> for
-                    future litters.
                 </div>
                 {{ end }}
             </div>
