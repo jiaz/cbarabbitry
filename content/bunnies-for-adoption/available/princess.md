@@ -4,6 +4,7 @@ breed: "Netherland Dwarf"
 grade: "S"
 color: "Frosty"
 sex: "Girl"
+price: "Please Inquiry"
 dob: "2026-02-01"
 available: true
 health: "Healthy"
