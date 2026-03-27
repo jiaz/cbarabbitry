@@ -10,7 +10,7 @@ available: true
 health: "Healthy"
 featured_image: "/images/bunnies/muffin3.jpg"
 video: "https://www.tiktok.com/t/ZP8bgRD2u/"
-description: "Muffin is a gorgeous Orange Netherland Dwarf girl available for adoption in Seattle, WA. Grade P (Premium quality) with excellent conformation and a wonderfully calm temperament."
+description: "Muffin is a gorgeous Orange Netherland Dwarf girl available for adoption in US. Grade P (Premium quality) with excellent conformation and a wonderfully calm temperament."
 ---
 
 Meet Muffin! Her Father is an ARBA show quality Netherland dwarf.
