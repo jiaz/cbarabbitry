@@ -17,9 +17,6 @@
       <p class="cba-bunny-row-meta">
         {{ with $bunny.Params.sex }}{{ . }}{{ with $bunny.Params.color }} &nbsp;·&nbsp; {{ . }}{{ end }}{{ else }}{{ with $bunny.Params.color }}{{ . }}{{ end }}{{ end }}
       </p>
-      {{ if and $available (not $reserved) }}
-      <p class="cba-bunny-row-price">${{ $bunny.Params.price }}</p>
-      {{ end }}
       <div class="cba-bunny-row-actions">
       {{ if not $available }}
         <button class="cba-bunny-row-btn cba-bunny-row-btn--sold" disabled>Sold</button>
