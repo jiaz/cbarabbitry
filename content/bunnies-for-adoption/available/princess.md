@@ -8,7 +8,7 @@ dob: "2026-02-01"
 available: true
 health: "Healthy"
 featured_image: "/images/about/banner_frosty_snow.jpg"
-video: "https://www.tiktok.com/t/ZP8bgRD2u/"
+video: "https://www.tiktok.com/@cba.rabbitry/video/7616912878582517023?_r=1&_t=ZP-951uRnij3TK"
 description: "Princess is a mini size Netherland dwarf, she could weigh less than 2lb when matured. Princess has a very beautiful, large black eye, short and furry ears, and a wonderfully calm temperament. She is Grade S, please inquire about pricing by contacting us directly."
 ---
 
