@@ -9,7 +9,11 @@ available: true
 health: "Healthy"
 featured_image: "/images/about/banner_frosty_snow.jpg"
 video: "https://www.tiktok.com/t/ZP8bgRD2u/"
-description: "Princess has a very beautiful, large black eye, short and furry ears, and a wonderfully calm temperament. She is Grade S, so please inquire about pricing by contacting us directly."
+description: "Princess is a mini size Netherland dwarf, she could weigh less than 2lb when matured. Princess has a very beautiful, large black eye, short and furry ears, and a wonderfully calm temperament. She is Grade S, please inquire about pricing by contacting us directly."
 ---
 
-Princess is our recent gorgeous litter, she has a very beautiful, black eye, very short ears and they are furry, Princess also have a wonderful temperament, being handled daily, socialized. She is Grade S, so please inquire about pricing by contacting us directly.
+Meet Princess, one of our newest and most gorgeous additions. She has a striking appearance, featuring a beautiful black eye, very short ears, and a soft, fluffy coat. Princess also has a wonderful temperament—she is handled daily and well-socialized, making her a sweet and friendly companion.
+
+Princess is Grade S quality. For pricing details, please contact us directly.
+
+Please note: Princess is a mini-sized Netherland Dwarf, meaning she is smaller than the average dwarf rabbit. She is expected to weigh under 2 lbs when fully grown. Due to her tiny size, she may require extra care compared to a standard Netherland Dwarf.

@@ -2,11 +2,10 @@
 title: "Muffin"
 breed: "Netherland Dwarf"
 grade: "P"
-price: 399
 color: "Orange"
 sex: "Girl"
 dob: "2026-02-08"
-available: true
+available: false
 health: "Healthy"
 featured_image: "/images/bunnies/muffin3.jpg"
 video: "https://www.tiktok.com/t/ZP8bgRD2u/"
