@@ -76,3 +76,19 @@ Reusable layout components are in `layouts/partials/`: `site-header.html`, `site
 ### Theme
 
 Ananke is included as a Git submodule at `themes/ananke/`. Always use `--recurse-submodules` when cloning. The `hugo server` command requires the submodule to be initialized.
+
+## Git Workflow
+
+This is a personal website — skip PRs entirely. Push changes directly to `master`:
+
+```bash
+git push origin master
+```
+
+If in a worktree where `master` is checked out in the main repo, push via:
+
+```bash
+git push origin <current-branch>:master
+```
+
+Resolve any conflicts before pushing.
