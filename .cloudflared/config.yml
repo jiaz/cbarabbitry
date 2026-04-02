@@ -1,5 +1,4 @@
-tunnel: ddb9ef18-b4dd-4fe2-a413-491dad1c3e27
-credentials-file: ~/.cloudflared/ddb9ef18-b4dd-4fe2-a413-491dad1c3e27.json
+tunnel: 499267fe-f58c-41c4-9967-291b724ec055
 
 ingress:
   - hostname: dev.cbarabbitry.com
