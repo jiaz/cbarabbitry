@@ -24,8 +24,12 @@ if [ -z "$TUNNEL_ID" ]; then
 fi
 echo "Using tunnel: $TUNNEL_ID"
 
+# Update Cloudflare DNS to point dev.cbarabbitry.com to this machine's tunnel
+echo "Updating DNS: dev.cbarabbitry.com -> $TUNNEL_ID ..."
+cloudflared tunnel route dns --overwrite-dns "$TUNNEL_ID" dev.cbarabbitry.com
+
 # Build a temp config with the discovered tunnel ID
-TMP_CONFIG=$(mktemp /tmp/cloudflared-config-XXXXXX.yml)
+TMP_CONFIG=$(mktemp /tmp/cloudflared-config.XXXXXX.yml)
 trap 'rm -f "$TMP_CONFIG"' EXIT
 { echo "tunnel: $TUNNEL_ID"; cat "$SCRIPT_DIR/.cloudflared/config.yml"; } > "$TMP_CONFIG"
 
