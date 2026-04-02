@@ -78,11 +78,50 @@ Cloudflare Pages picks it up and publishes within ~60 seconds.
 
 ## Running Locally (Preview Before Publishing)
 
+### Quick start
+
 ```bash
-hugo server
+bash dev.sh
 ```
 
-Then open `http://localhost:1313` in your browser. Press Ctrl+C to stop.
+This starts Hugo and opens a Cloudflare Tunnel so the site is live at **https://dev.cbarabbitry.com** — useful for testing on mobile or sharing a preview link. Press Ctrl+C to stop.
+
+> If you just want a local-only preview without the tunnel, run `hugo server` and open `http://localhost:1313`.
+
+---
+
+### New machine setup
+
+Do this once on any new machine before running `dev.sh`.
+
+**1. Install prerequisites**
+
+| Tool | Install |
+|------|---------|
+| [Hugo](https://gohugo.io/installation/) (extended) | `winget install Hugo.Hugo.Extended` |
+| [Git](https://git-scm.com/) | `winget install Git.Git` |
+| [cloudflared](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/) | `winget install Cloudflare.cloudflared` |
+
+**2. Clone the repo and initialise the theme**
+
+```bash
+git clone https://github.com/jiaz/cbarabbitry.git
+cd cbarabbitry
+git submodule update --init --recursive
+```
+
+**3. Add the Cloudflare Tunnel credentials**
+
+The tunnel config in `.cloudflared/config.yml` references a credentials file that is **not stored in git** (it contains a secret key). You need to copy it from an existing machine or re-authenticate:
+
+- **Copy from existing machine:** grab `~/.cloudflared/ddb9ef18-b4dd-4fe2-a413-491dad1c3e27.json` and place it at the same path on the new machine.
+- **Or re-authenticate:** run `cloudflared tunnel login` then `cloudflared tunnel token ddb9ef18-b4dd-4fe2-a413-491dad1c3e27` and follow the prompts.
+
+**4. Run**
+
+```bash
+bash dev.sh
+```
 
 ---
 

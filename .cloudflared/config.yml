@@ -1,0 +1,7 @@
+tunnel: ddb9ef18-b4dd-4fe2-a413-491dad1c3e27
+credentials-file: ~/.cloudflared/ddb9ef18-b4dd-4fe2-a413-491dad1c3e27.json
+
+ingress:
+  - hostname: dev.cbarabbitry.com
+    service: http://localhost:1313
+  - service: http_status:404
