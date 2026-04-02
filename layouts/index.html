@@ -53,7 +53,8 @@
     <p class="cba-section-subheading">{{ $p.bunnies_subheading }}</p>
     <div class="cba-mini-grid">
       {{ range first 3 $bunnies }}
-      <a href="{{ .RelPermalink }}" class="cba-mini-card">
+      <a href="{{ .RelPermalink }}" class="cba-mini-card{{ if .Params.reserved }} cba-mini-card--reserved{{ end }}">
+        {{ if .Params.reserved }}<span class="cba-reserved-badge">Reserved</span>{{ end }}
         {{ with .Params.grade }}<span class="grade-badge grade-{{ . | lower }}">Grade {{ . }}</span>{{ end }}
         {{ with .Params.featured_image }}
         <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">

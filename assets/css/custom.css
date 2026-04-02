@@ -555,6 +555,8 @@ p, li {
   transform: translateY(-3px);
   box-shadow: 0 8px 24px rgba(44, 26, 14, 0.12);
 }
+.cba-mini-card--reserved { opacity: 0.72; }
+.cba-mini-card--reserved img { filter: grayscale(30%); }
 .cba-mini-card img, .cba-mini-card-placeholder {
   width: 100%;
   aspect-ratio: 1 / 1;
