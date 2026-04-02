@@ -5,7 +5,7 @@ grade: "P"
 color: "Frosty"
 sex: "Girl"
 dob: "2026-02-01"
-available: false
+available: true
 reserved: true
 reserved_by: "Lauren"
 health: "Healthy"
