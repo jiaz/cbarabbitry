@@ -4,7 +4,7 @@ breed: "Netherland Dwarf"
 grade: "P"
 color: "Broken Fawn"
 dob: "2026-03-07"
-available: true
+available: false
 reserved: true
 reserved_by: "Sandra"
 new_home: "WA State"

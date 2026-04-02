@@ -5,7 +5,9 @@ grade: "P"
 color: "Frosty"
 sex: "Girl"
 dob: "2026-02-01"
-available: true
+available: false
+reserved: true
+reserved_by: "Lauren"
 health: "Healthy"
 featured_image: "/images/about/banner_frosty_snow.jpg"
 video: "https://www.tiktok.com/@cba.rabbitry/video/7616912878582517023?_r=1&_t=ZP-951uRnij3TK"
