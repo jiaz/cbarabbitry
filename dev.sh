@@ -11,9 +11,9 @@ if ! command -v cloudflared &>/dev/null; then
 fi
 
 # Kill any existing Hugo server
-if tasklist 2>/dev/null | grep -i "hugo.exe" > /dev/null 2>&1; then
+if pgrep -x hugo > /dev/null 2>&1; then
   echo "Killing existing Hugo server..."
-  taskkill //F //IM hugo.exe > /dev/null 2>&1 || true
+  pkill -x hugo > /dev/null 2>&1 || true
   sleep 1
 fi
 
