@@ -10,18 +10,24 @@ if ! command -v cloudflared &>/dev/null; then
   exit 1
 fi
 
-# Validate tunnel credentials exist
-TUNNEL_ID=$(grep '^tunnel:' "$SCRIPT_DIR/.cloudflared/config.yml" | awk '{print $2}')
-CREDS_FILE="$HOME/.cloudflared/$TUNNEL_ID.json"
-if [ -z "$TUNNEL_ID" ]; then
-  echo "ERROR: Could not read tunnel ID from .cloudflared/config.yml"
-  exit 1
-fi
-if [ ! -f "$CREDS_FILE" ]; then
-  echo "ERROR: Tunnel credentials not found: $CREDS_FILE"
+# Auto-discover tunnel credentials from ~/.cloudflared/*.json
+CREDS_FILE=$(ls "$HOME/.cloudflared/"*.json 2>/dev/null | head -1)
+if [ -z "$CREDS_FILE" ]; then
+  echo "ERROR: No tunnel credentials found in ~/.cloudflared/"
   echo "Run: cloudflared tunnel login"
   exit 1
 fi
+TUNNEL_ID=$(python3 -c "import json,sys; print(json.load(open('$CREDS_FILE'))['TunnelID'])" 2>/dev/null)
+if [ -z "$TUNNEL_ID" ]; then
+  echo "ERROR: Could not read TunnelID from $CREDS_FILE"
+  exit 1
+fi
+echo "Using tunnel: $TUNNEL_ID"
+
+# Build a temp config with the discovered tunnel ID
+TMP_CONFIG=$(mktemp /tmp/cloudflared-config-XXXXXX.yml)
+trap 'rm -f "$TMP_CONFIG"' EXIT
+{ echo "tunnel: $TUNNEL_ID"; cat "$SCRIPT_DIR/.cloudflared/config.yml"; } > "$TMP_CONFIG"
 
 # Kill any existing Hugo server
 if pgrep -x hugo > /dev/null 2>&1; then
@@ -40,7 +46,7 @@ sleep 1
 
 # Start Cloudflare Tunnel
 echo "Starting Cloudflare Tunnel -> dev.cbarabbitry.com ..."
-cloudflared tunnel --config "$SCRIPT_DIR/.cloudflared/config.yml" run
+cloudflared tunnel --config "$TMP_CONFIG" run
 
 # If cloudflared exits, kill Hugo too
 kill $HUGO_PID 2>/dev/null

@@ -1,4 +1,4 @@
-tunnel: 499267fe-f58c-41c4-9967-291b724ec055
+# tunnel ID is auto-discovered from ~/.cloudflared/*.json by dev.sh
 
 ingress:
   - hostname: dev.cbarabbitry.com
