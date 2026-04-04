@@ -9,13 +9,23 @@
     <p class="cba-news-single-date">{{ .Date.Format "January 2, 2006 · 3:04 PM" }}</p>
     <h1 class="cba-news-single-title">{{ .Title }}</h1>
 
-    {{ with .Params.photo }}
-    <div class="cba-news-single-photo-wrap">
-      <img src="{{ . }}" alt="{{ $.Title }}" class="cba-news-single-photo" loading="lazy">
+    <div class="cba-news-single-content">{{ .Content }}</div>
+
+    {{ with .Params.photos }}
+    <div class="cba-news-photo-stack">
+      {{ range . }}
+      <div class="cba-news-photo-stack-item">
+        <img src="{{ .src }}" alt="{{ .alt }}" loading="lazy">
+      </div>
+      {{ end }}
     </div>
     {{ end }}
 
-    <div class="cba-news-single-content">{{ .Content }}</div>
+    {{ with .Params.photo }}
+    <div class="cba-news-single-photo-wrap cba-news-summary-photo">
+      <img src="{{ . }}" alt="{{ $.Title }}" class="cba-news-single-photo" loading="lazy">
+    </div>
+    {{ end }}
   </div>
 </div>
 {{ end }}

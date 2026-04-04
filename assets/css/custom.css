@@ -2008,6 +2008,28 @@ p, li {
   margin: 2rem 0 0.75rem;
 }
 
+/* News photo stack */
+.cba-news-photo-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.cba-news-photo-stack-item {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cba-news-photo-stack-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Summary photo (ribbon) at end of post */
+.cba-news-summary-photo {
+  margin-top: 2.5rem;
+}
+
 /* News responsive */
 @media (max-width: 680px) {
   .cba-news-card {
