@@ -2,7 +2,7 @@
 title: "Cupcake"
 breed: "Netherland Dwarf"
 grade: "P"
-Price: "$399+(Please inquery us)"
+Price: "399+(Please inquery us)"
 color: "Creamy Orange"
 sex: "Girl"
 dob: "2026-02-08"
