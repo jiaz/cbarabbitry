@@ -16,4 +16,4 @@ description: "Princess is a mini size Netherland dwarf, she could weigh less tha
 
 Meet Princess, one of our newest and most gorgeous additions. She has a striking appearance, featuring a beautiful black eye, very short ears, and a soft, fluffy coat. Princess also has a wonderful temperament—she is handled daily and well-socialized, making her a sweet and friendly companion.
 
-Please note: Princess is a mini-sized Netherland Dwarf, meaning she is smaller than the average dwarf rabbit. She is expected to weigh under 2 lbs when fully grown. Due to her tiny size, she may require extra care compared to a standard Netherland Dwarf. For pricing details, please contact us directly for mini size dwarf bunny specialty.
+Please note: Princess is a mini-sized Netherland Dwarf, meaning she is smaller than the average dwarf rabbit. She is expected to weigh under 2 lbs when fully grown. Due to her tiny size, she may require extra care compared to a standard Netherland Dwarf. For pricing, please inquiry us directly as she is mini size dwarf bunny specialty.
