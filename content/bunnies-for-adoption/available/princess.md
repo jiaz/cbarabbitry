@@ -1,7 +1,7 @@
 ---
 title: "Princess"
 breed: "Netherland Dwarf"
-grade: "P"
+grade: "S"
 color: "Frosty"
 sex: "Girl"
 dob: "2026-02-01"
