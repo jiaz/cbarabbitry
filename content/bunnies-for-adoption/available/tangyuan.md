@@ -10,7 +10,7 @@ reserved: true
 reserved_by: "Songchi"
 new_home: "NYC"
 health: "Healthy"
-featured_image: "/images/about/banner_frosty_snow.jpg"
+featured_image: "/images/about/tangyuan.jpg"
 video: "https://www.tiktok.com/@cba.rabbitry/video/7616912878582517023?_r=1&_t=ZP-951uRnij3TK"
 description: "Princess is a mini size Netherland dwarf, she could weigh less than 2lb when matured. Princess has a very beautiful, large black eye, short and furry ears, and a wonderfully calm temperament."
 ---
