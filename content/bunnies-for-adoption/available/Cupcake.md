@@ -2,7 +2,7 @@
 title: "Cupcake"
 breed: "Netherland Dwarf"
 grade: "P"
-Price: "Grade P($349+)"
+Price: "449"
 color: "Creamy Orange"
 sex: "Girl"
 dob: "2026-02-08"
@@ -20,4 +20,3 @@ Her fur is Creamy Orange. Creamy Orange is a very beautiful fur color, which is 
 She has a very short and round shaped ears.
 She has been handled daily by our rabbitry staff since birth and she is fully trained to be socialized.
 
-Cupcake Adoption price: She is Grade P, starting from $349, Price veries based on quality and color, inquiry us for price details.
