@@ -58,9 +58,9 @@ nd_items:
     desc: "Netherland Dwarfs can be litter-box trained and raised cage-free at home — just like a dog or cat."
 ---
 
-While we have many years of rabbit breeding experience, the Rabbitry officially started since Aug. 2025.
+While we have more than 10 years of rabbit breeding experience, the Rabbitry officially started since Aug. 2025.
 
-CBA Rabbitry focus on breeding high quality Netherland dwarf rabbit in the US. Our rabbits comes from signature quality Netherland dwarf breeders blood lines, and we have been improve the breedings over years to ensure every bunny we breed is **adorable, has a sweet-personality, being trained for socialize, friendly to kids and healthy**.
+CBA Rabbitry focus on breeding high quality Netherland dwarf rabbit in the US. Our rabbits comes from signature show-line Netherland dwarf blood lines, our rabbit has continues wining all kinds of rabbit shows. Moreover, we have been improve the breedings over years to ensure every bunny we breed is **adorable, has a sweet-personality, being trained for socialize, friendly to kids and healthy**.
 
 We are passionate about finding loving homes for rabbits in need and supporting family to have them well-cared for.
 
