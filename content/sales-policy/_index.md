@@ -7,13 +7,18 @@ description: "CBA Rabbitry's adoption policies, health guarantee, and breeding r
 
 ### Non Refundable
 
-To reserve a bunny, full payment including shipping is due. No refunds will be given unless an ailment/death occurs while under our care. Be sure you are ready and committed to welcome your bunny into your family! You cannot switch reservations to a different bunny once you reserve.
+To reserve a bunny, full payment including shipping is due.  No refunds will be given unless an ailment/death occurs while under our care.
+If transportation needs to be arranged slightly later, a 50% deposit is required to reserve the rabbit, with the remaining 50% due once transportation is arranged.
+
+If transportation is not arranged within two (2) weeks of the scheduled pickup date, a boarding fee of $5 per day will be charged starting from the pickup date unless there is special circumstances has been discussed.
+
+All payments are non-refundable. Be sure you are ready and committed to welcome your bunny into your family! You cannot switch reservations to a different bunny once you reserve.
 
 ### Health Guarantee
 
 Our animals are healthy at the time of sale. Once they leave our facility, we are not held liable for any physical harm, illness, accidents, or genetic issues of any kind.
 
-If your rabbit passes away during a transport, which has never happened and most likely never will, we will send a full refund.
+We are not liable for any loss of your rabbit during transport unless it is proven that the cause was due to our handling or responsibility. In such cases, we will provide a replacement rabbit at equal or similar value.
 
 (Optional) We have an addition health guarantee policy that can only be purchased during the time your reservation is made. Please read in depth to fully understand what this covers. Our health guarantee is $50. This remains valid for a duration of 180 days from the birth date of the rabbit. If your rabbit passes away from a **genetic issue ONLY** and is proven to be a genetic issue by a licensed **exotic** veterinarian (they must be an exotic vet), we will issue a refund for the purchase price of the rabbit. The exotic vet will need to email a letter with a header from their vet office stating the genetic reason of death. Liver torsion and GI stasis are NOT covered.
 
@@ -23,7 +28,7 @@ For the lifelong health and proper development of our bunnies, we only transport
 
 ### Breeding Restriction Policy
 
-To protect animal welfare, pedigree integrity, and the reputation of our rabbitry, all rabbits purchased from this rabbitry are sold strictly as companion pets only. **Breeding is strictly prohibited** without the prior written authorization from rabbitry. Any violation of this policy shall constitute a material breach of contract and rabbitry will demand the payment of liquidated damages in the amount of **USD $3000**, which both parties acknowledge as a reasonable estimate of damages and not a penalty.
+To protect animal welfare, pedigree integrity, and the reputation of our rabbitry, all rabbits purchased from this rabbitry are sold strictly as companion pets only. **Breeding is strictly prohibited** without the prior written authorization from rabbitry. Any violation of this policy shall constitute a material breach of contract and rabbitry will demand the payment of liquidated damages in the amount of **USD $3000**, which both parties acknowledge as a reasonable estimate of damages and not a penalty. If you are interested in breed our rabbit please purchase and obtain the authorization from us.
 
 ### Payment
 
