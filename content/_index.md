@@ -30,7 +30,7 @@ quote_text: "We don't just sell you a bunny — we're here for the life of your 
 quote_body: "We provide life long support to the family that adopt bunnies from our Rabbitry. Please feel free to message us for any bunny care related question! We also provide every CBA bunny owner a pamphlet of Bunny Care include most of the things you need!\n\nIf you are in local Seattle, we additionally provide 14 days free boarding."
 
 gallery_heading: "Our Bunnies"
-gallery_subheading: "Netherland Dwarf, the World Smallest Rabbit Breed"
+gallery_subheading: "We specialize in Netherland Dwarf bunnies"
 gallery_blurb:
   - "The Netherland Dwarf is a small, iconic rabbit breed loved for its charming looks and compact size. Known for its **the world most tiny rabbit breed**, they average weigh rounded 2-2.5lb when adult, sizes of just 2 hands, round body, short upright ears, and large expressive eyes, this breed has a sweet, teddy-like appearance that makes it instantly recognizable."
   - "Despite its petite frame, the Netherland Dwarf has a bold, curious personality and often forms strong bonds with its humans. With its combination of beautiful type, soft coat, and lively, friendly nature, the Netherland Dwarf is cherished both as a show rabbit and as an adorable companion pet."
@@ -56,6 +56,13 @@ nd_items:
     desc: "With intelligence comparable to a 3-year-old child, they learn their names, respond when called, and can be trained to follow simple instructions."
   - title: "Free-Roam & Potty Trained"
     desc: "Netherland Dwarfs can be litter-box trained and raised cage-free at home — just like a dog or cat."
+
+winners_heading: "Our Award-Winning Rabbits"
+winners_subheading: "Proven show-quality bloodlines from CBA Rabbitry"
+winners_image: "/images/news/erba-ribbons.jpg"
+winners_body: "CBA Rabbitry had won — Best of Shaded Group, Best of Opposite Shaded Group, Best of AOV Group, Best of REW Variety, and Best of Orange Variety. Our winning bunnies were judged on conformation, type, and condition against competitors from across the region. These results reflect years of careful, selective breeding — prioritizing both show-quality structure and wonderful temperament."
+winners_cta_label: "Read the Full Story"
+winners_cta_url: "/news/2026-04-04-erba-show-winners/"
 ---
 
 While we have more than 10 years of rabbit breeding experience, the Rabbitry officially started since Aug. 2025.

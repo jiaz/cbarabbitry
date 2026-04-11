@@ -150,6 +150,22 @@
   </div>
 </section>
 
+<!-- Award-Winning Rabbits -->
+<section class="cba-gallery-strip cba-winners-strip">
+  <h2 class="cba-gallery-title cba-gallery-title--mobile">{{ $p.winners_heading }}</h2>
+  <div class="cba-gallery-layout">
+    <div>
+      <img class="cba-about-photo" src="{{ $p.winners_image }}" alt="ERBA show ribbons" loading="lazy">
+    </div>
+    <div class="cba-gallery-breed-blurb">
+      <h2 class="cba-gallery-title cba-gallery-title--desktop">{{ $p.winners_heading }}</h2>
+      <h3>{{ $p.winners_subheading }}</h3>
+      <p>{{ $p.winners_body | markdownify }}</p>
+      {{ with $p.winners_cta_url }}<a href="{{ . }}" class="cba-btn-primary">{{ $p.winners_cta_label }}</a>{{ end }}
+    </div>
+  </div>
+</section>
+
 <!-- Quote Band -->
 <section class="cba-quote-band">
   <div class="cba-quote-band-inner">
