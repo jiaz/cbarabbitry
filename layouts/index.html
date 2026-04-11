@@ -142,14 +142,10 @@
     </div>
     <div class="cba-gallery-breed-blurb">
       <h2 class="cba-gallery-title cba-gallery-title--desktop">{{ $p.gallery_heading }}</h2>
-      <h3>Netherland Dwarf, the World Smallest Rabbit Breed</h3>
-      <p>The Netherland Dwarf is a small, iconic rabbit breed loved for its charming looks and compact size. Known for
-        its **the world most tiny rabbit breed**, they average weigh rounded 2-2.5lb when adult, sizes of just 2 hands,
-        round body, short upright ears, and large expressive eyes, this breed has a sweet, teddy-like appearance that
-        makes it instantly recognizable.</p>
-      <p>Despite its petite frame, the Netherland Dwarf has a bold, curious personality and often forms strong bonds
-        with its humans. With its combination of beautiful type, soft coat, and lively, friendly nature, the Netherland
-        Dwarf is cherished both as a show rabbit and as an adorable companion pet.</p>
+      <h3>{{ $p.gallery_subheading }}</h3>
+      {{ range $p.gallery_blurb }}
+      <p>{{ . | markdownify }}</p>
+      {{ end }}
     </div>
   </div>
 </section>
