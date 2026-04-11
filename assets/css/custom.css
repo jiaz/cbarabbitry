@@ -473,6 +473,26 @@ p, li {
   line-height: 1.55;
 }
 
+/* About Netherland Dwarf strip */
+.cba-nd-strip {
+  background: var(--cba-off-white);
+}
+.cba-nd-strip .cba-section-heading {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--cba-dark);
+  margin: 0 0 0.15rem;
+}
+.cba-nd-strip .cba-section-subheading {
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: var(--cba-dark-mid);
+  margin: 0 0 2rem;
+}
+
 /* About blurb */
 .cba-about-blurb {
   background: var(--cba-off-white);

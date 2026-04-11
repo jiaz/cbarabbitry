@@ -42,6 +42,16 @@ gallery_images:
 
 social_heading: "Follow Our Journey"
 social_desc: "See our daily bunny life — new litters, care tips, and behind-the-scenes moments"
+
+nd_heading: "About Netherland Dwarf"
+nd_subheading: "The Perfect House Companion"
+nd_items:
+  - title: "World's Smallest Pet Rabbit"
+    desc: "Averaging just 2–2.5 lbs as adults and fitting in two hands, the Netherland Dwarf is the tiniest rabbit breed in the world — perfect for apartments and small spaces."
+  - title: "Surprisingly Smart"
+    desc: "With intelligence comparable to a 3-year-old child, they learn their names, respond when called, and can be trained to follow simple instructions."
+  - title: "Free-Roam & Potty Trained"
+    desc: "Netherland Dwarfs can be litter-box trained and raised cage-free at home — just like a dog or cat."
 ---
 
 While we have many years of rabbit breeding experience, the Rabbitry officially started since Aug. 2025.

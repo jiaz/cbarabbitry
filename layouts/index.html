@@ -119,11 +119,17 @@
 </section>
 {{ end }}
 
-<!-- Quote Band -->
-<section class="cba-quote-band">
-  <div class="cba-quote-band-inner">
-    <p class="cba-quote-text">"{{ $p.quote_text }}"</p>
-    {{ with $p.quote_body }}<div class="cba-quote-body">{{ . | markdownify }}</div>{{ end }}
+<!-- About Netherland Dwarf -->
+<section class="cba-trust-strip cba-nd-strip">
+  <h2 class="cba-section-heading">{{ $p.nd_heading }}</h2>
+  <p class="cba-section-subheading">{{ $p.nd_subheading }}</p>
+  <div class="cba-trust-strip-inner">
+    {{ range $p.nd_items }}
+    <div class="cba-trust-item">
+      <p class="cba-trust-item-title">{{ .title }}</p>
+      <p class="cba-trust-item-desc">{{ .desc }}</p>
+    </div>
+    {{ end }}
   </div>
 </section>
 
@@ -145,6 +151,14 @@
         with its humans. With its combination of beautiful type, soft coat, and lively, friendly nature, the Netherland
         Dwarf is cherished both as a show rabbit and as an adorable companion pet.</p>
     </div>
+  </div>
+</section>
+
+<!-- Quote Band -->
+<section class="cba-quote-band">
+  <div class="cba-quote-band-inner">
+    <p class="cba-quote-text">"{{ $p.quote_text }}"</p>
+    {{ with $p.quote_body }}<div class="cba-quote-body">{{ . | markdownify }}</div>{{ end }}
   </div>
 </section>
 
