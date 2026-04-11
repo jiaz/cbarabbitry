@@ -1,7 +1,7 @@
 ---
 title: "5 First Place Wins at the Washington State ERBA Show!"
 date: 2026-04-04T10:00:00-07:00
-photo: "/images/news/erba-ribbons.jpg"
+photo: "/images/news/erba-ribbons5.jpg"
 photos:
   - src: "/images/news/erba-winner-1.jpg"
     alt: "First place Netherland Dwarf winner at ERBA show"

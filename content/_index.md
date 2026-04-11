@@ -59,9 +59,9 @@ nd_items:
 
 winners_heading: "Our Award-Winning Rabbits"
 winners_subheading: "Proven show-quality bloodlines from CBA Rabbitry"
-winners_image: "/images/news/erba-ribbons.jpg"
+winners_image: "/images/news/erba-ribbons5.jpg"
 winners_images:
-  - src: "/images/news/erba-ribbons.jpg"
+  - src: "/images/news/erba-ribbons5.jpg"
     alt: "ERBA show ribbons"
   - src: "/images/news/erba-winner-1.jpg"
     alt: "First place Netherland Dwarf winner at ERBA show"

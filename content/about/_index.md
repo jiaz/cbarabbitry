@@ -2,7 +2,7 @@
 title: "About CBA Rabbitry"
 description: "Learn about our passion for Netherland dwarf Bunny and Rabbit."
 featured_image: "/images/hero-bunnies.jpg"
-_build:
+build:
   render: "never"
   list: "never"
 ---
