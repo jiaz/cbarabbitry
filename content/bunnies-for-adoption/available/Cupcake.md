@@ -6,7 +6,7 @@ Price: "449"
 color: "Creamy Orange"
 sex: "Girl"
 dob: "2026-02-08"
-available: true
+available: false
 health: "Healthy"
 featured_image: "/images/bunnies/cupcake.jpeg"
 video: "https://www.tiktok.com/t/ZP8b33dEM/"
