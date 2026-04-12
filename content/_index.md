@@ -39,7 +39,7 @@ gallery_images:
     alt: "Toffee"
   - src: "/images/about/champ_sq.jpg"
     alt: "Champ"
-  - src: "/images/about/hz_side.jpg"
+  - src: "/images/about/hz_side2.jpg"
     alt: "Hazel"
   - src: "/images/about/banner_frosty_snow.jpg"
     alt: "Princess"
