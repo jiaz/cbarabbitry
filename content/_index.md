@@ -32,8 +32,8 @@ quote_body: "We provide life long support to the family that adopt bunnies from 
 gallery_heading: "Our Bunnies"
 gallery_subheading: "We specialize in Netherland Dwarf bunnies"
 gallery_blurb:
-  - "The Netherland Dwarf is a small, iconic rabbit breed loved for its charming looks and compact size. Known for its round body, short upright ears, and large expressive eyes, this breed has a sweet, teddy-like appearance that makes it instantly recognizable."
-  - "Despite its petite frame, the Netherland Dwarf has a bold, curious personality and often forms strong bonds with its humans. With its combination of beautiful type, soft coat, and lively, friendly nature, the Netherland Dwarf is cherished both as a show rabbit and as an adorable companion pet."
+  - "Our rabbitry show-line Netherland Dwarf is a small, iconic rabbit breed loved for its charming looks and compact size. Known for its round body, short upright ears, and large expressive eyes, this breed has a sweet, teddy-like appearance that makes it instantly recognizable."
+  - "Despite its petite frame, our rabbitry Netherland Dwarf has a bold, curious personality and often forms strong bonds with its humans. With its combination of beautiful type, soft coat, and lively, friendly nature, which cherished both as a show rabbit and as an adorable companion pet."
 gallery_images:
   - src: "/images/about/toffee2.jpg"
     alt: "Toffee"
