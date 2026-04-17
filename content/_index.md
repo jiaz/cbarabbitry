@@ -83,7 +83,7 @@ winners_cta_label: "Read the Full Story"
 winners_cta_url: "/news/2026-04-04-erba-show-winners/"
 ---
 
-While we have more than 10 years of rabbit breeding experience, the Rabbitry officially started since Aug. 2025.
+We have more than 10 years of rabbit breeding experience, we are ARBA/ANDRC registered Netherland Dwarf Rabbit breeder. The Rabbitry officially started since Aug. 2025.
 
 CBA Rabbitry focus on breeding high quality Netherland dwarf rabbit in the US. Our rabbits comes from signature show-line Netherland dwarf blood lines, our rabbit has continues wining all kinds of rabbit shows. Moreover, we have been improve the breedings over years to ensure every bunny we breed is **adorable, has a sweet-personality, being trained for socialize, friendly to kids and healthy**.
 
