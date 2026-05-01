@@ -3,7 +3,7 @@ title: "CBA Rabbitry"
 description: "Netherland Dwarf bunnies raised with love in Seattle, WA. Socialization-trained, health-guaranteed, lifetime support."
 featured_image: "/images/hero-bunnies.jpg"
 
-hero_subtitle: "Netherland Dwarf bunnies, raised with love in Seattle, WA. Transport to all US States."
+hero_subtitle: "Netherland Dwarf bunnies, raised with love in Seattle, WA\n\nTransport to all US States."
 hero_cta_primary_label: "Adopt Our Bunnies"
 hero_cta_primary_url: "/bunnies-for-adoption/"
 hero_cta_secondary_label: "Join Waiting List"
