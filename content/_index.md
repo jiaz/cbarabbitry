@@ -27,7 +27,7 @@ bunnies_heading: "Available Now"
 bunnies_subheading: "Ready to find their forever home"
 
 quote_text: "We don't just sell you a bunny — we're here for the life of your pet."
-quote_body: "We provide life long support to the family that adopt bunnies from our Rabbitry. Please feel free to message us for any bunny care related question! We also provide every CBA bunny owner a pamphlet of Bunny Care include most of the things you need!\n\nIf you are in local Seattle, we additionally provide 14 days free boarding."
+quote_body: "We provide life long support to the family that adopt bunnies from our Rabbitry. Please feel free to message us for any bunny care related question! We also provide every CBA bunny owner a pamphlet of Bunny Care include most of the things you need!\n\n"
 
 gallery_heading: "Our Bunnies"
 gallery_subheading: "We specialize in Netherland Dwarf bunnies"
