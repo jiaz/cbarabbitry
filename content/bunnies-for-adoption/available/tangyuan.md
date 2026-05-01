@@ -5,8 +5,7 @@ grade: "S"
 color: "Frosty"
 sex: "Girl"
 dob: "2026-02-01"
-available: true
-reserved: true
+available: false
 reserved_by: "Songchi"
 new_home: "NYC"
 health: "Healthy"
