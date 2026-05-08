@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $stripeURL := site.Params.stripe_waitlist_payment_url }}
 <div class="cba-form-split-page">
   <div class="cba-form-split-inner">
 
@@ -7,16 +8,29 @@
       <div class="cba-waitlist-content">{{ .Content }}</div>
     </div>
 
-    <div class="cba-form-split-form">
-      <h2 class="cba-form-split-form-title">{{ .Params.form_title | default "Your Preferences" }}</h2>
-      {{ partial "contact-form.html" (dict
-        "subject" "Waiting List Request - CBA Rabbitry"
-        "showPreferences" true
-        "messageLabel" "Anything else we should know?"
-        "messageOptional" true
-        "messagePlaceholder" "Timeline, budget, any special requests..."
-        "submitLabel" "Join the Waiting List"
-      ) }}
+    <div class="cba-waitlist-payment-card">
+      <p class="cba-payment-eyebrow">Reservation Fee</p>
+      <h2 class="cba-form-split-form-title">$49 Waitlist Reservation</h2>
+      <p class="cba-payment-card-copy">Paying the reservation fee is the first step to join the CBA Rabbitry waitlist. Stripe will collect your payment and compact preferences in one secure checkout.</p>
+
+      <div class="cba-payment-includes">
+        <h3>Stripe checkout collects</h3>
+        <ul>
+          <li>Your name and email</li>
+          <li>Color preference</li>
+          <li>Grade preference</li>
+          <li>Anything else we should know</li>
+        </ul>
+      </div>
+
+      {{ if $stripeURL }}
+        <a class="cba-btn-primary cba-payment-button" href="{{ $stripeURL }}" target="_blank" rel="noopener">Pay $49 Reservation Fee</a>
+      {{ else }}
+        <button class="cba-btn-primary cba-payment-button cba-payment-button--disabled" type="button" disabled>Online Payment Coming Soon</button>
+        <p class="cba-payment-placeholder">We are preparing online reservation payment. Please review the waitlist details and check back soon.</p>
+      {{ end }}
+
+      <p class="cba-payment-footnote">The $49 fee applies toward your bunny adoption price after adoption.</p>
     </div>
 
   </div>
@@ -30,8 +44,8 @@
         <div class="cba-timeline-step">
           <div class="cba-timeline-icon">📋</div>
           <div class="cba-timeline-body">
-            <p class="cba-timeline-label">You Join &amp; Pay Fee</p>
-            <p class="cba-timeline-desc">Submit your preferences and $49 waitlist fee.</p>
+            <p class="cba-timeline-label">You Pay Fee &amp; Join</p>
+            <p class="cba-timeline-desc">Pay the $49 waitlist fee and share your compact preferences through Stripe Checkout.</p>
           </div>
           <div class="cba-timeline-badge">Day 0</div>
         </div>

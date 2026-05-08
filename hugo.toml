@@ -26,6 +26,9 @@ theme = "ananke"
   # Web3Forms
   web3forms_key = "688d6843-276c-4eaf-a68d-84893774df7c"
 
+  # Stripe
+  stripe_waitlist_payment_url = ""
+
   # Custom CSS
   custom_css = ["/css/custom.css"]
 
