@@ -11,11 +11,11 @@ Our goal is to produce healthy, high-quality Netherland Dwarf rabbits while avoi
 
 ### Waitlist Fee
 
-The waitlist fee is **$49**. We'll send you a payment link after you submit your request. After you adopt a bunny from us, the waitlist fee will be applied toward the total price.
+The waitlist fee is **$49**. After you adopt a bunny from us, the waitlist fee will be applied toward the total price.
 
 ### How to Join
 
-Please use this form, or [contact us](/contact/) to submit your request.
+Please use the payment button below to submit your waitlist fee and preferences.
 
 ### Waiting Time
 
@@ -30,5 +30,3 @@ At CBA Rabbitry, we focus on producing:
 - Exceptional temperament
 
 We appreciate your patience and support in maintaining a responsible and ethical breeding program.
-
-Have questions? [Contact us](/contact/) anytime!

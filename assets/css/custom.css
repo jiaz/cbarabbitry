@@ -1292,12 +1292,19 @@ p, li {
   gap: 2rem;
   align-items: start;
 }
+.cba-waitlist-single-inner {
+  max-width: 760px;
+  display: block;
+}
 .cba-form-split-info {
   background: var(--cba-cream-alt);
   border-radius: 12px;
   padding: 2rem;
   position: sticky;
   top: calc(var(--nav-height) + 1rem);
+}
+.cba-waitlist-info {
+  position: static;
 }
 .cba-form-split-info-title {
   font-family: 'Cormorant Garamond', serif;
@@ -1316,10 +1323,48 @@ p, li {
 .cba-waitlist-content a { color: var(--cba-accent); }
 .cba-waitlist-content strong { color: var(--cba-dark); }
 
+.cba-waitlist-payment-cta {
+  margin-top: 1.75rem;
+  padding-top: 1.35rem;
+  border-top: 1px solid var(--cba-tan-light);
+}
+.cba-payment-button {
+  display: block;
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 1rem;
+}
+.cba-payment-button--disabled,
+.cba-payment-button--disabled:hover {
+  background: var(--cba-warm-tan);
+  color: #fff;
+  cursor: not-allowed;
+  opacity: 0.78;
+}
+.cba-payment-placeholder {
+  margin: 0.85rem 0 0;
+  padding: 0.8rem 0.9rem;
+  background: var(--cba-accent-pale);
+  border-left: 3px solid var(--cba-accent);
+  border-radius: 5px;
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+.cba-payment-footnote {
+  margin: 1rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--cba-dark-mid);
+}
 /* ─── Breeding Timeline ─────────────────────────────────────────────────── */
 .cba-timeline-section {
   max-width: 1000px;
   margin: 2.5rem auto 0;
+}
+.cba-timeline-section.cba-waitlist-timeline-section {
+  max-width: 760px;
 }
 .cba-timeline {
   background: var(--cba-accent-pale);
