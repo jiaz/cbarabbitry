@@ -11,7 +11,7 @@ The fee is applied toward your bunny adoption price after adoption.
 
 ## What Stripe Will Collect
 
-When online payment is ready, Stripe Checkout will collect your name, email, payment, and three waitlist preferences:
+Stripe Checkout will collect your name, email, phone number, payment, and three waitlist preferences:
 
 - Color preference
 - Grade preference
