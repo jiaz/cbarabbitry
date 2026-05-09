@@ -3,46 +3,30 @@ title: "Join Our Waiting List"
 description: "Reserve your future Netherland Dwarf bunny by joining the CBA Rabbitry waiting list."
 ---
 
-## Reserve Your Waitlist Spot
+## Waitlist Policy – Effective March 1, 2026
 
-The **$49 waitlist reservation fee** confirms that you are seriously interested in a future CBA Rabbitry Netherland Dwarf bunny. It helps us plan responsible litters around committed homes instead of breeding without confirmed demand.
+To ensure responsible breeding practices and proper planning of our litters, CBA Rabbitry operates on a waitlist-based breeding system, breedings will only be planned based on confirmed demand from our waitlist.
 
-The fee is applied toward your bunny adoption price after adoption.
+Our goal is to produce healthy, high-quality Netherland Dwarf rabbits while avoiding overbreeding and ensuring every bunny has a committed home.
 
-## What Stripe Will Collect
+### Waitlist Fee
 
-Stripe Checkout will collect your name, email, phone number, payment, and three waitlist preferences:
+The waitlist fee is **$49**. After you adopt a bunny from us, the waitlist fee will be applied toward the total price.
 
-- Color preference
-- Grade preference
-- Anything else we should know
+### How to Join
 
-## What The Waitlist Means
+Please use the payment button below to submit your waitlist fee and preferences.
 
-Joining the waitlist gives you priority for future litters based on your preferences. It does not reserve a specific bunny. Once babies are available, we will share photos and videos so paid waitlist families can choose and reserve a bunny.
+### Waiting Time
 
-## Typical Timeline
+We typically start breeding within 1-2 weeks after you submit waitlist fee, in 1-2 month new babies are available for your to pick and reserve.
 
-We typically start planning breeding within 1-2 weeks after waitlist demand is confirmed. Babies are usually available for selection in 1-2 months, then go home after they are safely weaned.
+### Our Commitment
 
-## FAQ
+At CBA Rabbitry, we focus on producing:
 
-### Is the waitlist fee refundable?
+- Healthy rabbits
+- Strong Netherland Dwarf bloodlines
+- Exceptional temperament
 
-The waitlist fee is a reservation fee for planning future litters and is applied toward your bunny adoption price after adoption. Please make sure you are ready to join before paying.
-
-### Does paying reserve a specific bunny?
-
-No. The waitlist fee reserves your priority for future litters. A specific bunny is reserved later, after babies are available and you choose from photos and videos.
-
-### What if my preferred color or grade is not available?
-
-We use your preferences to plan and recommend good matches, but exact color, sex, and grade cannot be guaranteed. We will discuss available options with paid waitlist families when babies are ready.
-
-### What price range should I expect?
-
-Our grades typically range from A - Adorable to S - Signature. Current grade ranges are shown in the Stripe checkout field and on the adoption pages.
-
-### Can I ask questions before paying?
-
-Please review this page and our [sales policy](/sales-policy/) first. If you still have a specific policy or fit question that is not answered, you are welcome to [contact us](/contact/).
+We appreciate your patience and support in maintaining a responsible and ethical breeding program.
