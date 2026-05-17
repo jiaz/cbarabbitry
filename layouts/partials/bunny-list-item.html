@@ -15,7 +15,7 @@
       {{ if or (not $available) $reserved }}{{ with $bunny.Params.new_home }}<p class="cba-bunny-new-home">🏡 {{ . }}</p>{{ end }}{{ end }}
       {{ if $reserved }}{{ with $bunny.Params.reserved_by }}<p class="cba-bunny-reserved-by">🔒 Reserved by {{ . }}</p>{{ end }}{{ end }}
       <p class="cba-bunny-row-meta">
-        {{ with $bunny.Params.sex }}{{ . }}{{ with $bunny.Params.color }} &nbsp;·&nbsp; {{ . }}{{ end }}{{ else }}{{ with $bunny.Params.color }}{{ . }}{{ end }}{{ end }}
+        {{ with $bunny.Params.sex }}{{ . }}{{ end }}{{ with $bunny.Params.color }} &nbsp;·&nbsp; {{ . }}{{ end }}{{ with $bunny.Params.dob }} &nbsp;·&nbsp; Birth: {{ dateFormat "Jan 2, 2006" (time .) }}{{ end }}
       </p>
       <div class="cba-bunny-row-actions">
       {{ if not $available }}
@@ -27,6 +27,6 @@
       {{ end }}
       </div>
     </div>
-    <p class="cba-bunny-row-desc">{{ $bunny.Plain }}</p>
+    <p class="cba-bunny-row-desc">{{ $bunny.Plain | truncate 150 "...." }}</p>
   </div>
 </div>

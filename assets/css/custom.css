@@ -995,6 +995,11 @@ p, li {
   margin: 0;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: clip;
 }
 .cba-bunny-row-btn {
   display: inline-flex;
