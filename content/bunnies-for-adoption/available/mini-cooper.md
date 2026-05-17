@@ -4,10 +4,7 @@ breed: "Netherland Dwarf"
 grade: "P"
 color: "Broken Fawn"
 dob: "2026-03-07"
-available: true
-reserved: true
-reserved_by: "Sandra"
-new_home: "WA State"
+available: false
 health: "Healthy"
 featured_image: "/images/bunnies/mini-cooper.jpg"
 ---
