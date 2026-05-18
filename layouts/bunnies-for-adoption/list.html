@@ -99,7 +99,7 @@
                 <h2 class="cba-grade-header-title">Recently Adopted</h2>
                 <p class="cba-grade-header-sub">These bunnies have found their forever homes in recent 5 months. Join the waiting list for future litters.</p>
             </div>
-            {{ range $sold }}{{ partial "bunny-list-item.html" . }}{{ end }}
+            {{ range sort $sold "Params.dob" "desc" }}{{ partial "bunny-list-item.html" . }}{{ end }}
         </div>
         {{ end }}
 
