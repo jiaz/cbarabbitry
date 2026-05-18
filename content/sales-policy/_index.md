@@ -5,6 +5,14 @@ description: "CBA Rabbitry's adoption policies, health guarantee, and breeding r
 
 **Please Read Our policy Before purchasing or claiming a bunny. We love each and every bunny in our rabbitry and we want the best for all of them.**
 
+### Health Guarantee
+
+Our animals are healthy at the time of sale. Once they leave our facility, we are not held liable for any physical harm, illness, accidents, or genetic issues of any kind.
+
+We are not liable for any loss of your rabbit during transport unless it is proven that the cause was due to our handling or responsibility. In such cases, we will provide a replacement rabbit at equal or similar value.
+
+(Optional) We have an addition health guarantee policy that can only be purchased during the time your reservation is made. Please read in depth to fully understand what this covers. Our health guarantee is $50. This remains valid for a duration of 180 days from the birth date of the rabbit. If your rabbit passes away from a **genetic issue ONLY** and is proven to be a genetic issue by a licensed **exotic** veterinarian (they must be an exotic vet), we will issue a refund for the purchase price of the rabbit. The exotic vet will need to email a letter with a header from their vet office stating the genetic reason of death. Liver torsion and GI stasis are NOT covered.
+
 ### Non Refundable
 
 To reserve a bunny, full payment including shipping is due.  No refunds will be given unless an ailment/death occurs while under our care.
@@ -13,14 +21,6 @@ If transportation needs to be arranged slightly later, a 50% deposit is required
 If transportation is not arranged within two (2) weeks of the scheduled pickup date, a boarding fee of $5 per day will be charged starting from the pickup date unless there is special circumstances has been discussed.
 
 All payments are non-refundable. Be sure you are ready and committed to welcome your bunny into your family! You cannot switch reservations to a different bunny once you reserve.
-
-### Health Guarantee
-
-Our animals are healthy at the time of sale. Once they leave our facility, we are not held liable for any physical harm, illness, accidents, or genetic issues of any kind.
-
-We are not liable for any loss of your rabbit during transport unless it is proven that the cause was due to our handling or responsibility. In such cases, we will provide a replacement rabbit at equal or similar value.
-
-(Optional) We have an addition health guarantee policy that can only be purchased during the time your reservation is made. Please read in depth to fully understand what this covers. Our health guarantee is $50. This remains valid for a duration of 180 days from the birth date of the rabbit. If your rabbit passes away from a **genetic issue ONLY** and is proven to be a genetic issue by a licensed **exotic** veterinarian (they must be an exotic vet), we will issue a refund for the purchase price of the rabbit. The exotic vet will need to email a letter with a header from their vet office stating the genetic reason of death. Liver torsion and GI stasis are NOT covered.
 
 ### 8-Week Policy
 
