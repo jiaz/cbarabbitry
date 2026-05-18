@@ -6,6 +6,8 @@ color: "Pure Cream Frosty"
 sex: "Boy"
 dob: "2026-04-21"
 available: true
+reserved: true
+reserved_by: "Richard"
 featured_image: "/images/bunnies/opus.jpg"
 video: "https://www.tiktok.com/t/ZP8puprD9/"
 ---
