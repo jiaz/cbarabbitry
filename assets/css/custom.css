@@ -1523,6 +1523,16 @@ p, li {
   color: var(--cba-dark-mid);
   font-style: italic;
 }
+.cba-attention-note {
+  margin-top: 0.75rem;
+  padding: 0.65rem 0.85rem;
+  background: #fff3cd;
+  border: 1px solid #e2c87d;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  color: #664d03;
+  line-height: 1.45;
+}
 .cba-form-split-form {
   background: var(--cba-off-white);
   border: 1px solid var(--cba-tan-light);

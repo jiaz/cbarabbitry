@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-description: "Get in touch with CBA Rabbitry. We will respond to you ASAP."
+description: "Get in touch with CBA Rabbitry — reach us by email, phone, or WeChat and we'll respond within 24 hours."
 ---
 
 ## Contact
@@ -9,15 +9,14 @@ description: "Get in touch with CBA Rabbitry. We will respond to you ASAP."
 
 **Phone:** [360-489-6698](tel:3604896698)
 
+**WeChat ID:** cbarabbitry
+
 **Instagram:** [@cbarabbitry](https://www.instagram.com/cbarabbitry)
 
 **TikTok:** [CBA Rabbitry](https://www.tiktok.com/@CBA.Rabbitry)
 
 **Facebook:** [www.facebook.com/cbarabbitry/](https://www.facebook.com/cbarabbitry/)
 
-**WeChat ID:** cbarabbitry
-
 **Rednote (小红书):** CBA Rabbitry
 
-
-You are welcomed to contact us via any of the above channels. We will respond to you ASAP. If you do not receive our response within 24 hours, please feel free to send a message to a different channel above!
+Email, phone, and WeChat are our primary contact methods — we will respond within 24 hours. You are also welcome to reach out via any of the other channels above!
