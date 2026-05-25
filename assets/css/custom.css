@@ -1156,20 +1156,7 @@ p, li {
   color: var(--cba-dark-mid);
 }
 /* Welcome Package */
-/* Transportation & Pickup */
-.cba-transport-section {
-  margin-top: 2.5rem;
-  padding: 1.75rem 2rem;
-  background: var(--cba-off-white);
-  border: 1px solid var(--cba-tan-light);
-  border-radius: 12px;
-}
-.cba-transport-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.5rem;
-  color: var(--cba-dark);
-  margin: 0 0 1rem;
-}
+/* Transportation Table */
 .cba-transport-table {
   width: 100%;
   border-collapse: collapse;
