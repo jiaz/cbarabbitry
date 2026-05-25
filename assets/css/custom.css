@@ -1155,6 +1155,15 @@ p, li {
   line-height: 1.75;
   color: var(--cba-dark-mid);
 }
+.cba-contract-download {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.cba-contract-download a {
+  font-weight: 600;
+  color: var(--cba-accent);
+}
+
 /* Welcome Package */
 /* Transportation Table */
 .cba-transport-table {
