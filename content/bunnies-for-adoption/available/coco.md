@@ -7,6 +7,7 @@ dob: "2026-04-30"
 available: true
 price: 399
 Grade: "P"
+video: "https://www.tiktok.com/t/ZP8pnRpHy/"
 featured_image: "/images/bunnies/Coco.jpg"
 ---
 
