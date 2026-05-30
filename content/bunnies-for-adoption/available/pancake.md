@@ -6,6 +6,7 @@ sex: "Girl"
 dob: "2026-04-30"
 available: true
 price: $299
+grade: "A"
 featured_image: "/images/bunnies/pancake.jpg"
 ---
 
