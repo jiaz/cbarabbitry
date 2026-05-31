@@ -722,23 +722,22 @@ p, li {
   transform: translateY(-50%);
   width: 42px;
   height: 42px;
-  border-radius: 50%;
+  border-radius: 0;
   border: none;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: transparent;
   color: rgba(255, 255, 255, 0.8);
   font-size: 1rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.2s, border-color 0.2s;
+  transition: color 0.2s;
   z-index: 2;
 }
 .cba-carousel-btn:hover {
-  background: rgba(255, 255, 255, 0.4);
-  border-color: transparent;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
 }
 .cba-carousel-prev { left: 1rem; }
 .cba-carousel-next { right: 1rem; }
