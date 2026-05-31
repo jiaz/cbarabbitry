@@ -723,11 +723,11 @@ p, li {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  background: rgba(255, 255, 255, 0.75);
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  color: #2c1a0e;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 1rem;
   cursor: pointer;
   display: flex;
@@ -737,8 +737,8 @@ p, li {
   z-index: 2;
 }
 .cba-carousel-btn:hover {
-  background: rgba(255, 255, 255, 0.95);
-  border-color: rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.4);
+  border-color: transparent;
 }
 .cba-carousel-prev { left: 1rem; }
 .cba-carousel-next { right: 1rem; }
