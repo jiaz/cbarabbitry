@@ -4,13 +4,39 @@
         <a href="/bunnies-for-adoption/" class="cba-bunny-back"><svg class="cba-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg> Back to all bunnies</a>
 
         <div class="cba-bunny-single-layout">
+            {{ $gallery := slice }}
             {{ with .Params.featured_image }}
+              {{ $gallery = slice . }}
+            {{ end }}
+            {{ range .Params.gallery }}
+              {{ if ne . $.Params.featured_image }}
+                {{ $gallery = $gallery | append . }}
+              {{ end }}
+            {{ end }}
+            {{ with $gallery }}
             <div class="cba-bunny-single-photo-wrap">
-                <img
-                    src="{{ . }}"
-                    alt="{{ $.Title }}"
-                    class="cba-bunny-single-photo"
-                />
+                <div class="cba-carousel" data-carousel>
+                    <div class="cba-carousel-track">
+                        {{ range $i, $img := . }}
+                        <div class="cba-carousel-slide{{ if eq $i 0 }} active{{ end }}">
+                            <img src="{{ $img }}" alt="{{ $.Title }}" />
+                        </div>
+                        {{ end }}
+                    </div>
+                    {{ if gt (len .) 1 }}
+                    <button class="cba-carousel-btn cba-carousel-prev" data-carousel-prev aria-label="Previous photo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                    </button>
+                    <button class="cba-carousel-btn cba-carousel-next" data-carousel-next aria-label="Next photo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+                    </button>
+                    <div class="cba-carousel-dots">
+                        {{ range $i, $img := . }}
+                        <span class="cba-carousel-dot{{ if eq $i 0 }} active{{ end }}" data-slide="{{ $i }}"></span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
             </div>
             {{ end }}
 
@@ -141,4 +167,31 @@
 
     </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('[data-carousel]').forEach(function(carousel) {
+        var slides = carousel.querySelectorAll('.cba-carousel-slide');
+        var dots = carousel.querySelectorAll('.cba-carousel-dot');
+        if (slides.length < 2) return;
+        var current = 0;
+
+        function goTo(i) {
+            slides[current].classList.remove('active');
+            dots[current].classList.remove('active');
+            current = (i + slides.length) % slides.length;
+            slides[current].classList.add('active');
+            dots[current].classList.add('active');
+        }
+
+        var prev = carousel.querySelector('[data-carousel-prev]');
+        var next = carousel.querySelector('[data-carousel-next]');
+        if (prev) prev.addEventListener('click', function() { goTo(current - 1); });
+        if (next) next.addEventListener('click', function() { goTo(current + 1); });
+        dots.forEach(function(dot) {
+            dot.addEventListener('click', function() { goTo(parseInt(dot.dataset.slide)); });
+        });
+    });
+});
+</script>
 {{ end }}

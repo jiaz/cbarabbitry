@@ -679,6 +679,7 @@ p, li {
 /* ── Carousel ─────────────────────────────────────────────── */
 .cba-carousel {
   min-width: 0;
+  position: relative;
 }
 .cba-carousel-track {
   position: relative;
@@ -722,11 +723,11 @@ p, li {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  color: rgba(255, 255, 255, 0.9);
+  color: #2c1a0e;
   font-size: 1rem;
   cursor: pointer;
   display: flex;
@@ -736,8 +737,8 @@ p, li {
   z-index: 2;
 }
 .cba-carousel-btn:hover {
-  background: rgba(255, 255, 255, 0.28);
-  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(0, 0, 0, 0.25);
 }
 .cba-carousel-prev { left: 1rem; }
 .cba-carousel-next { right: 1rem; }
@@ -1094,6 +1095,7 @@ p, li {
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(44, 26, 14, 0.15);
 }
+
 .cba-bunny-single-details { flex: 1; min-width: 250px; }
 .cba-bunny-single-name {
   font-family: 'Cormorant Garamond', serif;

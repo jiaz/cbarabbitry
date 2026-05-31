@@ -7,7 +7,10 @@ dob: "2026-04-30"
 available: true
 price: 299
 grade: "A"
-featured_image: "/images/bunnies/pancake.jpg"
+featured_image: "/images/bunnies/pancake2.jpg"
+gallery:
+  - "/images/bunnies/pancake.jpg"
+  - "/images/bunnies/pancake2.jpg"
 video: "https://www.tiktok.com/t/ZP8poCUbh/"
 ---
 
