@@ -7,6 +7,8 @@ dob: "2026-05-05"
 available: true
 price: 299
 grade: "A"
+reserved: true
+reserved by: Maren
 featured_image: "/images/bunnies/pancake2.jpg"
 gallery:
   - "/images/bunnies/pancake.jpg"
