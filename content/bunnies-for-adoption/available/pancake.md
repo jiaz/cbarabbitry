@@ -8,7 +8,7 @@ available: true
 price: 299
 grade: "A"
 reserved: true
-reserved by: Maren
+reserved_by: "Maren"
 featured_image: "/images/bunnies/pancake2.jpg"
 gallery:
   - "/images/bunnies/pancake.jpg"
