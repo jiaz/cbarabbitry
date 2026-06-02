@@ -3,9 +3,9 @@ title: "Pancake"
 breed: "Netherland Dwarf"
 color: "Orange"
 sex: "Girl"
-dob: "2026-04-30"
+dob: "2026-05-05"
 available: true
-price: 299
+price: 249
 grade: "A"
 featured_image: "/images/bunnies/pancake2.jpg"
 gallery:
