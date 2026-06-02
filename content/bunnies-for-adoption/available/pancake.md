@@ -5,7 +5,7 @@ color: "Orange"
 sex: "Girl"
 dob: "2026-05-05"
 available: true
-price: 249
+price: 299
 grade: "A"
 featured_image: "/images/bunnies/pancake2.jpg"
 gallery:
