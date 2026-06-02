@@ -7,6 +7,8 @@ dob: "2026-05-05"
 available: true
 price: 399
 grade: "P"
+reserved: true
+reserved_by: "Josie"
 featured_image: "/images/bunnies/mini_roll.jpg"
 video: "https://www.tiktok.com/t/ZP8pohgSs/"
 ---
