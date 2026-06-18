@@ -1088,14 +1088,17 @@ p, li {
   flex-wrap: wrap;
   margin-bottom: 2.5rem;
 }
-.cba-bunny-single-photo-wrap { flex: 0 0 320px; }
+.cba-bunny-single-photo-wrap {
+  flex: 1 1 380px;
+  max-width: 430px;
+}
 .cba-bunny-single-photo {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(44, 26, 14, 0.15);
 }
 
-.cba-bunny-single-details { flex: 1; min-width: 250px; }
+.cba-bunny-single-details { flex: 1 1 380px; min-width: 280px; }
 .cba-bunny-single-name {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
