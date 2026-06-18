@@ -69,6 +69,11 @@
                         <td class="cba-bunny-table-label">Date of Birth</td>
                         <td>{{ . }}</td>
                     </tr>
+                    {{ end }} {{ with .Params.pickup }}
+                    <tr>
+                        <td class="cba-bunny-table-label">Pickup Date</td>
+                        <td>{{ . }}</td>
+                    </tr>
                     {{ end }} {{ with .Params.health }}
                     <tr>
                         <td class="cba-bunny-table-label">Health</td>
