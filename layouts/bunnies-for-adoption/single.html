@@ -92,6 +92,13 @@
                     {{ end }}
                 </table>
 
+                {{ with .Content }}
+                <div class="cba-bunny-single-content">
+                    <h2 class="cba-bunny-single-content-heading">Highlights</h2>
+                    {{ . }}
+                </div>
+                {{ end }}
+
                 {{ $available := .Params.available | default true }}
                 {{ $reserved := .Params.reserved | default false }}
                 {{ if not $available }}
@@ -122,8 +129,6 @@
                 {{ end }}
             </div>
         </div>
-
-        <div class="cba-bunny-single-content">{{ .Content }}</div>
 
         <div class="cba-bunny-single-contact">
             <h2>Interested in This Bunny?</h2>
