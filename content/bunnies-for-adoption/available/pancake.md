@@ -5,8 +5,8 @@ color: "Orange"
 sex: "Girl"
 dob: "2026-05-05"
 available: true
-price: 299
-grade: "A"
+price: 300
+grade: "P"
 reserved: true
 reserved_by: "Maren"
 featured_image: "/images/bunnies/pancake2.jpg"
