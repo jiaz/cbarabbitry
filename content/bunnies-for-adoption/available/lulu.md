@@ -9,6 +9,9 @@ available: true
 price: 299
 pickup: July 17, 2026
 featured_image: "/images/bunnies/lulu.png"
+gallery:
+  - "/images/bunnies/lulu.png"
+  - "/images/bunnies/lulu2.png"
 ---
 
 Lulu is a sweet girl with a beautiful creamy fawn coat. She has a lovely temperament and is fully socialized, comfortable with people and being handled.
