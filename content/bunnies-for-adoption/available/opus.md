@@ -8,6 +8,7 @@ dob: "2026-04-21"
 available: false
 featured_image: "/images/bunnies/opus.jpg"
 video: "https://www.tiktok.com/t/ZP8puprD9/"
+new_home: "BC, Canada"
 ---
 
 Super rare beautiful coat color — a stunning cream frosty, which is much more unique and eye-catching than a standard frosty. His fur is absolutely gorgeous: soft, dense, and plush to the touch.

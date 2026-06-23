@@ -7,6 +7,7 @@ dob: "2026-03-07"
 available: false
 health: "Healthy"
 featured_image: "/images/bunnies/mini-cooper.jpg"
+new_home: "WA State"
 ---
 
 A tiny and irresistible Broken Fawn baby with a striking two-tone coat. Mini Cooper may be small enough to fit in your palm, but full of charm!

@@ -10,7 +10,8 @@ available: false
 health: "Healthy"
 featured_image: "/images/bunnies/cupcake.jpeg"
 video: "https://www.tiktok.com/t/ZP8b33dEM/"
-description: "Cupcake has a beautiful fur color of Creamy Orange, a very short and round shaped ears."
+description: "Cupcake has a beautiful fur color of Creamy Orange, a very short and round shaped ears"
+new_home: "WA State"
 ---
 
 Meet Cupcake! Her Father is an ARBA show quality, his father is the 1st place winner of Washingtion State ERBA Rabbit Show Orange Colored Netherland Dwarf.

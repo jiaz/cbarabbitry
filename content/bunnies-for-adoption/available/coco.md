@@ -4,11 +4,12 @@ breed: "Netherland Dwarf"
 color: "Orange"
 sex: "Girl"
 dob: "2026-04-30"
-available: true
+available: false
 reserved: true
 reserved_by: "Cora"
 price: 399
 Grade: "P"
+new_home: "OR State"
 video: "https://www.tiktok.com/t/ZP8pnRpHy/"
 featured_image: "/images/bunnies/Coco.jpg"
 ---
