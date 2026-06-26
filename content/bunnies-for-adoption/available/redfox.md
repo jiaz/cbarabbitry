@@ -1,5 +1,5 @@
 ---
-title: "Redfox"
+title: "Cheeto"
 breed: "Netherland Dwarf"
 grade: "P"
 color: "Red Fox"
