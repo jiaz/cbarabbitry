@@ -5,7 +5,7 @@ grade: "P"
 color: "Red Fox"
 sex: "Boy"
 dob: "2026-05-23"
-available: false
+available: true
 reserved: true
 reserved_by: "Sujen"
 price: 349
