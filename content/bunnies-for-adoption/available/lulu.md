@@ -7,6 +7,8 @@ sex: "Girl"
 dob: "2026-05-23"
 available: true
 price: 299
+reserved: true
+reserved_by: "Tracy"
 pickup: July 17, 2026
 featured_image: "/images/bunnies/lulu.png"
 gallery:
