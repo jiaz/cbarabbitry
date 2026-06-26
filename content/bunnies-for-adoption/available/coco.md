@@ -5,8 +5,6 @@ color: "Orange"
 sex: "Girl"
 dob: "2026-04-30"
 available: false
-reserved: true
-reserved_by: "Cora"
 price: 399
 Grade: "P"
 new_home: "OR State"
