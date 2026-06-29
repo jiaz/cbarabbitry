@@ -7,8 +7,6 @@ dob: "2026-05-05"
 available: false
 price: 300
 grade: "P"
-reserved: true
-reserved_by: "Maren"
 featured_image: "/images/bunnies/pancake2.jpg"
 gallery:
   - "/images/bunnies/pancake.jpg"
