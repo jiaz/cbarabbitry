@@ -65,9 +65,10 @@
                         <td>{{ . }}</td>
                     </tr>
                     {{ end }} {{ with .Params.dob }}
+                    {{ $age := partial "bunny-age" . }}
                     <tr>
-                        <td class="cba-bunny-table-label">Date of Birth</td>
-                        <td>{{ . }}</td>
+                        <td class="cba-bunny-table-label">{{ if $age }}Age{{ else }}Date of Birth{{ end }}</td>
+                        <td>{{ if $age }}{{ $age }}{{ else }}{{ . }}{{ end }}</td>
                     </tr>
                     {{ end }} {{ with .Params.pickup }}
                     <tr>

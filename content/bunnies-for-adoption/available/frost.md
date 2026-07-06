@@ -8,7 +8,7 @@ dob: "2025-11-06"
 available: true
 health: "Healthy"
 price: 199
-original_price: 349
+original_price: 399
 featured_image: "/images/bunnies/Frost.jpg"
 video: "https://www.tiktok.com/t/ZP8GaXYEm/"
 ---

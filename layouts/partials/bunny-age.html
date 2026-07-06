@@ -1,0 +1,24 @@
+{{- /* Returns a human age string (e.g. "8 months old", "1 year 2 months old")
+       ONLY when the bunny is older than 6 months. Otherwise returns empty.
+       Call with the dob string, e.g. {{ partial "bunny-age" .Params.dob }} */ -}}
+{{- $dob := . -}}
+{{- with $dob -}}
+{{- $d := time . -}}
+{{- $now := now -}}
+{{- $dy := int ($d.Format "2006") -}}
+{{- $dm := int ($d.Format "1") -}}
+{{- $dd := int ($d.Format "2") -}}
+{{- $ny := int ($now.Format "2006") -}}
+{{- $nm := int ($now.Format "1") -}}
+{{- $nd := int ($now.Format "2") -}}
+{{- $months := add (mul (sub $ny $dy) 12) (sub $nm $dm) -}}
+{{- if lt $nd $dd -}}{{- $months = sub $months 1 -}}{{- end -}}
+{{- if gt $months 6 -}}
+{{- $rem := mod $months 12 -}}
+{{- $years := int (div (sub $months $rem) 12) -}}
+{{- $parts := slice -}}
+{{- if gt $years 0 -}}{{- $parts = $parts | append (printf "%d year%s" $years (cond (eq $years 1) "" "s")) -}}{{- end -}}
+{{- if gt $rem 0 -}}{{- $parts = $parts | append (printf "%d month%s" $rem (cond (eq $rem 1) "" "s")) -}}{{- end -}}
+{{- printf "%s old" (delimit $parts " ") -}}
+{{- end -}}
+{{- end -}}
