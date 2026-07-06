@@ -828,6 +828,80 @@ p, li {
 .grade-badge.grade-p { background-color: #f9e5d0; color: #7a3a0e; border-top: 1px solid #e8c4a0; border-left: 1px solid #e8c4a0; }
 .grade-badge.grade-s { background-color: #ece6f8; color: #4a2e80; border-top: 1px solid #cdc0ee; border-left: 1px solid #cdc0ee; }
 
+/* ─── 8b. Promo / Sale ──────────────────────────────────────────────────── */
+.cba-sale-ribbon {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  background: #c0392b;
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.28em 0.7em;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(44, 26, 14, 0.25);
+  z-index: 2;
+}
+
+/* List-item promo price line */
+.cba-bunny-promo {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.1rem 0 0.1rem;
+  font-family: 'Cormorant Garamond', serif;
+}
+.cba-bunny-promo-old {
+  color: var(--cba-warm-tan);
+  text-decoration: line-through;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+.cba-bunny-promo-new {
+  color: #c0392b;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.cba-bunny-promo-save {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #2d5a1f;
+  background: #dff0d8;
+  border-radius: 4px;
+  padding: 0.15em 0.5em;
+  align-self: center;
+}
+
+/* Card + single page strikethrough pricing */
+.cba-price-old {
+  color: var(--cba-warm-tan);
+  text-decoration: line-through;
+  font-weight: 500;
+  margin-right: 0.4rem;
+}
+.cba-price-new { color: #c0392b; font-weight: 700; }
+.cba-price-save {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #2d5a1f;
+  background: #dff0d8;
+  border-radius: 4px;
+  padding: 0.15em 0.5em;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
 /* ─── 9. Bunny List Page — Editorial (Option 2) ─────────────────────────── */
 .cba-bunnies-page {
   background: var(--cba-cream);

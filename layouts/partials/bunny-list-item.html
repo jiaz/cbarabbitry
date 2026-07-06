@@ -1,7 +1,11 @@
 {{ $bunny := . }}
 {{ $available := $bunny.Params.available | default true }}
 {{ $reserved := $bunny.Params.reserved | default false }}
+{{ $price := $bunny.Params.price }}
+{{ $origPrice := $bunny.Params.original_price }}
+{{ $onSale := and $available (not $reserved) $origPrice (gt (int $origPrice) (int ($price | default 0))) }}
 <div class="cba-bunny-row{{ if not $available }} sold{{ else if $reserved }} reserved{{ end }}">
+  {{ if $onSale }}<span class="cba-sale-ribbon">Sale</span>{{ end }}
   {{ with $bunny.Params.grade }}<span class="grade-badge grade-{{ . | lower }}">Grade {{ . }}</span>{{ end }}
   {{ if $reserved }}<span class="cba-reserved-badge">Reserved</span>{{ end }}
   {{ with $bunny.Params.featured_image }}
@@ -12,6 +16,13 @@
   <div class="cba-bunny-row-body">
     <div class="cba-bunny-row-info">
       <p class="cba-bunny-row-name">{{ $bunny.Title }}</p>
+      {{ if $onSale }}
+      <p class="cba-bunny-promo">
+        <span class="cba-bunny-promo-old">${{ $origPrice }}</span>
+        <span class="cba-bunny-promo-new">${{ $price }}</span>
+        <span class="cba-bunny-promo-save">Save ${{ sub (int $origPrice) (int $price) }}</span>
+      </p>
+      {{ end }}
       {{ if or (not $available) $reserved }}{{ with $bunny.Params.new_home }}<p class="cba-bunny-new-home">🏡 {{ . }}</p>{{ end }}{{ end }}
       {{ if $reserved }}{{ with $bunny.Params.reserved_by }}<p class="cba-bunny-reserved-by">🔒 Reserved by {{ . }}</p>{{ end }}{{ end }}
       <p class="cba-bunny-row-meta">

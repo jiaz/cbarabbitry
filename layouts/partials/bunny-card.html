@@ -1,6 +1,10 @@
 {{ $bunny := . }}
 {{ $available := $bunny.Params.available | default true }}
+{{ $price := $bunny.Params.price }}
+{{ $origPrice := $bunny.Params.original_price }}
+{{ $onSale := and $available $origPrice (gt (int $origPrice) (int ($price | default 0))) }}
 <div class="bunny-card{{ if not $available }} sold{{ end }}">
+  {{ if $onSale }}<span class="cba-sale-ribbon">Sale</span>{{ end }}
   {{ with $bunny.Params.featured_image }}
   <img src="{{ . }}" alt="{{ $bunny.Title }}" loading="lazy">
   {{ else }}
@@ -19,7 +23,12 @@
     </div>
     <div class="bunny-card-price">
       {{ if $available }}
-        ${{ $bunny.Params.price }}
+        {{ if $onSale }}
+          <span class="cba-price-old">${{ $origPrice }}</span>
+          <span class="cba-price-new">${{ $price }}</span>
+        {{ else }}
+          ${{ $bunny.Params.price }}
+        {{ end }}
       {{ else }}
         <span style="color:#c0392b;">Sold</span>
         {{ with $bunny.Params.new_home }}<div class="bunny-card-new-home">New home: {{ . }}</div>{{ end }}

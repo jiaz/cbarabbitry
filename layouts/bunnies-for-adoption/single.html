@@ -82,7 +82,16 @@
                     {{ end }} {{ with .Params.price }}
                     <tr>
                         <td class="cba-bunny-table-label">Price</td>
-                        <td class="cba-bunny-table-price">${{ . }}</td>
+                        <td class="cba-bunny-table-price">
+                          {{ $origPrice := $.Params.original_price }}
+                          {{ if and $origPrice (gt (int $origPrice) (int .)) }}
+                            <span class="cba-price-old">${{ $origPrice }}</span>
+                            <span class="cba-price-new">${{ . }}</span>
+                            <span class="cba-price-save">Save ${{ sub (int $origPrice) (int .) }}</span>
+                          {{ else }}
+                            ${{ . }}
+                          {{ end }}
+                        </td>
                     </tr>
                     {{ end }} {{ with .Params.video }}
                     <tr>
