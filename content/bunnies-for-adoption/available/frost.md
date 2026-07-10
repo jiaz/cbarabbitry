@@ -4,8 +4,8 @@ breed: "Netherland Dwarf"
 grade: "P"
 color: "Creamy Frosty"
 sex: "Boy"
-dob: "2025-11-06"
-available: true
+dob: "2025-09-23"
+available: false
 health: "Healthy"
 price: 199
 original_price: 399
