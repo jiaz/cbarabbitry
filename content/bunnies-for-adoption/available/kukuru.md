@@ -6,7 +6,9 @@ color: "Black Tort"
 sex: "Boy"
 dob: "2026-05-23"
 available: true
-price: 399
+health: "Healthy"
+price: 299
+original_price: 399
 pickup: July 17, 2026
 featured_image: "/images/bunnies/kukuru5.jpg"
 gallery:
