@@ -5,8 +5,7 @@ grade: "P"
 color: "Red Fox"
 sex: "Boy"
 dob: "2026-05-23"
-available: true
-reserved: true
+available: false
 reserved_by: "Sujen"
 price: 349
 new_home: "OR State"

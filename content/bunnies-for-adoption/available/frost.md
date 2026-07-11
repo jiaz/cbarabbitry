@@ -9,6 +9,7 @@ available: false
 health: "Healthy"
 price: 199
 original_price: 399
+new_home: "WA State"
 featured_image: "/images/bunnies/Frost.jpg"
 video: "https://www.tiktok.com/t/ZP8GaXYEm/"
 ---

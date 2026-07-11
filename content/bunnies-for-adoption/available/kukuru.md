@@ -5,11 +5,12 @@ grade: "P"
 color: "Black Tort"
 sex: "Boy"
 dob: "2026-05-23"
-available: true
+available: false
 health: "Healthy"
 price: 299
 original_price: 399
 pickup: July 17, 2026
+new_home: "WA State"
 featured_image: "/images/bunnies/kukuru5.jpg"
 gallery:
   - "/images/bunnies/kukuru2.jpg"
