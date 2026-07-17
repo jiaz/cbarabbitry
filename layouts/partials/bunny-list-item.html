@@ -38,6 +38,6 @@
       {{ end }}
       </div>
     </div>
-    <p class="cba-bunny-row-desc">{{ $bunny.Plain | truncate 150 "...." }}</p>
+    {{ if $available }}<p class="cba-bunny-row-desc">{{ $bunny.Plain | truncate 150 "...." }}</p>{{ end }}
   </div>
 </div>
