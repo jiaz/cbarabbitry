@@ -1,13 +1,12 @@
 ---
-title: "Lulu"
+title: "Mochi"
 breed: "Netherland Dwarf"
 grade: "A"
 color: "Creamy Fawn(奶鹿色)"
 sex: "Girl"
 dob: "2026-05-23"
-available: true
+available: false
 price: 299
-reserved: true
 reserved_by: "Tracy"
 pickup: July 17, 2026
 featured_image: "/images/bunnies/lulu.png"
