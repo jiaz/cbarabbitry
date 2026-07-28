@@ -4,11 +4,9 @@ breed: "Netherland Dwarf"
 color: "Golden Orange"
 sex: "Boy"
 dob: "2026-05-05"
-available: true
+available: false
 price: 399
 grade: "P"
-reserved: true
-reserved_by: "Josie"
 featured_image: "/images/bunnies/mini_roll.jpg"
 video: "https://www.tiktok.com/t/ZP8pohgSs/"
 ---
