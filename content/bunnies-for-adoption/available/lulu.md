@@ -10,6 +10,7 @@ price: 299
 reserved_by: "Tracy"
 pickup: July 17, 2026
 featured_image: "/images/bunnies/lulu.png"
+new_home: "WA State"
 gallery:
   - "/images/bunnies/lulu.png"
   - "/images/bunnies/lulu2.png"
