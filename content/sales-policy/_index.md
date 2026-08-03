@@ -26,6 +26,10 @@ All payments are non-refundable. Be sure you are ready and committed to welcome 
 
 For the lifelong health and proper development of our bunnies, we only transport when the bunny is at least 8 weeks old. Changes in appearance at this stage are a normal part of healthy growth and development. The bunny you receive is the exact same bunny you selected.
 
+### Reservation Cancellation
+
+CBA Rabbitry reserves the right to cancel a bunny reservation due to unforeseen circumstances, including but not limited to health concerns or determining that the bunny is not the best fit for the prospective pet family. In such cases, all reservation payments made for the bunny will be fully refunded.
+
 ### Breeding Restriction Policy
 
 To protect animal welfare, pedigree integrity, and the reputation of our rabbitry, all rabbits purchased from this rabbitry are sold strictly as companion pets only. **Breeding is strictly prohibited** without the prior written authorization from rabbitry. Any violation of this policy shall constitute a material breach of contract and rabbitry will demand the payment of liquidated damages in the amount of **USD $3000**, which both parties acknowledge as a reasonable estimate of damages and not a penalty. If you are interested in breed our rabbit please purchase and obtain the authorization from us.
