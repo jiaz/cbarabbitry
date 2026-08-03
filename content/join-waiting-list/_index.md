@@ -26,6 +26,8 @@ The waitlist deposit is $49. After you adopt a bunny from us, the waitlist fee w
 
 Please use the payment button below to submit your waitlist fee and preferences.
 
+> **Please note:** Before submitting your request, kindly read through our [Sales Policy](/sales-policy/) to make sure our adoption terms are the right fit for you.
+
 ### Waiting Time
 
 Our typical wait time is approximately 2–6 months, depending on the current size of our waitlist and your preferred bunny characteristics. In general, the more specific or rare your preferences are, the longer the wait may be.
