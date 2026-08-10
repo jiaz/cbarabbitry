@@ -20,9 +20,12 @@ If transportation is not arranged within two (2) weeks of the scheduled pickup d
 
 All payments are non-refundable. Be sure you are ready and committed to welcome your bunny into your family! You cannot switch reservations to a different bunny once you reserve.
 
-### 8-Week Policy
+### Bunny Development & Appearance
 
-For the lifelong health and proper development of our bunnies, we only transport when the bunny is at least 8 weeks old. Changes in appearance at this stage are a normal part of healthy growth and development. The bunny you receive is the exact same bunny you selected.
+The Buyer understands that a young bunny's appearance may change as it grows and develops. Changes in coat color, fur texture, body shape, size, ear position, and other physical characteristics are a normal part of growth and development.
+Netherland Dwarf bunnies may also go through an “awkward growth stage” during development, during which their body proportions, head shape, fur, or overall appearance may temporarily look less refined or different from their earlier baby appearance. This is a normal part of the breed's growth and development, and the bunny's adult appearance may develop gradually over time.
+The Buyer acknowledges that the bunny's appearance at the time of pickup or transportation may differ from photos or videos previously provided.
+The bunny received by the Buyer will be the same bunny selected and reserved by the Buyer.
 
 ### Reservation Cancellation
 
