@@ -20,7 +20,8 @@ This flexible process allows you to wait for the right bunny while keeping your 
 
 ### Waitlist Deposit
 
-The waitlist deposit is $49. After you adopt a bunny from us, the waitlist fee will be applied toward the total price.
+The waitlist deposit is $49. Once you adopt a bunny from CBA Rabbitry, the $49 deposit will be applied toward the total adoption price of your bunny.
+The waitlist deposit is non-refundable, as we use the waitlist to plan our breeding and future litters based on customer preferences and demand.
 
 ### How to Join
 

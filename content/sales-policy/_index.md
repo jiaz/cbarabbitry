@@ -41,4 +41,4 @@ By proceeding with payment via Venmo, Zelle, or PayPal, the buyer confirms that 
 
 ### Questions?
 
-If you have any questions about our policies, please [contact us](/contact/) before placing a reservation.
+If you have any questions about our policies, please [contact us](/contact/) before placing a reservation or waitlist.
