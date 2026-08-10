@@ -22,9 +22,9 @@ All payments are non-refundable. Be sure you are ready and committed to welcome 
 
 ### Bunny Development & Appearance
 
-The Buyer understands that a young bunny's appearance may change as it grows and develops. Changes in coat color, fur texture, body shape, size, ear position, and other physical characteristics are a normal part of growth and development.
+A young bunny's appearance may change as it grows and develops. Changes in coat color, fur texture, body shape, size, ear position, and other physical characteristics are a normal part of growth and development.
 Netherland Dwarf bunnies may also go through an “awkward growth stage” during development, during which their body proportions, head shape, fur, or overall appearance may temporarily look less refined or different from their earlier baby appearance. This is a normal part of the breed's growth and development, and the bunny's adult appearance may develop gradually over time.
-The Buyer acknowledges that the bunny's appearance at the time of pickup or transportation may differ from photos or videos previously provided.
+Thus the bunny's appearance at the time of pickup or transportation may differ from photos or videos previously provided.
 The bunny received by the Buyer will be the same bunny selected and reserved by the Buyer.
 
 ### Reservation Cancellation
@@ -33,7 +33,7 @@ CBA Rabbitry reserves the right to cancel a bunny reservation due to unforeseen 
 
 ### Breeding Restriction Policy ❗
 
-To protect animal welfare, pedigree integrity, and the reputation of our rabbitry, all rabbits purchased from this rabbitry are sold strictly as companion pets only. **Breeding is strictly prohibited** without the prior written authorization from rabbitry. Any violation of this policy shall constitute a material breach of contract and rabbitry will demand the payment of liquidated damages in the amount of **USD $3000**, which both parties acknowledge as a reasonable estimate of damages and not a penalty. If you are interested in breed our rabbit please purchase and obtain the authorization from us.
+To protect animal welfare, pedigree integrity, and the reputation of our rabbitry, all rabbits purchased from this rabbitry are sold strictly as companion pets only. **Breeding is strictly prohibited** without the prior written authorization from rabbitry. Any violation of this policy shall constitute a material breach of contract and rabbitry will demand the payment of liquidated damages in the amount of USD $X000, which both parties acknowledge as a reasonable estimate of damages and not a penalty. If you are interested in breed our rabbit please purchase and obtain the authorization from us.
 
 ### Payment
 
