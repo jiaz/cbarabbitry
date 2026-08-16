@@ -21,10 +21,10 @@ If you are unable to pick up your bunny from us in Seattle, WA, we will work wit
 
 Estimated ground transportation costs (for reference):
 
-| Region | Estimated Cost | Notes |
+| Region | Ground Transportation Estimated Cost | Notes |
 | --- | --- | --- |
 | Western U.S. | $130–$150 | |
-| Middle U.S. | $130–$170 | |
-| West Coast U.S. | $150–$190 | Only available during certain months of the year. For cross-country routes, we recommend air shipping to reduce transportation-related risks. CBA also offers budget air transportation options. |
+| Middle U.S. | $130–$160 | |
+| Eastern Coast U.S. | $150–$190 | Only available during certain months of the year. For cross-country routes, we recommend air shipping to reduce transportation-related risks. CBA also has special air transportation offers.|
 
 Transportation is arranged through trusted pet transport services. Final costs depend on distance, route, and season; we'll confirm the details with you after your adoption or reservation is confirmed.
