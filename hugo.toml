@@ -50,13 +50,17 @@ theme = "ananke"
     url = "/join-waiting-list/"
     weight = 4
   [[menu.main]]
+    name = "Pricing"
+    url = "/pricing/"
+    weight = 5
+  [[menu.main]]
     name = "Sales Policy"
     url = "/sales-policy/"
-    weight = 5
+    weight = 6
   [[menu.main]]
     name = "Partner Friends"
     url = "/partner-friends/"
-    weight = 6
+    weight = 7
   [[menu.main]]
     name = "Contact"
     url = "/contact/"

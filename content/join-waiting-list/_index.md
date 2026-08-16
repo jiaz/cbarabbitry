@@ -47,7 +47,4 @@ We appreciate your patience and support in maintaining a responsible and ethical
 
 1. Kindly read through our [Sales Policy](/sales-policy/) to make sure our adoption terms are the right fit for you.
 
-2. If you are unable to pick up your bunny from us in Seattle, please understand that you will need to work with CBA Rabbitry to arrange transportation, and additional transportation costs will apply. Estimated ground transportation cost for reference:
-   - Western U.S.: $130–$150
-   - Middle U.S.: $130–$170
-   - West Coast U.S.: $150–$190, only available in certain months around a year. We recommend using air shipping for cross-country routes to reduce transportation-related risks.
+2. If you are unable to pick up your bunny from us in Seattle, please understand that you will need to work with CBA Rabbitry to arrange transportation, and additional transportation costs will apply. See our [Pricing & Transportation](/pricing/) page for estimated costs.

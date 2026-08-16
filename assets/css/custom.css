@@ -920,6 +920,15 @@ p, li {
   margin-bottom: 2rem;
 }
 
+/* Pricing link under grade cards */
+.cba-pricing-link {
+  text-align: center;
+  margin: -0.75rem 0 2rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+}
+.cba-pricing-link a { color: var(--cba-accent); font-weight: 500; }
+
 /* How to Adopt process */
 .cba-adopt-process { margin-bottom: 2.5rem; }
 .cba-adopt-process-title {
