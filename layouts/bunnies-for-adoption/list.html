@@ -26,6 +26,25 @@
             </div>
         </div>
 
+        <!-- How to Adopt -->
+        <div class="cba-adopt-process">
+            <h2 class="cba-adopt-process-title">How to Adopt</h2>
+            <div class="cba-adopt-steps">
+                <div class="cba-adopt-step">
+                    <div class="cba-adopt-step-num">1</div>
+                    <div class="cba-adopt-step-text">Choose from our available bunnies below, or <a href="/join-waiting-list/">join the waiting list</a> for pre-selection access before bunnies are listed publicly.</div>
+                </div>
+                <div class="cba-adopt-step">
+                    <div class="cba-adopt-step-num">2</div>
+                    <div class="cba-adopt-step-text">Click the "Request Adoption" button on the bunny you love and submit the form.</div>
+                </div>
+                <div class="cba-adopt-step">
+                    <div class="cba-adopt-step-num">3</div>
+                    <div class="cba-adopt-step-text">We'll email you back to confirm your interest. If you are not picking up locally, we'll discuss transportation options with you.</div>
+                </div>
+            </div>
+        </div>
+
 {{ $pages := .Pages }}
         {{ $availableAll := where $pages "Params.available" true }}
         {{ $available := where $availableAll "Params.reserved" "!=" true }}
@@ -71,7 +90,7 @@
         {{ end }}
         {{ if not (or $gradeSS $gradeS $gradeP $gradeA) }}
         <div class="cba-bunnies-empty">
-            <p>No bunnies currently available. Last Update: Aug-16-2026</p>
+            <p>No bunnies currently publicly available. Last Update: Aug-16-2026</p>
             <div class="cba-cta-buttons" style="margin-top: 1rem">
                 <a href="/join-waiting-list/" class="cba-btn-primary">Join Our Waiting List</a>
                 <button type="button" class="cba-btn-secondary cba-subscribe-trigger">Subscribe New available Bunny</button>
