@@ -27,8 +27,6 @@ The waitlist deposit is non-refundable, as we use the waitlist to plan our breed
 
 Please use the payment button below to submit your waitlist fee and preferences.
 
-> **Please note:** Before submitting your request, kindly read through our [Sales Policy](/sales-policy/) to make sure our adoption terms are the right fit for you.
-
 ### Waiting Time
 
 Our typical wait time is approximately 2–6 months, depending on the current size of our waitlist and your preferred bunny characteristics. In general, the more specific or rare your preferences are, the longer the wait may be.
@@ -44,3 +42,12 @@ At CBA Rabbitry, we focus on producing:
 - Breeding to the SOP
 
 We appreciate your patience and support in maintaining a responsible and ethical breeding program.
+
+### Please Read Before Submitting Waitlist
+
+1. Kindly read through our [Sales Policy](/sales-policy/) to make sure our adoption terms are the right fit for you.
+
+2. If you are unable to pick up your bunny from us in Seattle, please understand that you will need to work with CBA Rabbitry to arrange transportation, and additional transportation costs will apply. Estimated ground transportation cost for reference:
+   - Western U.S.: $130–$150
+   - Middle U.S.: $130–$170
+   - West Coast U.S.: $150–$190, only available in certain months around a year. We recommend using air shipping for cross-country routes to reduce transportation-related risks.
