@@ -1125,6 +1125,46 @@ p, li {
   margin-top: 2rem;
 }
 .cba-bunnies-footer-cta p { margin-bottom: 1rem; }
+.cba-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+.cba-cta-buttons .cba-btn-primary,
+.cba-cta-buttons .cba-btn-secondary {
+  width: 280px;
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.cba-subscribe-trigger { cursor: pointer; }
+
+/* Subscribe modal */
+.cba-modal { display: none; position: fixed; inset: 0; z-index: 1000; }
+.cba-modal.is-open { display: block; }
+.cba-modal-overlay { position: absolute; inset: 0; background: rgba(44, 26, 14, 0.55); }
+.cba-modal-dialog {
+  position: relative;
+  max-width: 580px;
+  margin: 6vh auto 0;
+  padding: 0 1rem;
+}
+.cba-modal-card { position: relative; max-height: 88vh; overflow-y: auto; }
+.cba-modal-close {
+  position: absolute;
+  top: 0.9rem;
+  right: 1.1rem;
+  background: none;
+  border: none;
+  font-size: 1.9rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--cba-dark-mid);
+  padding: 0;
+}
+.cba-modal-close:hover { color: var(--cba-accent); }
 .cba-bunnies-empty {
   text-align: center;
   padding: 4rem 0;

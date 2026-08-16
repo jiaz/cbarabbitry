@@ -72,7 +72,10 @@
         {{ if not (or $gradeSS $gradeS $gradeP $gradeA) }}
         <div class="cba-bunnies-empty">
             <p>No bunnies currently available.</p>
-            <a href="/join-waiting-list/" class="cba-btn-primary" style="margin-top: 1rem; display: inline-block">Join Our Waiting List</a>
+            <div class="cba-cta-buttons" style="margin-top: 1rem">
+                <a href="/join-waiting-list/" class="cba-btn-primary">Join Our Waiting List</a>
+                <button type="button" class="cba-btn-secondary cba-subscribe-trigger">Subscribe New available Bunny</button>
+            </div>
         </div>
         {{ end }}
 
@@ -105,10 +108,72 @@
 
         <div class="cba-bunnies-footer-cta">
             <p>Don't see your perfect match?</p>
-            <a href="/join-waiting-list/" class="cba-btn-primary"
-                >Join Our Waiting List</a
-            >
+            <div class="cba-cta-buttons">
+                <a href="/join-waiting-list/" class="cba-btn-primary"
+                    >Join Our Waiting List</a
+                >
+                <button type="button" class="cba-btn-secondary cba-subscribe-trigger">Subscribe New available Bunny</button>
+            </div>
         </div>
     </div>
 </div>
+
+<div id="cba-subscribe-modal" class="cba-modal" aria-hidden="true">
+    <div class="cba-modal-overlay" data-cba-close></div>
+    <div class="cba-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="cba-subscribe-title">
+        <div class="cba-form-card cba-modal-card">
+            <button type="button" class="cba-modal-close" data-cba-close aria-label="Close">&times;</button>
+            <h2 class="cba-form-card-title" id="cba-subscribe-title">Get New Bunny Alerts</h2>
+            <p>Enter your email and we'll email you when new bunnies become publicly available.</p>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="{{ site.Params.web3forms_key }}">
+                <input type="hidden" name="subject" value="New Bunny Alert Subscription - CBA Rabbitry">
+                <input type="hidden" name="redirect" value="{{ site.BaseURL }}thank-you/">
+                <input type="hidden" name="from_name" value="CBA Rabbitry Website">
+
+                <label for="subscribe-email">Email Address *</label>
+                <input type="email" id="subscribe-email" name="email" required placeholder="your@email.com">
+
+                <label for="subscribe-zip">Your Zip Code</label>
+                <input type="text" id="subscribe-zip" name="zip_code" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}(-[0-9]{4})?" placeholder="e.g. 98004">
+
+                <label for="subscribe-notes">Notes (Optional)</label>
+                <textarea id="subscribe-notes" name="message" placeholder="Anything else you'd like us to know."></textarea>
+
+                <!-- Honeypot spam protection -->
+                <input type="checkbox" name="botcheck" style="display:none">
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        var modal = document.getElementById('cba-subscribe-modal');
+        if (!modal) return;
+        function openModal() {
+            modal.classList.add('is-open');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            var email = document.getElementById('subscribe-email');
+            if (email) email.focus();
+        }
+        function closeModal() {
+            modal.classList.remove('is-open');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+        document.querySelectorAll('.cba-subscribe-trigger').forEach(function (btn) {
+            btn.addEventListener('click', openModal);
+        });
+        modal.querySelectorAll('[data-cba-close]').forEach(function (el) {
+            el.addEventListener('click', closeModal);
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+        });
+    })();
+</script>
 {{ end }}

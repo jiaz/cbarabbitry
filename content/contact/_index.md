@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-description: "Get in touch with CBA Rabbitry — reach us by email, phone, or WeChat and we'll respond within 24 hours."
+description: "Get in touch with CBA Rabbitry — reach us by email, phone, or WeChat and we'll respond within 48 hours."
 ---
 
 ## Contact
