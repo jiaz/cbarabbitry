@@ -2061,7 +2061,24 @@ p, li {
 
   /* Grade cards — compact 3-col on mobile */
   .cba-grade-cards { grid-template-columns: repeat(3, 1fr); gap: 0.4rem; }
-  .cba-adopt-steps { grid-template-columns: 1fr; }
+  /* How to Adopt — compact horizontal rows on mobile */
+  .cba-adopt-process-title { font-size: 1.4rem; margin-bottom: 0.75rem; }
+  .cba-adopt-steps { grid-template-columns: 1fr; gap: 0.5rem; }
+  .cba-adopt-step {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 0.7rem 0.85rem;
+    gap: 0.7rem;
+    border-radius: 6px;
+  }
+  .cba-adopt-step-num {
+    width: 1.6rem;
+    height: 1.6rem;
+    font-size: 0.85rem;
+    margin-bottom: 0;
+  }
+  .cba-adopt-step-text { font-size: 0.8rem; line-height: 1.4; }
   .cba-grade-card { padding: 0.65rem 0.4rem; }
   .cba-grade-card-label { font-size: 0.62rem; }
   .cba-grade-card-name { font-size: 0.85rem; margin-bottom: 0.1rem; }
