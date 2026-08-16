@@ -47,4 +47,4 @@ We appreciate your patience and support in maintaining a responsible and ethical
 
 1. Kindly read through our [Sales Policy](/sales-policy/) to make sure our adoption terms are the right fit for you.
 
-2. If you are unable to pick up your bunny from us in Seattle, please understand that you will need to work with CBA Rabbitry to arrange transportation, and additional transportation costs will apply. See our [Pricing & Transportation](/pricing/) page for estimated costs.
+2. If you are unable to pick up your bunny from us in Seattle, WA, you will need to work with us to arrange transportation. See our [Pricing & Transportation](/pricing/) page for estimated costs.
