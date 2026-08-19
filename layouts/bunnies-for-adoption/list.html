@@ -144,7 +144,7 @@
         <div class="cba-form-card cba-modal-card">
             <button type="button" class="cba-modal-close" data-cba-close aria-label="Close">&times;</button>
             <h2 class="cba-form-card-title" id="cba-subscribe-title">Get New Bunny Alerts</h2>
-            <p>Enter your email and we'll email you when new bunnies become publicly available.</p>
+            <p>Enter your email to receive new bunny alerts. Add your phone number if you'd also like a text when a new bunny becomes available.</p>
             <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="{{ site.Params.web3forms_key }}">
                 <input type="hidden" name="subject" value="New Bunny Alert Subscription - CBA Rabbitry">
@@ -153,6 +153,9 @@
 
                 <label for="subscribe-email">Email Address *</label>
                 <input type="email" id="subscribe-email" name="email" required placeholder="your@email.com">
+
+                <label for="subscribe-phone">Phone Number (Optional if you also want to receive text alerts when a new bunny is available)</label>
+                <input type="tel" id="subscribe-phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="e.g. (425) 555-0123">
 
                 <label for="subscribe-zip">Your Zip Code</label>
                 <input type="text" id="subscribe-zip" name="zip_code" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}(-[0-9]{4})?" placeholder="e.g. 98004">
