@@ -19,12 +19,14 @@ The waitlist deposit is $49 and is applied toward the total adoption price when 
 
 If you are unable to pick up your bunny from us in Seattle, WA, we will work with you to arrange transportation. Additional transportation costs apply and are paid by the adopter.
 
-Estimated ground transportation costs (for reference):
+Below is Estimated ground transportation costs (for reference):
 
-| Region | Ground Transportation Estimated Cost | Notes |
+| Region | Shared Ground Transportation Estimated Cost | Notes |
 | --- | --- | --- |
-| Western U.S. | $130–$150 | |
-| Middle U.S. | $130–$160 | |
-| Eastern Coast U.S. | $150–$190 | Only available during certain months of the year. For cross-country routes, we recommend air shipping to reduce transportation-related risks. CBA also has special air transportation offers.|
+| Western U.S. | $130–$170 | |
+| Middle U.S. | $130–$190 | |
+| Eastern Coast U.S. | $150–$190 | Shared Ground transport only available during spring and fall For cross-country routes, please quote with us first before reserving.|
 
-Transportation is arranged through trusted pet transport services. Final costs depend on distance, route, and season; we'll confirm the details with you after your adoption or reservation is confirmed.
+Transportation is arranged through trusted pet transport services.  we'll confirm the details with you after your adoption or reservation is confirmed.
+
+Please understand that ground transportation carries risks especially when it is a multi-days transport. Our prefered way is buyer to pickup or to arrange air shipping over ground transportation, and we can work with buyer for ground transport if buyer perfers with understand the risk.
