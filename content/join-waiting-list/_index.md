@@ -29,7 +29,7 @@ Please use the payment button below to submit your waitlist fee and preferences.
 
 ### Waiting Time
 
-Our typical wait time is approximately 2–6 months, depending on the current size of our waitlist and your preferred bunny characteristics. In general, the more specific or rare your preferences are, the longer the wait may be.
+Our typical wait time is approximately 1–2.5 months, depending on the current size of our waitlist and your preferred bunny characteristics, if you have more specific or rare your preferences, the waiting time might be longer than that.
 We encourage families to join the waitlist as early as possible, When your turn comes you can either choose a bunny or pass and remain on the waitlist for future litters.
 
 ### Our Commitment
