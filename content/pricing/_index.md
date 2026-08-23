@@ -19,13 +19,13 @@ The waitlist deposit is $49 and is applied toward the total adoption price when 
 
 If you are unable to pick up your bunny from us in Seattle, WA, we will work with you to arrange transportation. Additional transportation costs apply and are paid by the adopter.
 
-Below is Estimated ground transportation costs (for reference):
+Below is Estimated Shared-ride Pet Ground Transportation costs (for reference):
 
-| Region | Shared Ground Transportation Estimated Cost | Notes |
+| Region | Estimated Cost | Notes |
 | --- | --- | --- |
 | Western U.S. | $130–$170 | |
 | Middle U.S. | $130–$190 | |
-| Eastern Coast U.S. | $150–$190 | Shared Ground transport only available during spring and fall For cross-country routes, please quote with us first before reserving.|
+| Eastern Coast U.S. | $150–$190 | For cross-country shared routes, please quote with us first before reserving.|
 
 Transportation is arranged through trusted pet transport services.  we'll confirm the details with you after your adoption or reservation is confirmed.
 
