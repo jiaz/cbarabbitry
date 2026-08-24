@@ -24,7 +24,19 @@
       </p>
       {{ end }}
       {{ if or (not $available) $reserved }}{{ with $bunny.Params.new_home }}<p class="cba-bunny-new-home">🏡 {{ . }}</p>{{ end }}{{ end }}
-      {{ if $reserved }}{{ with $bunny.Params.reserved_by }}<p class="cba-bunny-reserved-by">🔒 Reserved by {{ . }}</p>{{ end }}{{ end }}
+      {{ if $reserved }}
+        {{ with $bunny.Params.reserved_by }}
+          {{ $reservedBy := printf "%v" . }}
+          {{ $waitlistLabel := " (Waitlist Families)" }}
+          {{ $reservedByName := strings.TrimSuffix $waitlistLabel $reservedBy }}
+          <p class="cba-bunny-reserved-by">
+            <span>🔒 Reserved by {{ $reservedByName }}</span>
+            {{ if ne $reservedByName $reservedBy }}
+              <span class="cba-waitlist-family-badge"><span class="cba-waitlist-family-mark" aria-hidden="true"></span>Waitlist Family</span>
+            {{ end }}
+          </p>
+        {{ end }}
+      {{ end }}
       <p class="cba-bunny-row-meta">
         {{ with $bunny.Params.sex }}{{ . }}{{ end }}{{ with $bunny.Params.color }} &nbsp;·&nbsp; {{ . }}{{ end }}{{ with $bunny.Params.dob }} &nbsp;·&nbsp; {{ $age := partial "bunny-age" . }}{{ if $age }}{{ $age }}{{ else }}Birth: {{ dateFormat "Jan 2, 2006" (time .) }}{{ end }}{{ end }}
       </p>
