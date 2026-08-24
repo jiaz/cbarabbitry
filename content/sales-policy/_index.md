@@ -14,7 +14,6 @@ We are not liable for any loss of your rabbit during transport unless it is prov
 ### Non Refundable
 
 To reserve a bunny, full payment including shipping is due.  No refunds will be given unless an ailment/death occurs while under our care.
-If transportation needs to be arranged slightly later, a 50% deposit is required to reserve the rabbit, with the remaining 50% due once transportation is arranged.
 
 If transportation is not arranged within two (2) weeks of the scheduled pickup date, a boarding fee of $5 per day will be charged starting from the pickup date unless there is special circumstances has been discussed.
 
