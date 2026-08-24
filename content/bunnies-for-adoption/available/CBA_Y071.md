@@ -1,5 +1,5 @@
 ---
-title: "CBA_Y071"
+title: "Sol"
 breed: "Netherland Dwarf"
 grade: "S"
 color: "Creamy Gold"
