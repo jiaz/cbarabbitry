@@ -91,7 +91,7 @@
         {{ end }}
         {{ if not (or $gradeSS $gradeS $gradeP $gradeA) }}
         <div class="cba-bunnies-empty">
-            <p>No bunnies currently publicly available. Last Update: Aug-29-2026, </p>
+            <p>No bunnies currently publicly available.{{ with .Params.availability_last_updated }} Last Update: {{ . }}.{{ end }}</p>
             <div class="cba-cta-buttons" style="margin-top: 1rem">
                 <a href="/join-waiting-list/" class="cba-btn-primary">Join Our Waiting List</a>
                 {{/* Temporarily hidden: Subscribe New available Bunny button. */}}
