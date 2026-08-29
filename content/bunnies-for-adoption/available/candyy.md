@@ -1,5 +1,5 @@
 ---
-title: "Candy"
+title: "Mochi"
 breed: "Netherland Dwarf"
 grade: "S"
 color: "Creamy White"
