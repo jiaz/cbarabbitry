@@ -3,6 +3,19 @@ title: "Bunnies for Adoption"
 description: "Adopt our Elite Netherland Dwarf Bunnies raised with love, every bunny is gently handled every day. Transportation available to all U.S. states at a reasonable cost."
 featured_image: "/images/hero-bunnies.jpg"
 availability_last_updated: "Aug-29-2026"
+grades:
+  - code: "A"
+    name: "Adorable"
+    description: "Adorable companions; may have some conformation variation."
+    price: "$199–$349"
+  - code: "P"
+    name: "Premium"
+    description: "Pet quality with great conformation, such as a round face; has a show-line parent."
+    price: "$399–$549"
+  - code: "S"
+    name: "Signature"
+    description: "Exceptional conformation with show-line parents, short ears, big round face, or rare coat colors."
+    price: "$599+"
 ---
 
 ## Adoptions

@@ -2,29 +2,7 @@
 <div class="cba-bunnies-page">
     <div class="cba-bunnies-page-inner">
         <!-- Grading system cards -->
-        <div class="cba-grade-cards">
-            <div class="cba-grade-card cba-grade-card-a">
-                <div class="cba-grade-card-label">Grade A</div>
-                <div class="cba-grade-card-name">Adorable Quality</div>
-                <div class="cba-grade-card-desc">
-                    Adorable companions; may have conformation variation. $199~$349
-                </div>
-            </div>
-            <div class="cba-grade-card cba-grade-card-p">
-                <div class="cba-grade-card-label">Grade P</div>
-                <div class="cba-grade-card-name">Premium Quality</div>
-                <div class="cba-grade-card-desc">
-                    Great conformation as pet such as have a round face, has show-line parent, chubby and cute. $399~$549
-                </div>
-            </div>
-            <div class="cba-grade-card cba-grade-card-s">
-                <div class="cba-grade-card-label">Grade S</div>
-                <div class="cba-grade-card-name">Signature Quality</div>
-                <div class="cba-grade-card-desc">
-                    Exceptional conformation with showline parents, short ears, big round face, rare coat colors. $599+
-                </div>
-            </div>
-        </div>
+        {{ partial "grade-presentation.html" (dict "grades" .Params.grades "view" "cards") }}
         <p class="cba-pricing-link"><a href="/pricing/">View full pricing &amp; transportation costs →</a></p>
 
         <!-- How to Adopt -->

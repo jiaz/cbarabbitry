@@ -1,0 +1,33 @@
+{{- $grades := .grades -}}
+{{- $view := .view | default "cards" -}}
+
+{{- if eq $view "table" }}
+<table>
+  <thead>
+    <tr>
+      <th>Grade</th>
+      <th>Quality</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{- range $grades }}
+    <tr>
+      <td><strong>Grade {{ .code }} — {{ .name }}</strong></td>
+      <td>{{ .description }}</td>
+      <td>{{ .price }}</td>
+    </tr>
+    {{- end }}
+  </tbody>
+</table>
+{{- else }}
+<div class="cba-grade-cards">
+  {{- range $grades }}
+  <div class="cba-grade-card cba-grade-card-{{ .code | lower }}">
+    <div class="cba-grade-card-label">Grade {{ .code }}</div>
+    <div class="cba-grade-card-name">{{ .name }} Quality</div>
+    <div class="cba-grade-card-desc">{{ .description }} {{ .price }}</div>
+  </div>
+  {{- end }}
+</div>
+{{- end }}

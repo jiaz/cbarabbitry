@@ -1,0 +1,6 @@
+{{- $source := site.GetPage "/bunnies-for-adoption" -}}
+{{- if $source -}}
+  {{- partial "grade-presentation.html" (dict "grades" $source.Params.grades "view" "table") -}}
+{{- else -}}
+  {{- errorf "Unable to find /bunnies-for-adoption grade data" -}}
+{{- end -}}
