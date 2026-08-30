@@ -1,0 +1,6 @@
+{{- $source := site.GetPage "/bunnies-for-adoption" -}}
+{{- if $source -}}
+  {{- $source.Params.estimated_wait_time -}}
+{{- else -}}
+  {{- errorf "Unable to find /bunnies-for-adoption wait-time data" -}}
+{{- end -}}
