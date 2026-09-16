@@ -5,10 +5,9 @@ grade: "A"
 color: "Lilac Otter"
 sex: "Boy"
 dob: "2026-03-18"
-available: true
-reserved: true
+available: false
 reserved_by: "Shan (Waitlist Families)"
 health: "Healthy"
-# price: 299
+new_home: "WA State"
 featured_image: "/images/bunnies/ap.jpg"
 ---
