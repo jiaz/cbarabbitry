@@ -15,7 +15,7 @@ trust_items:
     desc: "Every bunny is handled from birth for a calm, friendly temperament ready to bond with your family."
   - icon: "🩺"
     title: "Health Guarantee"
-    desc: "180-day genetic health guarantee on every bunny, plus optional extended coverage for peace of mind."
+    desc: "We guarantee on every bunny are healthy when go to their forever home, it is peace of mind for parents."
   - icon: "💌"
     title: "Lifetime Support"
     desc: "We're here for questions, advice, and support throughout your bunny's entire life — not just at pickup."
