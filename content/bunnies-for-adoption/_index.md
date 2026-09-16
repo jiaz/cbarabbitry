@@ -2,7 +2,7 @@
 title: "Bunnies for Adoption"
 description: "Adopt our Elite Netherland Dwarf Bunnies raised with love, every bunny is gently handled every day. Transportation available to all U.S. states at a reasonable cost."
 featured_image: "/images/hero-bunnies.jpg"
-availability_last_updated: "Sep-12-2026"
+availability_last_updated: "Sep-16-2026"
 estimated_wait_time: "1-2.5 months"
 grades:
   - code: "A"
