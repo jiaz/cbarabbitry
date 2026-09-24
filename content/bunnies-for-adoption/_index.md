@@ -1,6 +1,6 @@
 ---
 title: "Bunnies for Adoption"
-description: "Adopt our Elite Netherland Dwarf Bunnies raised with love, every bunny is gently handled every day. Transportation available to all U.S. states at a reasonable cost."
+description: "Hand-raised completely indoors with love and care, every CBA bunny is gently handled and socialized every day. Transportation available to all U.S. states."
 featured_image: "/images/hero-bunnies.jpg"
 availability_last_updated: "Sep-16-2026"
 estimated_wait_time: "1-2.5 months"
@@ -15,7 +15,7 @@ grades:
     price: "$399–$589"
   - code: "S"
     name: "Signature"
-    description: "[Exceptional conformation with show-line parents, short ears, big round face, chubby body.] And/or [Has rare fur colors such as Fawn, Creamy Gold, Lilac, Creamy Frosty etc.]"
+    description: "[Exceptional conformation with show-line parents, short ears, big round face, chubby body.] And/or [Has rare fur colors such as Fawn, Creamy Gold, Lilac, Creamy Frosty, Sable Point etc.]"
     price: "$599+"
 ---
 
