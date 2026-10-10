@@ -5,8 +5,7 @@ grade: "S"
 color: "Martenized Sable Point"
 sex: "Boy"
 dob: "2026-08-12"
-available: true
-reserved: true
+available: false
 reserved_by: Xiaotong
 health: "Healthy"
 price: $599

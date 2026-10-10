@@ -5,7 +5,7 @@ grade: "P"
 color: "Creamy Gold"
 sex: "Boy"
 dob: "2026-07-24"
-available: true
+available: false
 reserved: true
 reserved_by: Vivi (Waitlist Families)
 health: "Healthy"

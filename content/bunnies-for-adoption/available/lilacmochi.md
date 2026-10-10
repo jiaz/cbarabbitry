@@ -5,7 +5,7 @@ grade: "S"
 color: "Lilac Silver Marten"
 sex: "Boy"
 dob: "2026-08-12"
-available: true
+available: false
 reserved: true
 reserved_by: Yohen (Waitlist Families)
 health: "Healthy"
