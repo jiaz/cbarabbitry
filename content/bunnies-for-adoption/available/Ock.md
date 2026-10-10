@@ -6,10 +6,9 @@ color: "Creamy Gold"
 sex: "Boy"
 dob: "2026-07-24"
 available: false
-reserved: true
 reserved_by: Vivi (Waitlist Families)
 health: "Healthy"
 price: $549
-# new_home: "FL State"
+new_home: "CO State"
 featured_image: "/images/bunnies/Y072.jpg"
 ---
