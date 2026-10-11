@@ -2,8 +2,7 @@
 <div class="cba-bunnies-page">
     <div class="cba-bunnies-page-inner">
         <!-- Pricing overview -->
-        {{ partial "pricing-overview.html" . }}
-        <p class="cba-pricing-link"><a href="/pricing/">View full pricing &amp; transportation costs →</a></p>
+        {{ partial "pricing-overview.html" (dict "showPricingLink" true) }}
 
         <!-- How to Adopt -->
         <div class="cba-adopt-process">

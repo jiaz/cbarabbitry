@@ -1039,6 +1039,7 @@ p, li {
 }
 .cba-pricing-box p:last-child { margin-bottom: 0; }
 .cba-pricing-box a { color: var(--cba-accent); font-weight: 500; }
+.cba-pricing-box .cba-pricing-link { margin: 0.9rem 0 0; }
 
 /* Deposit note */
 .cba-deposit-note {
