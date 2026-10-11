@@ -830,19 +830,29 @@ p, li {
 
 /* Breeder-Keeper premium badge */
 .cba-bk-badge {
-  display: inline-block;
-  background: linear-gradient(135deg, #3a2a1a, #5f3f22);
-  color: #f3d9a4;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  background: linear-gradient(135deg, #fbefb0 0%, #ecc85e 40%, #c7962f 75%, #e8d07a 100%);
+  color: #5a3a12;
   font-family: 'DM Sans', sans-serif;
   font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  font-weight: 800;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
-  border: 1px solid #c9a35c;
-  border-radius: 4px;
-  padding: 0.22em 0.6em;
-  box-shadow: 0 2px 6px rgba(44, 26, 14, 0.2);
+  border: 1px solid #a9792a;
+  border-radius: 999px;
+  padding: 0.3em 0.8em;
+  box-shadow:
+    0 2px 6px rgba(44, 26, 14, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65),
+    inset 0 -1px 2px rgba(120, 80, 20, 0.35);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
   white-space: nowrap;
+}
+.cba-bk-badge-icon {
+  font-size: 0.95em;
+  filter: drop-shadow(0 1px 1px rgba(90, 58, 18, 0.4));
 }
 .cba-bk-badge--corner {
   position: absolute;
