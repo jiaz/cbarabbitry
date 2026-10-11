@@ -1,7 +1,7 @@
 ---
 title: "Mochi"
 breed: "Netherland Dwarf"
-grade: "S"
+grade: "Breeder-Keeper"
 color: "Creamy White"
 sex: "Boy"
 dob: "2026-07-24"
