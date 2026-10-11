@@ -52,7 +52,7 @@
                     {{ end }} {{ with .Params.grade }}
                     <tr>
                         <td class="cba-bunny-table-label">Grade</td>
-                        <td>{{ . }}</td>
+                        <td>{{ if eq . "Breeder-Keeper" }}<span class="cba-bk-badge">★ Breeder-Keeper</span>{{ else }}{{ . }}{{ end }}</td>
                     </tr>
                     {{ end }} {{ with .Params.color }}
                     <tr>

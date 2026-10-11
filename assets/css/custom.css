@@ -828,6 +828,29 @@ p, li {
 .grade-badge.grade-p { background-color: #f9e5d0; color: #7a3a0e; border-top: 1px solid #e8c4a0; border-left: 1px solid #e8c4a0; }
 .grade-badge.grade-s { background-color: #ece6f8; color: #4a2e80; border-top: 1px solid #cdc0ee; border-left: 1px solid #cdc0ee; }
 
+/* Breeder-Keeper premium badge */
+.cba-bk-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #3a2a1a, #5f3f22);
+  color: #f3d9a4;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid #c9a35c;
+  border-radius: 4px;
+  padding: 0.22em 0.6em;
+  box-shadow: 0 2px 6px rgba(44, 26, 14, 0.2);
+  white-space: nowrap;
+}
+.cba-bk-badge--corner {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  z-index: 2;
+}
+
 /* ─── 8b. Promo / Sale ──────────────────────────────────────────────────── */
 .cba-sale-ribbon {
   position: absolute;
