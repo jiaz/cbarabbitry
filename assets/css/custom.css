@@ -1042,6 +1042,11 @@ p, li {
   margin: 0 0 0.75rem;
 }
 .cba-pricing-box-body p:last-child { margin-bottom: 0; }
+.cba-pricing-box-body .cba-pricing-box-note {
+  font-size: 0.8rem;
+  color: var(--cba-dark-mid);
+  opacity: 0.75;
+}
 .cba-pricing-box a { color: var(--cba-accent); font-weight: 500; }
 .cba-pricing-box .cba-pricing-link {
   text-align: center;

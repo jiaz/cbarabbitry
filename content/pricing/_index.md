@@ -20,7 +20,7 @@ The final price reflects a combination of coat color and conformation. At CBA Ra
 
 The waitlist deposit is $49 and is applied toward the total adoption price when you adopt. See our [Join Waiting List](/join-waiting-list/) page for details.
 
-## Transportation
+## Transportation Pricing
 
 If you are unable to pick up your bunny from us in Seattle, WA, we will work with you to arrange transportation. Additional transportation costs apply and are paid by the adopter.
 
