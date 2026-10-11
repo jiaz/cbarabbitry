@@ -849,6 +849,7 @@ p, li {
     inset 0 -1px 2px rgba(120, 80, 20, 0.35);
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
   white-space: nowrap;
+  vertical-align: middle;
 }
 .cba-bk-badge-icon {
   font-size: 0.95em;

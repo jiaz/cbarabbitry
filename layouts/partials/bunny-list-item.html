@@ -7,7 +7,6 @@
 <div class="cba-bunny-row{{ if not $available }} sold{{ else if $reserved }} reserved{{ end }}">
   {{ if $onSale }}<span class="cba-sale-ribbon">Sale</span>{{ end }}
   {{ if $reserved }}<span class="cba-reserved-badge">Reserved</span>{{ end }}
-  {{ if eq $bunny.Params.grade "Breeder-Keeper" }}<span class="cba-bk-badge cba-bk-badge--corner"><span class="cba-bk-badge-icon">🏆</span> Breeder-Keeper</span>{{ end }}
   {{ with $bunny.Params.featured_image }}
   <img class="cba-bunny-row-img" src="{{ . }}" alt="{{ $bunny.Title }}" loading="lazy">
   {{ else }}
@@ -15,7 +14,7 @@
   {{ end }}
   <div class="cba-bunny-row-body">
     <div class="cba-bunny-row-info">
-      <p class="cba-bunny-row-name">{{ $bunny.Title }}</p>
+      <p class="cba-bunny-row-name">{{ $bunny.Title }}{{ if eq $bunny.Params.grade "Breeder-Keeper" }} <span class="cba-bk-badge"><span class="cba-bk-badge-icon">🏆</span> Breeder-Keeper</span>{{ end }}</p>
       {{ if $onSale }}
       <p class="cba-bunny-promo">
         <span class="cba-bunny-promo-old">${{ $origPrice }}</span>
