@@ -13,9 +13,6 @@
   <div class="bunny-card-body">
     <div class="bunny-card-title">
       {{ $bunny.Title }}
-      {{ with $bunny.Params.grade }}
-        <span class="grade-badge grade-{{ . | lower }}">Grade {{ . }}</span>
-      {{ end }}
     </div>
     <div class="bunny-card-meta">
       {{ with $bunny.Params.sex }}{{ . }} &nbsp;·&nbsp; {{ end }}

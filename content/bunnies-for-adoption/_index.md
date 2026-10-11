@@ -4,15 +4,6 @@ description: "Hand-raised completely indoors with love and care, every CBA bunny
 featured_image: "/images/hero-bunnies.jpg"
 availability_last_updated: "Oct-10-2026"
 estimated_wait_time: "1 months"
-grades:
-  - code: "P"
-    name: "Premium"
-    description: "Great conformation, has a round face; has a show-line parent. Fur color available in this grade is Orange or any color that is darker, sometimes Frosty."
-    price: "$399–$589"
-  - code: "S"
-    name: "Signature"
-    description: "[Exceptional conformation with show-line parents, short ears, big round face, chubby body.] And/or [Has rare fur colors such as Fawn, Creamy Gold, Lilac, Creamy Frosty, Sable Point etc.]"
-    price: "$599+"
 ---
 
 ## Adoptions

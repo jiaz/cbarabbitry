@@ -1012,6 +1012,34 @@ p, li {
   line-height: 1.4;
 }
 
+/* Pricing overview (adoption + pricing pages) */
+.cba-pricing-box {
+  background: var(--cba-accent-pale);
+  border: 1px solid #e0b898;
+  border-radius: 10px;
+  padding: 1.5rem 1.5rem 1.25rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.cba-pricing-box-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 1;
+  color: var(--cba-dark);
+  margin-bottom: 0.75rem;
+}
+.cba-pricing-box p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--cba-dark-mid);
+  line-height: 1.55;
+  margin: 0 auto 0.5rem;
+  max-width: 44rem;
+}
+.cba-pricing-box p:last-child { margin-bottom: 0; }
+.cba-pricing-box a { color: var(--cba-accent); font-weight: 500; }
+
 /* Deposit note */
 .cba-deposit-note {
   background: var(--cba-off-white);
@@ -2084,6 +2112,10 @@ p, li {
   .cba-grade-card-name { font-size: 0.85rem; margin-bottom: 0.1rem; }
   .cba-grade-card-price { font-size: 0.95rem; }
   .cba-grade-card-desc { font-size: 0.68rem; margin-top: 0.2rem; }
+
+  /* Pricing overview — mobile */
+  .cba-pricing-box { padding: 1.1rem 1rem; }
+  .cba-pricing-box-title { font-size: 1.5rem; }
 
   /* Gallery layout */
   .cba-gallery-layout { grid-template-columns: 1fr; gap: 2rem; }

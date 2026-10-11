@@ -5,9 +5,9 @@ description: "Adoption pricing by grade and estimated transportation costs for C
 
 ## Adoption Pricing
 
-Our bunnies are priced by grade, based on conformation, bloodline, and rarity. Every bunny — regardless of grade — is raised with the same love, daily handling, and care.
+Every bunny — regardless of price — is raised with the same love, daily handling, and care.
 
-{{< grade-presentation >}}
+{{< pricing-overview >}}
 
 The waitlist deposit is $49 and is applied toward the total adoption price when you adopt. See our [Join Waiting List](/join-waiting-list/) page for details.
 
