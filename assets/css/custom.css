@@ -1081,6 +1081,24 @@ p, li {
   color: var(--cba-dark-mid);
   opacity: 0.75;
 }
+.cba-pricing-checks-intro {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  color: var(--cba-dark);
+  margin: 1rem 0 0.4rem;
+}
+.cba-pricing-checks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cba-pricing-checks li {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--cba-dark);
+  margin-bottom: 0.3rem;
+}
+.cba-pricing-checks + .cba-pricing-checks { margin-top: 0.6rem; }
 .cba-pricing-box a { color: var(--cba-accent); font-weight: 500; }
 .cba-pricing-box .cba-pricing-link {
   text-align: center;
