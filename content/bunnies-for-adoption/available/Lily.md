@@ -11,5 +11,5 @@ reserved_by: Tara
 health: "Healthy"
 price: $449
 new_home: "WA State"
-featured_image: "/images/bunnies/Lily.jpg"
+featured_image: "/images/bunnies/lily.jpg"
 ---

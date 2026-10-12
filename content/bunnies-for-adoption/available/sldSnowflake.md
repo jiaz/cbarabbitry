@@ -3,7 +3,7 @@ title: "Snowflake"
 breed: "Netherland Dwarf"
 grade: "P"
 color: "Creamy"
-sex: "Girl"
+sex: "Boy"
 dob: "2026-09-03"
 available: true
 reserved: true

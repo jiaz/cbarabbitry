@@ -97,7 +97,7 @@
                     {{ end }} {{ with .Params.video }}
                     <tr>
                         <td class="cba-bunny-table-label">Video</td>
-                        <td><a href="{{ . }}" target="_blank" rel="noopener">Watch video ▶</a></td>
+                        <td>{{ if reflect.IsSlice . }}{{ range $i, $v := . }}{{ if $i }}<br>{{ end }}<a href="{{ $v }}" target="_blank" rel="noopener">Watch video {{ add $i 1 }} ▶</a>{{ end }}{{ else }}<a href="{{ . }}" target="_blank" rel="noopener">Watch video ▶</a>{{ end }}</td>
                     </tr>
                     {{ end }}
                 </table>

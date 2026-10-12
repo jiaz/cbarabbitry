@@ -7,10 +7,15 @@ sex: "Boy"
 dob: "2026-08-12"
 available: true
 health: "Healthy"
-price: 799
+price: 699
 # new_home: "Las Vegas"
 featured_image: "/images/bunnies/piano.jpg"
-video: "https://www.instagram.com/p/Dc-SjHxlIwV/?img_index=7&obrf=cm1mbjk4MzB5NjI2"
+gallery:
+  - "/images/bunnies/piano.jpg"
+  - "/images/bunnies/piano2.jpg"
+video:
+  - "https://www.instagram.com/p/Dc-SjHxlIwV/?img_index=7&obrf=cm1mbjk4MzB5NjI2"
+  - "https://www.tiktok.com/t/ZPLBDmVGP/"
 ---
 We made a heart broke decision to let Piano go, as Piano is the best babies we recently breed in our rabbitry! He has a exceptional big face, broad forehead, super tiny ears, very compact and chubby body, born to many Netherland Dwarf SOP features, he will be looking gorgeous when adult! We let him go is just because there are enough herd buck in our rabbitry while we have limited space!
 We also give him a nice name called Piano, as he is such a beauty and sweat heart!
