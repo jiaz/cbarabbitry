@@ -15,3 +15,4 @@ gallery:
 ---
 
 Lilac Smoke Pearl is an extreamly beautiful and rare coat color, He has thick ears and sweat personality!
+Contact for more his videos, he is gorgeus!
