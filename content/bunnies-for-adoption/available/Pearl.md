@@ -8,11 +8,14 @@ dob: "2026-09-03"
 available: true
 health: "Healthy"
 price: 499
-featured_image: "/images/bunnies/pearl1.jpg"
+featured_image: "/images/bunnies/pearl3.jpg"
 gallery:
-  - "/images/bunnies/pearl1.jpg"
-  - "/images/bunnies/pearl2.jpg"
+  - "/images/bunnies/pearl3.jpg"
+  - "/images/bunnies/pearl4.jpg"
 ---
 
-Lilac Smoke Pearl is an extreamly beautiful and rare coat color, He has thick ears and sweat personality!
+Those photos took in 40 days old, he went to the ugly stage but he is still so beautiful!
+
+This Lilac Smoke Pearl is an extreamly beautiful and rare coat color.
+He has thick ears and sweat personality!
 Contact for more his videos, he is gorgeus!

@@ -13,6 +13,7 @@ featured_image: "/images/bunnies/piano.jpg"
 gallery:
   - "/images/bunnies/piano.jpg"
   - "/images/bunnies/piano2.jpg"
+  - "/images/bunnies/piano5_2m.jpg"
 video:
   - "https://www.instagram.com/p/Dc-SjHxlIwV/?img_index=7&obrf=cm1mbjk4MzB5NjI2"
   - "https://www.tiktok.com/t/ZPLBDmVGP/"
