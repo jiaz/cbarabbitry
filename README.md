@@ -62,6 +62,21 @@ After setting up Web3Forms and Cloudflare Turnstile, update `hugo.toml`:
   turnstile_site_key = "your-actual-key-here"
 ```
 
+### Stripe Payment Link editing key (local only)
+
+The waitlist page uses the public Stripe Payment Link URL in `hugo.toml`. Its checkout questions are managed in Stripe. To let an agent update those questions from this computer:
+
+1. In the [Stripe API keys dashboard](https://dashboard.stripe.com/apikeys), select **live mode** and create a **restricted API key**. Give it **Payment Links: Write** permission and leave other permissions at **None**. If Stripe asks who will use it, select **Authorizing agent access**. A key with this permission can edit any Payment Link in the account.
+2. From this repository in an interactive terminal (or Git Bash on Windows), run:
+
+   ```bash
+   bash scripts/setup-stripe-key.sh
+   ```
+
+3. Paste the `rk_live_...` key at the prompt. Asterisks appear to confirm the input without showing the key; press Enter to save it. The command saves it at `~/.config/cbarabbitry/stripe-payment-links.key` with access limited to your user. It does not put the key in Git or the website.
+
+On a new computer, repeat these steps with a **new restricted key** so each host's access can be revoked separately. Tell the agent the file path when requesting a Stripe edit. Never paste the key into chat or commit it to the repository. To replace a rotated key, run the same command again.
+
 ---
 
 ## Deploying (Push to GitHub)
