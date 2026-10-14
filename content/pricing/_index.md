@@ -28,8 +28,8 @@ Below is estimated cost for "Shared-ride Pet Ground Transportation":
 
 | Region | Estimated Cost | Notes |
 | --- | --- | --- |
-| Western U.S. | $130–$160 | |
-| Middle U.S. | $160–$190 | |
+| Western U.S. | ~$160 | |
+| Middle U.S. | ~$160 | |
 | Eastern U.S. | $160–$195 | For cross-country transport, please quote with us first.|
 
 Transportation is arranged through trusted pet transport services.  we'll confirm the details with you after your adoption or reservation is confirmed.
