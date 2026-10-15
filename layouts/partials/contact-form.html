@@ -40,16 +40,16 @@
   <select id="delivery" name="delivery_method" required onchange="toggleTransport(this.value)">
     <option value="">Select an option</option>
     <option value="Pickup">Pickup — I will pick up in person (Seattle, WA)</option>
-    <option value="Transportation - Rabbitry Arranged ($150)">Transportation(US Only) — Arrange ground transport for me ($150)</option>
+    <option value="Transportation - Rabbitry Arranged ($180)">Transportation(US Only) — Arrange shared ground transport for me ($180)</option>
     <option value="Transportation - Self Arranged">Transportation — I will arrange my own transport</option>
   </select>
   <div id="transport-note" style="display:none; margin: -0.5rem 0 1rem; padding: 0.75rem 1rem; background: var(--cba-accent-pale); border-left: 3px solid var(--cba-accent); border-radius: 4px; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; color: var(--cba-dark-mid);">
-    Ground transportation is arranged through a trusted pet transport service. The $150 fee covers door-to-door delivery within the continental US. We will coordinate the details with you after your adoption is confirmed.
+    Ground transportation is arranged through a trusted pet transport service. The $180 fee covers door-to-door delivery within the continental US. We will coordinate the details with you after your adoption is confirmed.
   </div>
   <script>
     function toggleTransport(val) {
       document.getElementById('transport-note').style.display =
-        val === 'Transportation - Rabbitry Arranged ($150)' ? 'block' : 'none';
+        val === 'Transportation - Rabbitry Arranged ($180)' ? 'block' : 'none';
     }
   </script>
   {{ end }}
