@@ -1439,21 +1439,6 @@ p, li {
 }
 
 /* Welcome Package */
-/* Transportation Table */
-.cba-transport-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.92rem;
-}
-.cba-transport-table tr + tr { border-top: 1px solid var(--cba-tan-light); }
-.cba-transport-table td { padding: 0.6rem 0.5rem; }
-.cba-transport-label {
-  font-weight: 600;
-  color: var(--cba-dark-mid);
-  white-space: nowrap;
-}
-
-/* Welcome Package */
 .cba-welcome-package {
   margin-top: 2.5rem;
   padding: 1.75rem 2rem;
