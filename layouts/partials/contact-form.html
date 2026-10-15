@@ -15,41 +15,25 @@
   </script>
   {{ end }}
 
-  {{ if .showPreferences }}
-  <label for="color_pref">Color Preference(Optional)</label>
-  <input type="text" id="color_pref" name="color_preference" placeholder="e.g. Orange, Frosty, Fawn, Grey, any">
-
-  <label for="grade_pref">Grade Preference</label>
-  <select id="grade_pref" name="grade_preference">
-    <option value="">No preference</option>
-    <option value="A - Adorable ($149-$299)">A — Adorable ($149-$299)</option>
-    <option value="P - Premium ($349-$549)">P — Premium ($349-$549)</option>
-    <option value="S - Signature ($599+)">S — Signature ($599+)</option>
-  </select>
-
-  <label for="gender_pref">Gender Preference</label>
-  <select id="gender_pref" name="gender_preference">
-    <option value="">No preference</option>
-    <option value="Girl (female)">Girl (female)</option>
-    <option value="Boy (male)">Boy (male)</option>
-  </select>
-  {{ end }}
-
   {{ if .showDelivery }}
+  {{ $fee := site.Data.adoption_form.transport_fee }}
   <label for="delivery">How would you like to receive your bunny? *</label>
-  <select id="delivery" name="delivery_method" required onchange="toggleTransport(this.value)">
+  <select id="delivery" name="delivery_method" required onchange="toggleTransport(this)">
     <option value="">Select an option</option>
-    <option value="Pickup">Pickup — I will pick up in person (Seattle, WA)</option>
-    <option value="Transportation - Rabbitry Arranged ($180)">Transportation(US Only) — Arrange shared ground transport for me ($180)</option>
-    <option value="Transportation - Self Arranged">Transportation — I will arrange my own transport</option>
+    {{ range site.Data.adoption_form.delivery_options }}
+    {{ $value := .value }}{{ $label := .label }}
+    {{ if .show_fee }}{{ $value = printf "%s (%s)" .value $fee }}{{ $label = printf "%s (%s)" .label $fee }}{{ end }}
+    <option value="{{ $value }}"{{ if .show_note }} data-transport-note="true"{{ end }}>{{ $label }}</option>
+    {{ end }}
   </select>
-  <div id="transport-note" style="display:none; margin: -0.5rem 0 1rem; padding: 0.75rem 1rem; background: var(--cba-accent-pale); border-left: 3px solid var(--cba-accent); border-radius: 4px; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; color: var(--cba-dark-mid);">
-    Ground transportation is arranged through a trusted pet transport service. The $180 fee covers door-to-door delivery within the continental US. We will coordinate the details with you after your adoption is confirmed.
+  <div id="transport-note" class="cba-transport-note" style="display:none;">
+    {{ replace site.Data.adoption_form.transport_note "{fee}" $fee }}
   </div>
   <script>
-    function toggleTransport(val) {
+    function toggleTransport(sel) {
+      var opt = sel.options[sel.selectedIndex];
       document.getElementById('transport-note').style.display =
-        val === 'Transportation - Rabbitry Arranged ($180)' ? 'block' : 'none';
+        (opt && opt.getAttribute('data-transport-note') === 'true') ? 'block' : 'none';
     }
   </script>
   {{ end }}
