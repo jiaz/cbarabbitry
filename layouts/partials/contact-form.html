@@ -47,6 +47,15 @@
   <label for="phone">Phone Number *</label>
   <input type="tel" id="phone" name="phone" required placeholder="Your phone number">
 
+  {{ if .showContactPref }}
+  <label for="contact_pref">Do you prefer phone or email for us to contact you for the adoption process? *</label>
+  <select id="contact_pref" name="contact_preference" required>
+    <option value="">Select an option</option>
+    <option value="Email">Email</option>
+    <option value="Phone">Phone</option>
+  </select>
+  {{ end }}
+
   {{ if not .hideMessage }}
   {{ if .messageOptional }}
   <label for="message">{{ .messageLabel | default "Message" }}</label>
@@ -58,7 +67,7 @@
   {{ end }}
 
   {{ if .showComments }}
-  <label for="comments">Additional Comments (Optional)</label>
+  <label for="comments">Any adoption questions?</label>
   <textarea id="comments" name="comments" placeholder="Anything else you'd like us to know?"></textarea>
   {{ end }}
 
