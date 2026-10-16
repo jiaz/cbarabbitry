@@ -1,5 +1,5 @@
 ---
-title: "LilacOBoy"
+title: "Lilo"
 breed: "Netherland Dwarf"
 grade: "A"
 color: "Lilac Otter"
