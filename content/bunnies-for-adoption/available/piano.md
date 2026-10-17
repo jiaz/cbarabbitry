@@ -3,13 +3,14 @@ title: "Piano"
 breed: "Netherland Dwarf"
 grade: "Breeder-Keeper"
 color: "Black Silver Marten"
+# color_rarity: "★★★★★☆"
 sex: "Boy"
 dob: "2026-08-12"
 available: true
 health: "Healthy"
 socialized: true
 showline: true
-price: 699
+price: 599
 # new_home: "Las Vegas"
 featured_image: "/images/bunnies/piano.jpg"
 gallery:

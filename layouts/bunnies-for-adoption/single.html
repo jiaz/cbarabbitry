@@ -59,6 +59,11 @@
                         <td class="cba-bunny-table-label">Color</td>
                         <td>{{ . }}</td>
                     </tr>
+                    {{ end }} {{ with .Params.color_rarity }}
+                    <tr>
+                        <td class="cba-bunny-table-label">Color Rarity Degree</td>
+                        <td>{{ . }}</td>
+                    </tr>
                     {{ end }} {{ with .Params.sex }}
                     <tr>
                         <td class="cba-bunny-table-label">Gender</td>
