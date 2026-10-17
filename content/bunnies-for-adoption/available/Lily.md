@@ -13,3 +13,7 @@ price: $449
 new_home: "WA State"
 featured_image: "/images/bunnies/lily.jpg"
 ---
+
+Daily Socialized & Raised by hand Indoor: ✅
+
+From Showline: ✅

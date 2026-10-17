@@ -25,3 +25,7 @@ as for his personality, super sweet, fully socialized and friendly to kids. If y
 If you are looking for a high potential herd buck for your ND herd, we truly believe he will bring a thing to your rabbitry! He can come with pedigree, and he is a resseive genetic carrier that can give you all kinds of color variety!
 
 If you are breeder and interested in him, please tell us, we will also priortize him for ARBA Youth breeder.
+
+Daily Socialized & Raised by hand Indoor: ✅
+
+From Showline: ✅

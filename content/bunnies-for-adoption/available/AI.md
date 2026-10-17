@@ -13,3 +13,7 @@ price: $599
 new_home: "New York"
 featured_image: "/images/bunnies/AI.jpg"
 ---
+
+Daily Socialized & Raised by hand Indoor: ✅
+
+From Showline: ✅

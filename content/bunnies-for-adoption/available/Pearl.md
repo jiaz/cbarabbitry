@@ -22,3 +22,7 @@ Those photos took in 40 days old, he went to the ugly stage but he is still so b
 This Lilac Smoke Pearl is an extreamly beautiful and rare coat color.
 He has thick ears and sweat personality!
 Contact for more his videos, he is gorgeus!
+
+Daily Socialized & Raised by hand Indoor: ✅
+
+From Showline: ✅
