@@ -80,6 +80,16 @@
                         <td class="cba-bunny-table-label">Health</td>
                         <td>{{ . }}</td>
                     </tr>
+                    {{ end }} {{ if .Params.socialized }}
+                    <tr>
+                        <td class="cba-bunny-table-label">Daily Socialized</td>
+                        <td>✅</td>
+                    </tr>
+                    {{ end }} {{ if .Params.showline }}
+                    <tr>
+                        <td class="cba-bunny-table-label">From Showline</td>
+                        <td>✅</td>
+                    </tr>
                     {{ end }} {{ with .Params.price }}
                     <tr>
                         <td class="cba-bunny-table-label">Price</td>

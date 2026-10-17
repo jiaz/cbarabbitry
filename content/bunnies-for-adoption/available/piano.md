@@ -7,6 +7,8 @@ sex: "Boy"
 dob: "2026-08-12"
 available: true
 health: "Healthy"
+socialized: true
+showline: true
 price: 699
 # new_home: "Las Vegas"
 featured_image: "/images/bunnies/piano.jpg"
