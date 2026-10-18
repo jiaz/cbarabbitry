@@ -23,7 +23,7 @@
             </div>
         </div>
 
-{{ $pages := .Pages }}
+{{ $pages := where .Pages "Params.early_access" "!=" true }}
         {{ $availableAll := where $pages "Params.available" true }}
         {{ $available := where $availableAll "Params.reserved" "!=" true }}
         {{ $reserved := where $availableAll "Params.reserved" true }}
