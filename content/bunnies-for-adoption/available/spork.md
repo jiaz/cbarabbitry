@@ -7,6 +7,8 @@ sex: "Boy"
 dob: "2026-09-21"
 available: true
 # early_access: true
+reserved: true
+reserved_by: Katryna
 health: "Healthy"
 socialized: true
 showline: true
