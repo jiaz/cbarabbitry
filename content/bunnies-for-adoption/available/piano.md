@@ -13,10 +13,9 @@ showline: true
 price: 599
 # new_home: "Las Vegas"
 featured_image: "/images/bunnies/piano.jpg"
-gallery:
-  - "/images/bunnies/piano.jpg"
-  - "/images/bunnies/piano2.jpg"
-  - "/images/bunnies/piano5_2m.jpg"
+# gallery:
+#  - "/images/bunnies/piano.jpg"
+#  - "/images/bunnies/piano2.jpg"
 video:
   - "https://www.instagram.com/p/Dc-SjHxlIwV/?img_index=7&obrf=cm1mbjk4MzB5NjI2"
   - "https://www.tiktok.com/t/ZPLBDmVGP/"
