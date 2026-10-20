@@ -18,8 +18,8 @@
   {{ if .showDelivery }}
   {{ $deliveryOptions := slice
     (dict "value" "Pickup" "label" "Pickup — I will pick up in person (Seattle, WA)")
-    (dict "value" "Transportation - Rabbitry Arranged" "label" "Transportation(US Only) — Arrange shared ground transport for me" "needs_location" true)
-    (dict "value" "Transportation - Self Arranged" "label" "Transportation — I will arrange my own transport" "needs_location" true)
+    (dict "value" "Transportation - Rabbitry Arranged" "label" "Transportation(US Only) — help me find a budget-friendly shared transport" "needs_location" true)
+    (dict "value" "Transportation - Self Arranged" "label" "Transportation — I will arrange my own transport")
   }}
   <label for="delivery">How would you like to receive your bunny? *</label>
   <select id="delivery" name="delivery_method" required onchange="toggleTransport(this)">
