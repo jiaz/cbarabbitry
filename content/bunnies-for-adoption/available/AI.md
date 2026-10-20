@@ -7,7 +7,7 @@ sex: "Boy"
 dob: "2026-09-03"
 available: true
 reserved: true
-reserved_by: Crystal
+reserved_by: Crystal (Waitlist Families)
 health: "Healthy"
 price: $599
 new_home: "New York"

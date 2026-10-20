@@ -8,7 +8,7 @@ sex: "Boy"
 dob: "2026-09-21"
 available: true
 reserved: true
-reserved_by: Sherry
+reserved_by: Sherry (Waitlist Families)
 health: "Healthy"
 socialized: true
 showline: true

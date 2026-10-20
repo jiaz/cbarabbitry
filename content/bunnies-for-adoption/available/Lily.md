@@ -7,7 +7,7 @@ sex: "Girl"
 dob: "2026-09-03"
 available: true
 reserved: true
-reserved_by: Tara
+reserved_by: Tara (Waitlist Families)
 health: "Healthy"
 price: $449
 new_home: "WA State"

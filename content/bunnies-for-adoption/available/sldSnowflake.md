@@ -7,7 +7,7 @@ sex: "Boy"
 dob: "2026-09-03"
 available: true
 reserved: true
-reserved_by: Titus
+reserved_by: Titus (Waitlist Families)
 health: "Healthy"
 price: $449
 new_home: "WA State"

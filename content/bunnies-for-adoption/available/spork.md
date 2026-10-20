@@ -8,7 +8,7 @@ dob: "2026-09-21"
 available: true
 # early_access: true
 reserved: true
-reserved_by: Katryna
+reserved_by: Katryna (Waitlist Families)
 health: "Healthy"
 socialized: true
 showline: true
