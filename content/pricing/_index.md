@@ -22,6 +22,8 @@ The waitlist deposit is $49 and is applied toward the total adoption price when 
 
 ## Transportation Pricing
 
+If you are not local in WA state, We highly recommend you fly to Seattle-Tacoma International airport to pickup your bunny via Alaska or Frontier airline, they are budget-friendly and allow bunny in cabin.
+
 If you are unable to pick up your bunny from us in Seattle, WA, please arrange transportation. Additional transportation costs apply and are paid by the adopter.
 
 Below is estimated cost exmaple for "Shared-ride Pet Ground Transportation":
