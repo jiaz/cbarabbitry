@@ -26,7 +26,7 @@ If you are not local in WA state, We highly recommend you fly to Seattle-Tacoma 
 
 If you are unable to pick up your bunny from us in Seattle, WA, please arrange transportation. Additional transportation costs apply and are paid by the adopter.
 
-Below is estimated cost exmaple for "Shared-ride Pet Ground Transportation":
+Below is estimated cost example for "Shared-ride Pet Ground Transportation":
 
 | Region | Estimated Cost | Notes |
 | --- | --- | --- |

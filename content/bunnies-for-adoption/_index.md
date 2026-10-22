@@ -3,7 +3,7 @@ title: "Bunnies for Adoption"
 description: "Hand-raised completely indoors with love and care, every CBA bunny is gently handled and socialized every day. Transportation available to all U.S. states."
 featured_image: "/images/hero-bunnies.jpg"
 availability_last_updated: "Oct-13-2026"
-estimated_wait_time: "~4 weeks"
+estimated_wait_time: "~6 weeks"
 ---
 
 ## Adoptions
