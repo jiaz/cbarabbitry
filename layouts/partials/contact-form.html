@@ -42,6 +42,23 @@
   </script>
   {{ end }}
 
+  {{ if .showWelcomeKit }}
+  <label for="welcome_kit">Would you like to purchase the <a id="welcome-kit-link" href="/bunnies-for-adoption/" target="_blank" rel="noopener">Welcome Kit</a>? *</label>
+  <select id="welcome_kit" name="welcome_kit_purchase" required>
+    <option value="">Select an option</option>
+    <option value="Yes">Yes, please</option>
+    <option value="No">No, thank you</option>
+  </select>
+  <script>
+    (function () {
+      var detailURL = new URLSearchParams(window.location.search).get('bunny_details');
+      if (detailURL && detailURL.charAt(0) === '/') {
+        document.getElementById('welcome-kit-link').href = detailURL + '#welcome-kit';
+      }
+    })();
+  </script>
+  {{ end }}
+
   <label for="name">Your Name *</label>
   <input type="text" id="name" name="name" required placeholder="Your full name">
 
