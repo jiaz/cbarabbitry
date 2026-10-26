@@ -1,7 +1,8 @@
 ---
 title: "Piano"
 breed: "Netherland Dwarf"
-grade: "Breeder-Keeper"
+grade: "S"
+# grade: "Breeder-Keeper"
 color: "Black Silver Marten"
 # color_rarity: "★★★★★☆"
 sex: "Boy"
