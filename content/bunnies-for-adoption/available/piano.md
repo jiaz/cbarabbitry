@@ -11,7 +11,7 @@ available: true
 health: "Healthy"
 socialized: true
 showline: true
-price: 599
+price: 499
 # new_home: "Las Vegas"
 featured_image: "/images/bunnies/piano.jpg"
 # gallery:

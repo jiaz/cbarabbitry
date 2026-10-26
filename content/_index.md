@@ -1,9 +1,9 @@
 ---
 title: "CBA Rabbitry"
-description: "Netherland Dwarf bunnies raised with love in Seattle, WA. Socialization-trained, health-guaranteed, lifetime support."
+description: "High quality Netherland Dwarf bunnies hand raised with love. Socialization-trained, health-guaranteed, lifetime support."
 featured_image: "/images/hero-bunnies.jpg"
 
-hero_subtitle: "Netherland Dwarf bunnies, raised with love in Seattle, WA.\n\n Transport bunnies to all US States."
+hero_subtitle: "High quality Netherland Dwarf bunnies, hand raised with love in Seattle.\n\n Transport bunnies to all US States."
 hero_cta_primary_label: "Adopt Our Bunnies"
 hero_cta_primary_url: "/bunnies-for-adoption/"
 hero_cta_secondary_label: "Join Waiting List"
@@ -83,7 +83,7 @@ winners_cta_label: "Read the Full Story"
 winners_cta_url: "/news/2026-04-04-erba-show-winners/"
 ---
 
-We have more than 10 years of rabbit breeding experience, we are ARBA/ANDRC registered Netherland Dwarf Rabbit breeder. The Rabbitry officially started since Aug. 2025.
+We have more than 10 years of rabbit breeding experience, we are ARBA/ANDRC registered Netherland Dwarf Rabbit breeder, and we offically started CBA Rabbitry since Aug. 2025.
 
 CBA Rabbitry focus on breeding high quality Netherland dwarf rabbit in the US. Our rabbits comes from signature show-line Netherland dwarf blood lines, our rabbit has continues wining all kinds of rabbit shows. Moreover, we have been improve the breedings over years to ensure every bunny we breed is **adorable, has a sweet-personality, being trained for socialize, friendly to kids and healthy**.
 
