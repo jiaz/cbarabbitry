@@ -1,18 +1,26 @@
 {{ define "main" }}
+{{ $stripeURL := site.Params.stripe_reservation_payment_url }}
 <div class="cba-form-page">
   <div class="cba-form-card">
     <h1 class="cba-form-card-title">{{ .Title }}</h1>
     {{ .Content }}
-    {{ partial "contact-form.html" (dict
-    "subject" "Adoption Request - CBA Rabbitry"
-    "showBunny" true
-    "showDelivery" true
-    "showWelcomeKit" true
-    "showContactPref" true
-    "showComments" true
-    "hideMessage" true
-    "submitLabel" "Submit Adoption Request"
-    ) }}
+    {{ if $stripeURL }}
+      {{ partial "contact-form.html" (dict
+      "subject" "Adoption Request - CBA Rabbitry"
+      "showBunny" true
+      "showDelivery" true
+      "showWelcomeKit" true
+      "showCombinedContact" true
+      "showComments" true
+      "showReservationAgreement" true
+      "hideMessage" true
+      "paymentURL" $stripeURL
+      "paymentAmount" "$250"
+      "submitLabel" "Submit Request & Pay $250 Reservation Fee"
+      ) }}
+    {{ else }}
+      <div class="cba-payment-placeholder">Online reservation payment is temporarily unavailable. Please check back soon or <a href="/contact/">contact us</a> for help.</div>
+    {{ end }}
   </div>
 </div>
 {{ end }}

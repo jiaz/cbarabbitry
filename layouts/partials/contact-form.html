@@ -1,8 +1,14 @@
-<form action="https://api.web3forms.com/submit" method="POST">
+{{ $paymentURL := .paymentURL | default "" }}
+{{ $redirectURL := printf "%sthank-you/" site.BaseURL }}
+{{ if $paymentURL }}{{ $redirectURL = $paymentURL }}{{ end }}
+<form action="https://api.web3forms.com/submit" method="POST"{{ if $paymentURL }} data-payment-url="{{ $paymentURL }}"{{ end }}>
   <input type="hidden" name="access_key" value="{{ site.Params.web3forms_key }}">
   <input type="hidden" name="subject" value="{{ .subject | default "New Message - CBA Rabbitry" }}">
-  <input type="hidden" name="redirect" value="{{ site.BaseURL }}thank-you/">
+  <input type="hidden" name="redirect" value="{{ $redirectURL }}">
   <input type="hidden" name="from_name" value="CBA Rabbitry Website">
+  {{ if $paymentURL }}
+  <input type="hidden" name="reservation_fee" value="{{ .paymentAmount }} reservation fee through Stripe">
+  {{ end }}
 
   {{ if .showBunny }}
   <label for="bunny">Which bunny are you interested in?</label>
@@ -62,11 +68,16 @@
   <label for="name">Your Name *</label>
   <input type="text" id="name" name="name" required placeholder="Your full name">
 
+  {{ if .showCombinedContact }}
+  <label for="contact_information">Enter Your Email or Phone for Rabbitry to contact you for adoption. *</label>
+  <input type="text" id="contact_information" name="contact_information" required placeholder="Email address or phone number">
+  {{ else }}
   <label for="email">Email Address *</label>
   <input type="email" id="email" name="email" required placeholder="your@email.com">
 
   <label for="phone">Phone Number *</label>
   <input type="tel" id="phone" name="phone" required placeholder="Your phone number">
+  {{ end }}
 
   {{ if .showContactPref }}
   <label for="contact_pref">Prefer Text or Email to contact you for adoption process? *</label>
@@ -95,5 +106,67 @@
   <!-- Honeypot spam protection -->
   <input type="checkbox" name="botcheck" style="display:none">
 
+  {{ if .showReservationAgreement }}
+  <p class="cba-reservation-agreement">By proceeding with the reservation payment, the buyer confirms that they have read, understood, and agreed to all of the above <a href="/sales-policy/" target="_blank" rel="noopener">sales policies</a>.</p>
+  {{ end }}
+
   <button type="submit">{{ .submitLabel | default "Send Message" }}</button>
+  {{ if $paymentURL }}
+  <p class="cba-form-status" role="status" aria-live="polite"></p>
+  <noscript><p class="cba-form-noscript">After this form is submitted, you will continue to Stripe to pay the {{ .paymentAmount }} reservation fee.</p></noscript>
+  {{ end }}
 </form>
+
+{{ if $paymentURL }}
+<script>
+  (function () {
+    var script = document.currentScript;
+    var form = script && script.previousElementSibling;
+    if (!form || !form.matches('form[data-payment-url]')) return;
+
+    form.addEventListener('submit', async function (event) {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+
+      var button = form.querySelector('button[type="submit"]');
+      var status = form.querySelector('.cba-form-status');
+      var originalLabel = button.textContent;
+      button.disabled = true;
+      button.setAttribute('aria-busy', 'true');
+      button.textContent = 'Submitting request...';
+      status.classList.remove('is-error');
+      status.textContent = 'Saving your adoption request before secure checkout.';
+
+      try {
+        var response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        });
+        var result = await response.json();
+        if (!response.ok || !result.success) throw new Error('Form submission failed');
+
+        status.textContent = 'Request saved. Opening secure Stripe checkout...';
+        var checkoutURL = new URL(form.dataset.paymentUrl);
+        var email = form.querySelector('input[name="email"]');
+        var contact = form.querySelector('input[name="contact_information"]');
+        var bunny = form.querySelector('input[name="bunny_interest"]');
+        var emailValue = email && email.value ? email.value.trim() : '';
+        if (!emailValue && contact && contact.value.includes('@')) emailValue = contact.value.trim();
+        if (emailValue) checkoutURL.searchParams.set('prefilled_email', emailValue);
+        if (bunny && bunny.value) {
+          var reference = bunny.value.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+          if (reference) checkoutURL.searchParams.set('client_reference_id', reference.substring(0, 200));
+        }
+        window.location.assign(checkoutURL.toString());
+      } catch (error) {
+        button.disabled = false;
+        button.removeAttribute('aria-busy');
+        button.textContent = originalLabel;
+        status.classList.add('is-error');
+        status.textContent = 'We could not submit your request. Please check your connection and try again.';
+      }
+    });
+  })();
+</script>
+{{ end }}

@@ -28,6 +28,7 @@ theme = "ananke"
 
   # Stripe
   stripe_waitlist_payment_url = "https://buy.stripe.com/dRm14ngnOdrv2Cg9N0fQI00"
+  stripe_reservation_payment_url = "https://buy.stripe.com/9B6fZhgnOafj7WA0cqfQI01"
 
   # Custom CSS
   custom_css = ["/css/custom.css"]

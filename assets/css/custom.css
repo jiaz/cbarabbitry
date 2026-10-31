@@ -1912,6 +1912,30 @@ p, li {
 .cba-form-split-form button[type="submit"]:hover {
   background: var(--cba-accent-muted);
 }
+.cba-form-card button[type="submit"]:disabled,
+.cba-form-split-form button[type="submit"]:disabled {
+  background: var(--cba-warm-tan);
+  cursor: wait;
+}
+.cba-form-status {
+  margin: 0.85rem 0 0;
+  padding: 0.75rem 0.9rem;
+  background: var(--cba-accent-pale);
+  border-left: 3px solid var(--cba-accent);
+  border-radius: 5px;
+  color: var(--cba-dark-mid);
+  line-height: 1.5;
+}
+.cba-form-status:empty { display: none; }
+.cba-form-status.is-error {
+  background: #fff3cd;
+  border-left-color: #b7791f;
+  color: #664d03;
+}
+.cba-form-noscript {
+  margin: 0.85rem 0 0;
+  color: var(--cba-dark-mid);
+}
 .cf-turnstile { margin-bottom: 1rem; }
 
 /* ─── 12. Prose Pages (Sales Policy, Partner Friends) ──────────────────── */
