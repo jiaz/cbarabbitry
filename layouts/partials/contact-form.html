@@ -49,7 +49,7 @@
   {{ end }}
 
   {{ if .showWelcomeKit }}
-  <label for="welcome_kit">Would you like to purchase the <a id="welcome-kit-link" href="/bunnies-for-adoption/" target="_blank" rel="noopener">Welcome Kit</a>? *</label>
+  <label for="welcome_kit">Would you like to purchase the <a id="welcome-kit-link" href="/bunnies-for-adoption/" target="_blank" rel="noopener">First-time Owner Kit</a>? *</label>
   <select id="welcome_kit" name="welcome_kit_purchase" required>
     <option value="">Select an option</option>
     <option value="Yes">Yes, please</option>
@@ -107,7 +107,7 @@
   <input type="checkbox" name="botcheck" style="display:none">
 
   {{ if .showReservationAgreement }}
-  <p class="cba-reservation-agreement">By proceeding with the reservation payment, the buyer confirms that they have read, understood, and agreed to all of the above <a href="/sales-policy/" target="_blank" rel="noopener">sales policies</a>.</p>
+  <p class="cba-reservation-agreement">By submitting with the reservation payment, the buyer confirms that they have read, understood, and agreed to all terms and conditions in <a href="/sales-policy/" target="_blank" rel="noopener">sales policies</a>.</p>
   {{ end }}
 
   <button type="submit">{{ .submitLabel | default "Send Message" }}</button>

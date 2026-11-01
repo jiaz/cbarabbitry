@@ -37,7 +37,7 @@ To protect animal welfare, pedigree integrity, and the reputation of our rabbitr
 
 ### Payment
 
-By proceeding with the reservation payment, the buyer confirms that they have read, understood, and agreed to all of the above sales policies.
+By proceeding with the reservation payment, the buyer confirms that they have read, understood, and agreed to all terms in sales policies.
 
 ### Questions?
 
