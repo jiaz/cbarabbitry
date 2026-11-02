@@ -1,5 +1,5 @@
 ---
-title: "Spork"
+title: "Panco"
 breed: "Netherland Dwarf"
 color: "Lilac"
 color_rarity: "★★★★☆"
