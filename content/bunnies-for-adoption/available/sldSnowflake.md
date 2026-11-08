@@ -5,8 +5,7 @@ grade: "P"
 color: "Creamy"
 sex: "Boy"
 dob: "2026-09-03"
-available: true
-reserved: true
+available: false
 reserved_by: Titus (Waitlist Families)
 health: "Healthy"
 price: $449

@@ -5,8 +5,7 @@ grade: "P"
 color: "Creamy"
 sex: "Girl"
 dob: "2026-09-03"
-available: true
-reserved: true
+available: false
 reserved_by: Tara (Waitlist Families)
 health: "Healthy"
 price: $449

@@ -5,8 +5,7 @@ grade: "P"
 color: "Lilac Smoke Pearl"
 sex: "Boy"
 dob: "2026-09-03"
-available: true
-reserved: true
+available: false
 reserved_by: Sam
 health: "Healthy"
 price: 499
